@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial-mod",
+	"version": "${version}",
+	"name": "tutorial mod",
+	"description": "mod for Bagelvulture to figure out what the flying f*** is going on",
+	"authors": [
+		"BagelVulture https://www.youtube.com/@bagelvulture"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/@bagelvulture",
+		"sources": "https://github.com/CHANGE LATER AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorial-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bagelvulture.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.bagelvulture.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.bagelvulture.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorial-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
