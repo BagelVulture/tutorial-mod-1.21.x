@@ -1,4 +1,6 @@
 {
   "item.tutorialmod.bevultrium": "Bevultrium",
-  "item.tutorialmod.raw_bevultrium": "Raw Bevultrium Ore"
+  "item.tutorialmod.raw_bevultrium": "Raw Bevultrium Ore",
+
+  "block.tutorialmod.bevultrium_block": "Block of Bevultrium"
 }
