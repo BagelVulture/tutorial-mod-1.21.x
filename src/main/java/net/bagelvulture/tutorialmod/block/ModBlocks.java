@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block BEVULTRIUM_BLOCK = registerBlock("bevultrium_block", new Block(AbstractBlock.Settings.create().strength(4f).requiresTool()));
-
+    public static final Block RAW_BEVULTRIUM_BLOCK = registerBlock("raw_bevultrium_block", new Block(AbstractBlock.Settings.create().strength(3f).requiresTool()));
 
 
     private static Block registerBlock(String name, Block block) {
@@ -30,7 +30,8 @@ public class ModBlocks {
         TutorialMod.LOGGER.info("Registering " + TutorialMod.MOD_ID + "s blocks");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(BEVULTRIUM_BLOCK);
+            entries.add(ModBlocks.BEVULTRIUM_BLOCK);
+            entries.add(ModBlocks.RAW_BEVULTRIUM_BLOCK);
         });
     }
 }
