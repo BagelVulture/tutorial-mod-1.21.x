@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:bevultrium_block",
+    "tutorialmod:raw_bevultrium_block",
+    "tutorialmod:bevultrium_ore",
+    "tutorialmod:bevultrium_deepslate_ore"
+  ]
+}

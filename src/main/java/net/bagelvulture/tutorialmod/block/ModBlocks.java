@@ -3,11 +3,13 @@ package net.bagelvulture.tutorialmod.block;
 import net.bagelvulture.tutorialmod.TutorialMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block BEVULTRIUM_BLOCK = registerBlock("bevultrium_block", new
@@ -15,9 +17,11 @@ public class ModBlocks {
     public static final Block RAW_BEVULTRIUM_BLOCK = registerBlock("raw_bevultrium_block", new
             Block(AbstractBlock.Settings.create().strength(3f).requiresTool()));
     public static final Block BEVULTRIUM_ORE = registerBlock("bevultrium_ore", new
-            Block(AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
+            ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
     public static final Block BEVULTRIUM_DEEPSLATE_ORE = registerBlock("bevultrium_deepslate_ore", new
-            Block(AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
+            ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
 
 
     private static Block registerBlock(String name, Block block) {
