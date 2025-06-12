@@ -27,6 +27,8 @@ public class ModItemGroups {
             .entries((displayContext, entries) -> {
                 entries.add(ModBlocks.BEVULTRIUM_BLOCK);
                 entries.add(ModBlocks.RAW_BEVULTRIUM_BLOCK);
+                entries.add(ModBlocks.BEVULTRIUM_ORE);
+                entries.add(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE);
             }).build());
 
 
