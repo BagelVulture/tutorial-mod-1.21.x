@@ -14,6 +14,10 @@ public class ModBlocks {
             Block(AbstractBlock.Settings.create().strength(4f).requiresTool()));
     public static final Block RAW_BEVULTRIUM_BLOCK = registerBlock("raw_bevultrium_block", new
             Block(AbstractBlock.Settings.create().strength(3f).requiresTool()));
+    public static final Block BEVULTRIUM_ORE = registerBlock("bevultrium_ore", new
+            Block(AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
+    public static final Block BEVULTRIUM_DEEPSLATE_ORE = registerBlock("bevultrium_deepslate_ore", new
+            Block(AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
 
 
     private static Block registerBlock(String name, Block block) {

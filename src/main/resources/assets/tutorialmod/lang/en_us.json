@@ -2,8 +2,12 @@
   "item.tutorialmod.bevultrium": "Bevultrium",
   "item.tutorialmod.raw_bevultrium": "Raw Bevultrium Ore",
 
+
   "block.tutorialmod.bevultrium_block": "Block of Bevultrium",
   "block.tutorialmod.raw_bevultrium_block": "Block of Raw Bevultrium",
+  "block.tutorialmod.bevultrium_ore": "Stone Bevultrium Ore",
+  "block.tutorialmod.raw_bevultrium_deepslate_ore": "Deepslate Bevultrium Ore",
+
 
   "itemgroup.tutorialmod.bvs_1st_mod_items": "Items From BV's First Mod",
   "itemgroup.tutorialmod.bvs_1st_mod_blocks": "Blocks From BV's First Mod"
