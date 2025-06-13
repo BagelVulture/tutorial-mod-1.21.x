@@ -1,6 +1,7 @@
 package net.bagelvulture.tutorialmod.block;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
+import net.bagelvulture.tutorialmod.block.custom.CrudeAlchemyTransformer;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
@@ -22,6 +23,11 @@ public class ModBlocks {
     public static final Block BEVULTRIUM_DEEPSLATE_ORE = registerBlock("bevultrium_deepslate_ore", new
             ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
+
+    public static final Block CRUDE_ALCHEMY_TRANSFORMER = registerBlock("crude_alchemy_transformer",
+            new CrudeAlchemyTransformer(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+
 
 
     private static Block registerBlock(String name, Block block) {

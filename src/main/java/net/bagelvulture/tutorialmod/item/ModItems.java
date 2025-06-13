@@ -11,6 +11,7 @@ public class ModItems {
 
     public static final Item BEVULTRIUM = registerItem("bevultrium", new Item(new Item.Settings()));
     public static final Item RAW_BEVULTRIUM = registerItem("raw_bevultrium", new Item(new Item.Settings()));
+    public static final Item PLACEHOLDER = registerItem("placeholder", new Item(new Item.Settings()));
 
     public static final Item HAND_SMELTER = registerItem("hand_smelter", new HandSmelterItem(new Item.Settings()));
 
