@@ -18,6 +18,7 @@ public class ModItemGroups {
             .entries((displayContext, entries) -> {
                 entries.add(ModItems.BEVULTRIUM);
                 entries.add(ModItems.RAW_BEVULTRIUM);
+                entries.add(ModItems.HAND_SMELTER);
             }).build());
 
 
