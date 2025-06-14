@@ -1,0 +1,6 @@
+// 1.21	2025-06-14T16:31:44.701028	tutorial mod/Block Loot Tables
+aa692e36daa27ea25e729451b4a2b67704799b60 data/tutorialmod/loot_table/blocks/bevultrium_ore.json
+c5d879d0b564f96da9d7f56ddb4779b90898cbc3 data/tutorialmod/loot_table/blocks/bevultrium_deepslate_ore.json
+9d5925fa184378a4d62d95dc3a8048c852f1379f data/tutorialmod/loot_table/blocks/raw_bevultrium_block.json
+661f4c3c3e87a7f1b1c117a65c953014c922a4ab data/tutorialmod/loot_table/blocks/crude_alchemy_transformer.json
+c883becd6737ff2c6d4afebe49004d283cda99d5 data/tutorialmod/loot_table/blocks/bevultrium_block.json

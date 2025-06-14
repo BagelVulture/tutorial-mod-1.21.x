@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bevultrium_deepslate_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:bevultrium_deepslate_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:bevultrium_from_smelting_bevultrium_deepslate_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bevultrium_deepslate_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:bevultrium_from_smelting_bevultrium_deepslate_ore"
+    ]
+  }
+}
