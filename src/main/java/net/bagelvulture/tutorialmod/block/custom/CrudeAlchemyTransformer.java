@@ -1,6 +1,5 @@
 package net.bagelvulture.tutorialmod.block.custom;
 
-import net.bagelvulture.tutorialmod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -29,8 +28,8 @@ public class CrudeAlchemyTransformer extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
-            if(itemEntity.getStack().getItem() == ModItems.PLACEHOLDER) {
-                itemEntity.setStack(new ItemStack(Items.DIAMOND, itemEntity.getStack().getCount()));
+            if(itemEntity.getStack().getItem() == Items.BLACKSTONE) {
+                itemEntity.setStack(new ItemStack(Items.GOLD_NUGGET, itemEntity.getStack().getCount()));
             }
         }
 
