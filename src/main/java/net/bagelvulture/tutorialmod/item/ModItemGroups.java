@@ -18,8 +18,10 @@ public class ModItemGroups {
             .entries((displayContext, entries) -> {
                 entries.add(ModItems.BEVULTRIUM);
                 entries.add(ModItems.RAW_BEVULTRIUM);
-                entries.add(ModItems.HAND_SMELTER);
                 entries.add(ModItems.PLACEHOLDER);
+
+                entries.add(ModItems.HAND_SMELTER);
+                entries.add(ModItems.FRIED_BEVULTRIUM);
             }).build());
 
 
@@ -31,6 +33,7 @@ public class ModItemGroups {
                 entries.add(ModBlocks.RAW_BEVULTRIUM_BLOCK);
                 entries.add(ModBlocks.BEVULTRIUM_ORE);
                 entries.add(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE);
+
                 entries.add(ModBlocks.CRUDE_ALCHEMY_TRANSFORMER);
             }).build());
 
