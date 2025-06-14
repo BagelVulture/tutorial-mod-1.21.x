@@ -19,6 +19,7 @@ public class ModItemGroups {
                 entries.add(ModItems.BEVULTRIUM);
                 entries.add(ModItems.RAW_BEVULTRIUM);
                 entries.add(ModItems.PLACEHOLDER);
+                entries.add(ModItems.FERTILE_BEVULTRIUM);
 
                 entries.add(ModItems.HAND_SMELTER);
                 entries.add(ModItems.FRIED_BEVULTRIUM);

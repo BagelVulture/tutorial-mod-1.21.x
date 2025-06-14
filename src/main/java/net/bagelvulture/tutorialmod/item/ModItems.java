@@ -12,6 +12,7 @@ public class ModItems {
     public static final Item BEVULTRIUM = registerItem("bevultrium", new Item(new Item.Settings()));
     public static final Item RAW_BEVULTRIUM = registerItem("raw_bevultrium", new Item(new Item.Settings()));
     public static final Item PLACEHOLDER = registerItem("placeholder", new Item(new Item.Settings()));
+    public static final Item FERTILE_BEVULTRIUM = registerItem("fertile_bevultrium", new Item(new Item.Settings()));
 
     public static final Item HAND_SMELTER = registerItem("hand_smelter", new HandSmelterItem(new Item.Settings()));
     public static final Item FRIED_BEVULTRIUM = registerItem("fried_bevultrium", new Item(new Item.Settings().food(ModFoodComponents.FRIED_BEVULTRIUM)));
