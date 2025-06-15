@@ -1,6 +1,7 @@
 package net.bagelvulture.tutorialmod.datagen;
 
 import net.bagelvulture.tutorialmod.block.ModBlocks;
+import net.bagelvulture.tutorialmod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -55,5 +56,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES).add(ModBlocks.BEVULTRIUM_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.BEVULTRIUM_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.BEVULTRIUM_WALL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BEVULTRIUM_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
     }
 }

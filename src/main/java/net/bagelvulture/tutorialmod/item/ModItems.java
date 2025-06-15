@@ -3,8 +3,7 @@ package net.bagelvulture.tutorialmod.item;
 import net.bagelvulture.tutorialmod.TutorialMod;
 import net.bagelvulture.tutorialmod.item.custom.HandSmelterItem;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -17,6 +16,24 @@ public class ModItems {
 
     public static final Item BEVULTRIUM = registerItem("bevultrium", new Item(new Item.Settings()));
     public static final Item RAW_BEVULTRIUM = registerItem("raw_bevultrium", new Item(new Item.Settings()));
+
+    public static final Item BEVULTRIUM_SWORD = registerItem("bevultrium_sword",
+            new SwordItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 3, -2.4f))));
+    public static final Item BEVULTRIUM_PICKAXE = registerItem("bevultrium_pickaxe",
+            new PickaxeItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 1, -2.8f))));
+    public static final Item BEVULTRIUM_SHOVEL = registerItem("bevultrium_shovel",
+            new ShovelItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 1.5f, -3.0f))));
+    public static final Item BEVULTRIUM_AXE = registerItem("bevultrium_axe",
+            new AxeItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 6, -3.2f))));
+    public static final Item BEVULTRIUM_HOE = registerItem("bevultrium_hoe",
+            new HoeItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 0, -3f))));
+
+
     public static final Item FERTILE_BEVULTRIUM = registerItem("fertile_bevultrium", new Item(new Item.Settings()){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {

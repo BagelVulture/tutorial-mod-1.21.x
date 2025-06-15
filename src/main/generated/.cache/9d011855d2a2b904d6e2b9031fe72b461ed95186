@@ -1,5 +1,6 @@
-// 1.21	2025-06-15T00:05:38.127183	tutorial mod/Recipes
+// 1.21	2025-06-15T17:11:09.883784	tutorial mod/Recipes
 674fca5827ee697d5a0a176d52087faac51dc5d0 data/tutorial-mod/advancement/recipes/misc/bevultrium_block.json
+6ffbe06892286a2b4054fd8db62be9f227ea5e8f data/tutorial-mod/advancement/recipes/misc/bevultrium_lamp.json
 d149cbebcf2fb4285679684bcab060119806559a data/tutorial-mod/recipe/crude_alchemy_transformer.json
 456e549b3143b6bc60ee2f61a6b3e51698f3c3fa data/tutorial-mod/recipe/bevultrium_from_smelting_bevultrium_ore.json
 df98a752c049f6a04adb678e4c704ab0ddd0e1ea data/tutorial-mod/recipe/bevultrium_from_blasting_raw_bevultrium.json
@@ -11,6 +12,7 @@ ce2b4fec8903955df8ce57eddf4382260954454e data/tutorial-mod/advancement/recipes/m
 183e1f27697ebeb42eef860755b571bad6e8c746 data/tutorial-mod/advancement/recipes/misc/raw_bevultrium_block.json
 4b812e8f1a02f6a8db9ac4c49a7c0d5ed0e59339 data/tutorial-mod/advancement/recipes/misc/fertile_bevultrium.json
 67b9f317e17f6db5b90fe26e12e851f8ba958c66 data/tutorial-mod/recipe/bevultrium_from_blasting_bevultrium_ore.json
+50eaa7a8e77b4e275e9e1917cf6a29e6cc6b22a5 data/tutorial-mod/recipe/bevultrium_lamp.json
 1aef5570f1a6d1bba17f8c2e2bc82a54c4bdcc78 data/tutorial-mod/recipe/bevultrium_button.json
 d1e958f42eba152e0f81c714a553b28119091ce5 data/tutorial-mod/recipe/bevultrium.json
 a88ba8e5556a393a5a99e617154b02bc7544ec7c data/tutorial-mod/advancement/recipes/misc/bevultrium_button.json

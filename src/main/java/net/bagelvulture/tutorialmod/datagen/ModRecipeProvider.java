@@ -47,12 +47,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_LAMP)
-                .pattern("ABA")
+                .pattern(" B ")
                 .pattern("BCB")
-                .pattern("ABA")
-                .input('A', Items.AIR)
+                .pattern(" B ")
                 .input('B', Items.REDSTONE)
-                .input('C', BEVULTRIUM_BLOCK)
+                .input('C', ModBlocks.BEVULTRIUM_BLOCK)
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .offerTo(exporter);
 
@@ -88,5 +87,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BEVULTRIUM_FENCE, 3).input('W', BEVULTRIUM).input('#', Items.STICK).pattern("W#W").pattern("W#W");
         ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, BEVULTRIUM_FENCE_GATE).input('#', Items.STICK).input('W', BEVULTRIUM).pattern("#W#").pattern("#W#");
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BEVULTRIUM_WALL, 6).input('#', BEVULTRIUM).pattern("###").pattern("###");
+
+
     }
 }

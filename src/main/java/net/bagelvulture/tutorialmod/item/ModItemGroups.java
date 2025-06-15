@@ -22,6 +22,12 @@ public class ModItemGroups {
 
                 entries.add(ModItems.HAND_SMELTER);
                 entries.add(ModItems.FRIED_BEVULTRIUM);
+
+                entries.add(ModItems.BEVULTRIUM_SWORD);
+                entries.add(ModItems.BEVULTRIUM_PICKAXE);
+                entries.add(ModItems.BEVULTRIUM_SHOVEL);
+                entries.add(ModItems.BEVULTRIUM_AXE);
+                entries.add(ModItems.BEVULTRIUM_HOE);
             }).build());
 
 

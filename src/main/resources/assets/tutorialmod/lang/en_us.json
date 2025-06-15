@@ -6,6 +6,13 @@
 
   "item.tutorialmod.hand_smelter": "Handheld Instant Smelter",
 
+  "item.tutorialmod.bevultrium_sword": "Bevultrium Sword",
+  "item.tutorialmod.bevultrium_pickaxe": "Bevultrium Pickaxe",
+  "item.tutorialmod.bevultrium_shovel": "Bevultrium Shovel",
+  "item.tutorialmod.bevultrium_axe": "Bevultrium Axe",
+  "item.tutorialmod.bevultrium_hoe": "Bevultrium Hoe",
+
+
   "block.tutorialmod.bevultrium_block": "Block of Bevultrium",
   "block.tutorialmod.raw_bevultrium_block": "Block of Raw Bevultrium",
   "block.tutorialmod.bevultrium_ore": "Stone Bevultrium Ore",
