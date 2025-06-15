@@ -1,12 +1,12 @@
 package net.bagelvulture.tutorialmod.datagen;
 
+import net.bagelvulture.tutorialmod.block.custom.BevultriumLampBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.bagelvulture.tutorialmod.block.ModBlocks;
 import net.bagelvulture.tutorialmod.item.ModItems;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -34,6 +34,11 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.BEVULTRIUM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.BEVULTRIUM_TRAPDOOR);
+
+        Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.BEVULTRIUM_LAMP, blockStateModelGenerator.modelCollector);
+        Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.BEVULTRIUM_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.BEVULTRIUM_LAMP)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(BevultriumLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
     }
 
     @Override

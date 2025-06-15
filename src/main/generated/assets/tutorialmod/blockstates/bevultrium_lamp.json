@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "tutorialmod:block/bevultrium_lamp"
+    },
+    "clicked=true": {
+      "model": "tutorialmod:block/bevultrium_lamp_on"
+    }
+  }
+}

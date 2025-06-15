@@ -46,6 +46,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.FURNACE), conditionsFromItem(Items.FURNACE))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_LAMP)
+                .pattern("ABA")
+                .pattern("BCB")
+                .pattern("ABA")
+                .input('A', Items.AIR)
+                .input('B', Items.REDSTONE)
+                .input('C', BEVULTRIUM_BLOCK)
+                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
+                .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CRUDE_ALCHEMY_TRANSFORMER)
                 .pattern("ABC")
                 .pattern("DEF")

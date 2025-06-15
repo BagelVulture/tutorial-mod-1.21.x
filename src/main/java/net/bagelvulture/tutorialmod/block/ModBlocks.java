@@ -1,6 +1,7 @@
 package net.bagelvulture.tutorialmod.block;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
+import net.bagelvulture.tutorialmod.block.custom.BevultriumLampBlock;
 import net.bagelvulture.tutorialmod.block.custom.CrudeAlchemyTransformer;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -46,6 +47,9 @@ public class ModBlocks {
     public static final Block BEVULTRIUM_TRAPDOOR = registerBlock("bevultrium_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
 
+    public static final Block BEVULTRIUM_LAMP = registerBlock("bevultrium_lamp",
+            new BevultriumLampBlock(AbstractBlock.Settings.create()
+                    .strength(3f).requiresTool().luminance(state -> state.get(BevultriumLampBlock.CLICKED) ? 15 : 0)));
 
 
     private static Block registerBlock(String name, Block block) {

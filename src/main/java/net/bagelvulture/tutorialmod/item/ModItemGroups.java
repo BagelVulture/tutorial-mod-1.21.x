@@ -35,6 +35,7 @@ public class ModItemGroups {
                 entries.add(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE);
 
                 entries.add(ModBlocks.CRUDE_ALCHEMY_TRANSFORMER);
+                entries.add(ModBlocks.BEVULTRIUM_LAMP);
 
                 entries.add(ModBlocks.BEVULTRIUM_SLAB);
                 entries.add(ModBlocks.BEVULTRIUM_STAIRS);

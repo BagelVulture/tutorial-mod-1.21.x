@@ -29,6 +29,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BEVULTRIUM_BLOCK);
         addDrop(ModBlocks.RAW_BEVULTRIUM_BLOCK);
         addDrop(ModBlocks.CRUDE_ALCHEMY_TRANSFORMER);
+        addDrop(ModBlocks.BEVULTRIUM_LAMP);
 
         addDrop(ModBlocks.BEVULTRIUM_ORE, oreDrops(ModBlocks.BEVULTRIUM_ORE, ModItems.RAW_BEVULTRIUM));
         addDrop(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE, ModItems.RAW_BEVULTRIUM, 2, 3));

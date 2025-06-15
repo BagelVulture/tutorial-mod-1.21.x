@@ -1,11 +1,10 @@
 {
   "item.tutorialmod.bevultrium": "Bevultrium",
   "item.tutorialmod.raw_bevultrium": "Raw Bevultrium",
+  "item.tutorialmod.fried_bevultrium": "Fried Bevultrium",
   "item.tutorialmod.fertile_bevultrium": "Fertile Bevultrium",
 
   "item.tutorialmod.hand_smelter": "Handheld Instant Smelter",
-  "item.tutorialmod.fried_bevultrium": "Fried Bevultrium",
-
 
   "block.tutorialmod.bevultrium_block": "Block of Bevultrium",
   "block.tutorialmod.raw_bevultrium_block": "Block of Raw Bevultrium",
@@ -22,8 +21,8 @@
   "block.tutorialmod.bevultrium_door": "Bevultrium Door",
   "block.tutorialmod.bevultrium_trapdoor": "Bevultrium Trapdoor",
 
-
   "block.tutorialmod.crude_alchemy_transformer": "Crude Alchemy Transformer Block",
+  "block.tutorialmod.bevultrium_lamp": "Bevultrium Lamp",
 
 
   "itemgroup.tutorialmod.bvs_1st_mod_items": "Items From BV's First Mod",

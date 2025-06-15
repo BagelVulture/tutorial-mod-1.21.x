@@ -29,7 +29,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BEVULTRIUM_TRAPDOOR)
                 .add(ModBlocks.BEVULTRIUM_FENCE)
                 .add(ModBlocks.BEVULTRIUM_FENCE_GATE)
-                .add(ModBlocks.BEVULTRIUM_WALL);
+                .add(ModBlocks.BEVULTRIUM_WALL)
+                .add(ModBlocks.BEVULTRIUM_LAMP);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RAW_BEVULTRIUM_BLOCK)
@@ -47,7 +48,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BEVULTRIUM_TRAPDOOR)
                 .add(ModBlocks.BEVULTRIUM_FENCE)
                 .add(ModBlocks.BEVULTRIUM_FENCE_GATE)
-                .add(ModBlocks.BEVULTRIUM_WALL);
+                .add(ModBlocks.BEVULTRIUM_WALL)
+                .add(ModBlocks.BEVULTRIUM_LAMP);
 
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.BEVULTRIUM_FENCE);
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES).add(ModBlocks.BEVULTRIUM_FENCE);
