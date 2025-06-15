@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tutorialmod:bevultrium"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:bevultrium_button"
+  }
+}

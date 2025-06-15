@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "tutorialmod:block/bevultrium_block",
+    "side": "tutorialmod:block/bevultrium_block",
+    "top": "tutorialmod:block/bevultrium_block"
+  }
+}

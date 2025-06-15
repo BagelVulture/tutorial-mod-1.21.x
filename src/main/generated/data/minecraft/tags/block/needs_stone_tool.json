@@ -1,6 +1,15 @@
 {
   "values": [
     "tutorialmod:bevultrium_block",
-    "tutorialmod:crude_alchemy_transformer"
+    "tutorialmod:crude_alchemy_transformer",
+    "tutorialmod:bevultrium_slab",
+    "tutorialmod:bevultrium_stairs",
+    "tutorialmod:bevultrium_button",
+    "tutorialmod:bevultrium_pressure_plate",
+    "tutorialmod:bevultrium_door",
+    "tutorialmod:bevultrium_trapdoor",
+    "tutorialmod:bevultrium_fence",
+    "tutorialmod:bevultrium_fence_gate",
+    "tutorialmod:bevultrium_wall"
   ]
 }

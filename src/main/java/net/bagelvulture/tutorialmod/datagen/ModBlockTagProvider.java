@@ -20,7 +20,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_BEVULTRIUM_BLOCK)
                 .add(ModBlocks.BEVULTRIUM_ORE)
                 .add(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE)
-                .add(ModBlocks.CRUDE_ALCHEMY_TRANSFORMER);
+                .add(ModBlocks.CRUDE_ALCHEMY_TRANSFORMER)
+                .add(ModBlocks.BEVULTRIUM_SLAB)
+                .add(ModBlocks.BEVULTRIUM_STAIRS)
+                .add(ModBlocks.BEVULTRIUM_BUTTON)
+                .add(ModBlocks.BEVULTRIUM_PRESSURE_PLATE)
+                .add(ModBlocks.BEVULTRIUM_DOOR)
+                .add(ModBlocks.BEVULTRIUM_TRAPDOOR)
+                .add(ModBlocks.BEVULTRIUM_FENCE)
+                .add(ModBlocks.BEVULTRIUM_FENCE_GATE)
+                .add(ModBlocks.BEVULTRIUM_WALL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RAW_BEVULTRIUM_BLOCK)
@@ -29,6 +38,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.BEVULTRIUM_BLOCK)
-                .add(ModBlocks.CRUDE_ALCHEMY_TRANSFORMER);
+                .add(ModBlocks.CRUDE_ALCHEMY_TRANSFORMER)
+                .add(ModBlocks.BEVULTRIUM_SLAB)
+                .add(ModBlocks.BEVULTRIUM_STAIRS)
+                .add(ModBlocks.BEVULTRIUM_BUTTON)
+                .add(ModBlocks.BEVULTRIUM_PRESSURE_PLATE)
+                .add(ModBlocks.BEVULTRIUM_DOOR)
+                .add(ModBlocks.BEVULTRIUM_TRAPDOOR)
+                .add(ModBlocks.BEVULTRIUM_FENCE)
+                .add(ModBlocks.BEVULTRIUM_FENCE_GATE)
+                .add(ModBlocks.BEVULTRIUM_WALL);
+
+        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.BEVULTRIUM_FENCE);
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES).add(ModBlocks.BEVULTRIUM_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.BEVULTRIUM_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.BEVULTRIUM_WALL);
     }
 }

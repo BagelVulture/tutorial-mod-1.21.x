@@ -17,7 +17,6 @@ public class ModItems {
 
     public static final Item BEVULTRIUM = registerItem("bevultrium", new Item(new Item.Settings()));
     public static final Item RAW_BEVULTRIUM = registerItem("raw_bevultrium", new Item(new Item.Settings()));
-    public static final Item PLACEHOLDER = registerItem("placeholder", new Item(new Item.Settings()));
     public static final Item FERTILE_BEVULTRIUM = registerItem("fertile_bevultrium", new Item(new Item.Settings()){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tutorialmod:block/bevultrium_slab"
+    },
+    "type=double": {
+      "model": "tutorialmod:block/bevultrium_block"
+    },
+    "type=top": {
+      "model": "tutorialmod:block/bevultrium_slab_top"
+    }
+  }
+}

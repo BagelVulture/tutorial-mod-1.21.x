@@ -15,6 +15,9 @@ import net.minecraft.registry.RegistryWrapper;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+import static net.bagelvulture.tutorialmod.block.ModBlocks.*;
+import static net.bagelvulture.tutorialmod.item.ModItems.BEVULTRIUM;
+
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -25,12 +28,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         List<ItemConvertible> BEVULTRIUM_SMELTABLES = List.of(ModItems.RAW_BEVULTRIUM, ModBlocks.BEVULTRIUM_ORE,
                 ModBlocks.BEVULTRIUM_DEEPSLATE_ORE);
 
-        offerSmelting(exporter, BEVULTRIUM_SMELTABLES, RecipeCategory.MISC, ModItems.BEVULTRIUM, 0.20f, 200, "BEVULTRIUM");
-        offerBlasting(exporter, BEVULTRIUM_SMELTABLES, RecipeCategory.MISC, ModItems.BEVULTRIUM, 0.20f, 100, "BEVULTRIUM");
+        offerSmelting(exporter, BEVULTRIUM_SMELTABLES, RecipeCategory.MISC, BEVULTRIUM, 0.20f, 200, "BEVULTRIUM");
+        offerBlasting(exporter, BEVULTRIUM_SMELTABLES, RecipeCategory.MISC, BEVULTRIUM, 0.20f, 100, "BEVULTRIUM");
 
         //smoking recipes manually added to generated folder
 
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BEVULTRIUM, RecipeCategory.MISC, ModBlocks.BEVULTRIUM_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, BEVULTRIUM, RecipeCategory.MISC, ModBlocks.BEVULTRIUM_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_BEVULTRIUM, RecipeCategory.MISC, ModBlocks.RAW_BEVULTRIUM_BLOCK);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HAND_SMELTER)
@@ -65,5 +68,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(Items.WHEAT_SEEDS)
                 .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BEVULTRIUM_SLAB, 6).input('#', BEVULTRIUM).pattern("###");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BEVULTRIUM_STAIRS, 4).input('#', BEVULTRIUM).pattern("#  ").pattern("## ").pattern("###");
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_BUTTON, 1).input(BEVULTRIUM).criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM)).offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, BEVULTRIUM_PRESSURE_PLATE).input('#', BEVULTRIUM).pattern("##");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, BEVULTRIUM_DOOR, 3).input('#', BEVULTRIUM).pattern("##").pattern("##").pattern("##");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, BEVULTRIUM_TRAPDOOR, 2).input('#', BEVULTRIUM).pattern("###").pattern("###");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BEVULTRIUM_FENCE, 3).input('W', BEVULTRIUM).input('#', Items.STICK).pattern("W#W").pattern("W#W");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, BEVULTRIUM_FENCE_GATE).input('#', Items.STICK).input('W', BEVULTRIUM).pattern("#W#").pattern("#W#");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BEVULTRIUM_WALL, 6).input('#', BEVULTRIUM).pattern("###").pattern("###");
     }
 }

@@ -18,7 +18,6 @@ public class ModItemGroups {
             .entries((displayContext, entries) -> {
                 entries.add(ModItems.BEVULTRIUM);
                 entries.add(ModItems.RAW_BEVULTRIUM);
-                entries.add(ModItems.PLACEHOLDER);
                 entries.add(ModItems.FERTILE_BEVULTRIUM);
 
                 entries.add(ModItems.HAND_SMELTER);
@@ -36,6 +35,16 @@ public class ModItemGroups {
                 entries.add(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE);
 
                 entries.add(ModBlocks.CRUDE_ALCHEMY_TRANSFORMER);
+
+                entries.add(ModBlocks.BEVULTRIUM_SLAB);
+                entries.add(ModBlocks.BEVULTRIUM_STAIRS);
+                entries.add(ModBlocks.BEVULTRIUM_BUTTON);
+                entries.add(ModBlocks.BEVULTRIUM_PRESSURE_PLATE);
+                entries.add(ModBlocks.BEVULTRIUM_DOOR);
+                entries.add(ModBlocks.BEVULTRIUM_TRAPDOOR);
+                entries.add(ModBlocks.BEVULTRIUM_FENCE);
+                entries.add(ModBlocks.BEVULTRIUM_FENCE_GATE);
+                entries.add(ModBlocks.BEVULTRIUM_WALL);
             }).build());
 
 

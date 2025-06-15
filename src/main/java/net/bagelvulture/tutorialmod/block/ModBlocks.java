@@ -2,9 +2,7 @@ package net.bagelvulture.tutorialmod.block;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
 import net.bagelvulture.tutorialmod.block.custom.CrudeAlchemyTransformer;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -27,6 +25,26 @@ public class ModBlocks {
     public static final Block CRUDE_ALCHEMY_TRANSFORMER = registerBlock("crude_alchemy_transformer",
             new CrudeAlchemyTransformer(AbstractBlock.Settings.create().strength(2f).requiresTool()));
 
+
+    public static final Block BEVULTRIUM_STAIRS = registerBlock("bevultrium_stairs",
+            new StairsBlock(ModBlocks.BEVULTRIUM_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(4f).requiresTool()));
+    public static final Block BEVULTRIUM_SLAB = registerBlock("bevultrium_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(4f).requiresTool()));
+    public static final Block BEVULTRIUM_BUTTON = registerBlock("bevultrium_button",
+            new ButtonBlock(BlockSetType.IRON, 2, AbstractBlock.Settings.create().strength(4f).requiresTool().noCollision().breakInstantly()));
+    public static final Block BEVULTRIUM_PRESSURE_PLATE = registerBlock("bevultrium_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(4f).requiresTool()));
+    public static final Block BEVULTRIUM_FENCE = registerBlock("bevultrium_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(4f).requiresTool()));
+    public static final Block BEVULTRIUM_FENCE_GATE = registerBlock("bevultrium_fence_gate",
+            new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create().strength(4f).requiresTool()));
+    public static final Block BEVULTRIUM_WALL = registerBlock("bevultrium_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(4f).requiresTool()));
+    public static final Block BEVULTRIUM_DOOR = registerBlock("bevultrium_door",
+            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
+    public static final Block BEVULTRIUM_TRAPDOOR = registerBlock("bevultrium_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
 
 
 

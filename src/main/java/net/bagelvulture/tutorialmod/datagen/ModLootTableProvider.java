@@ -32,6 +32,19 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.BEVULTRIUM_ORE, oreDrops(ModBlocks.BEVULTRIUM_ORE, ModItems.RAW_BEVULTRIUM));
         addDrop(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE, ModItems.RAW_BEVULTRIUM, 2, 3));
+
+        addDrop(ModBlocks.BEVULTRIUM_STAIRS);
+        addDrop(ModBlocks.BEVULTRIUM_SLAB, slabDrops(ModBlocks.BEVULTRIUM_SLAB));
+
+        addDrop(ModBlocks.BEVULTRIUM_BUTTON);
+        addDrop(ModBlocks.BEVULTRIUM_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.BEVULTRIUM_WALL);
+        addDrop(ModBlocks.BEVULTRIUM_FENCE);
+        addDrop(ModBlocks.BEVULTRIUM_FENCE_GATE);
+
+        addDrop(ModBlocks.BEVULTRIUM_DOOR, doorDrops(ModBlocks.BEVULTRIUM_DOOR));
+        addDrop(ModBlocks.BEVULTRIUM_TRAPDOOR);
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
