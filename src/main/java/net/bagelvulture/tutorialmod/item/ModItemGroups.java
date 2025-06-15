@@ -28,6 +28,8 @@ public class ModItemGroups {
                 entries.add(ModItems.BEVULTRIUM_SHOVEL);
                 entries.add(ModItems.BEVULTRIUM_AXE);
                 entries.add(ModItems.BEVULTRIUM_HOE);
+
+                entries.add(ModItems.BEVULTRIUM_HAMMER);
             }).build());
 
 

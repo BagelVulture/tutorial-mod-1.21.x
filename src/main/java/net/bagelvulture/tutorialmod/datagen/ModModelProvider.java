@@ -55,5 +55,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BEVULTRIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BEVULTRIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BEVULTRIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.BEVULTRIUM_HAMMER, Models.HANDHELD);
     }
 }

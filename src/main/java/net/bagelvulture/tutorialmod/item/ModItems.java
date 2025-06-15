@@ -1,6 +1,7 @@
 package net.bagelvulture.tutorialmod.item;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
+import net.bagelvulture.tutorialmod.item.custom.HammerItem;
 import net.bagelvulture.tutorialmod.item.custom.HandSmelterItem;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.*;
@@ -32,6 +33,10 @@ public class ModItems {
     public static final Item BEVULTRIUM_HOE = registerItem("bevultrium_hoe",
             new HoeItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 0, -3f))));
+
+    public static final Item BEVULTRIUM_HAMMER = registerItem("bevultrium_hammer",
+            new HammerItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 7, -3.4f))));
 
 
     public static final Item FERTILE_BEVULTRIUM = registerItem("fertile_bevultrium", new Item(new Item.Settings()){

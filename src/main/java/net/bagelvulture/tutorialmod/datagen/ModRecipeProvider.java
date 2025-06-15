@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 import static net.bagelvulture.tutorialmod.block.ModBlocks.*;
-import static net.bagelvulture.tutorialmod.item.ModItems.BEVULTRIUM;
+import static net.bagelvulture.tutorialmod.item.ModItems.*;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
@@ -71,6 +71,54 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_NUGGET), conditionsFromItem(Items.GOLD_NUGGET))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_PICKAXE)
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .input('B', Items.STICK)
+                .input('A', BEVULTRIUM)
+                .criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_AXE)
+                .pattern("AA")
+                .pattern("BA")
+                .pattern("B ")
+                .input('B', Items.STICK)
+                .input('A', BEVULTRIUM)
+                .criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_SHOVEL)
+                .pattern("A")
+                .pattern("B")
+                .pattern("B")
+                .input('B', Items.STICK)
+                .input('A', BEVULTRIUM)
+                .criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_HOE)
+                .pattern("AA")
+                .pattern("B ")
+                .pattern("B ")
+                .input('B', Items.STICK)
+                .input('A', BEVULTRIUM)
+                .criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_SWORD)
+                .pattern("A")
+                .pattern("A")
+                .pattern("B")
+                .input('B', Items.STICK)
+                .input('A', BEVULTRIUM)
+                .criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_HAMMER)
+                .pattern(" B ")
+                .pattern(" AB")
+                .pattern("A  ")
+                .input('A', Items.STICK)
+                .input('B', BEVULTRIUM)
+                .criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM))
+                .offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FERTILE_BEVULTRIUM, 9)
                 .input(ModBlocks.RAW_BEVULTRIUM_BLOCK)
