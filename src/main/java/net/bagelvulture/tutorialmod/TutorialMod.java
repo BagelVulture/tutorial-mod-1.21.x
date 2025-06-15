@@ -1,6 +1,7 @@
 package net.bagelvulture.tutorialmod;
 
 import net.bagelvulture.tutorialmod.block.ModBlocks;
+import net.bagelvulture.tutorialmod.component.ModDataComponentTypes;
 import net.bagelvulture.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.bagelvulture.tutorialmod.item.ModItemGroups;
@@ -19,6 +20,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 200);
 	}
