@@ -34,6 +34,19 @@ public class ModItems {
             new HoeItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 0, -3f))));
 
+    public static final Item BEVULTRIUM_HELMET = registerItem("bevultrium_helmet",
+            new ArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item BEVULTRIUM_CHESTPLATE = registerItem("bevultrium_chestplate",
+            new ArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item BEVULTRIUM_LEGGINGS = registerItem("bevultrium_leggings",
+            new ArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item BEVULTRIUM_BOOTS = registerItem("bevultrium_boots",
+            new ArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
     public static final Item BEVULTRIUM_HAMMER = registerItem("bevultrium_hammer",
             new HammerItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 7, -3.4f))));

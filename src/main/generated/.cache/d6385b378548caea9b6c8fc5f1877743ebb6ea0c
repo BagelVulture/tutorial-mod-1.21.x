@@ -1,9 +1,9 @@
-// 1.21	2025-06-15T19:23:44.910572	tutorial mod/Tags for minecraft:block
+// 1.21	2025-06-16T17:12:11.216781	tutorial mod/Tags for minecraft:block
 3e71fdd49b41d11d9165561c4cfc2bb8eb88526b data/minecraft/tags/block/fences.json
 ff9c85a02a947e996a7f47cc1144728c33cc1b82 data/minecraft/tags/block/mineable/pickaxe.json
 78afe2ce3db4e1f1b8869f3a11ac345f45770ed2 data/minecraft/tags/block/needs_stone_tool.json
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data/tutorialmod/tags/block/needs_bevultrium_tool.json
-c9725deeae21654e16c209e29bf7e68ee9c4f65e data/minecraft/tags/block/needs_iron_tool.json
 c36307326f090b71739b9076942d7c434010579d data/minecraft/tags/block/walls.json
+c9725deeae21654e16c209e29bf7e68ee9c4f65e data/minecraft/tags/block/needs_iron_tool.json
 0352afeec054da072c8fbcdc8fbc9057cb3c6da4 data/minecraft/tags/block/fence_gates.json
 3e71fdd49b41d11d9165561c4cfc2bb8eb88526b data/minecraft/tags/block/wooden_fences.json

@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.bagelvulture.tutorialmod.block.ModBlocks;
 import net.bagelvulture.tutorialmod.item.ModItems;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -55,6 +56,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BEVULTRIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BEVULTRIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BEVULTRIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEVULTRIUM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEVULTRIUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEVULTRIUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEVULTRIUM_BOOTS));
 
         itemModelGenerator.register(ModItems.BEVULTRIUM_HAMMER, Models.HANDHELD);
     }

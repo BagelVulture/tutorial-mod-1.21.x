@@ -29,5 +29,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BEVULTRIUM_AXE);
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.BEVULTRIUM_HOE);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.BEVULTRIUM_HELMET)
+                .add(ModItems.BEVULTRIUM_CHESTPLATE)
+                .add(ModItems.BEVULTRIUM_LEGGINGS)
+                .add(ModItems.BEVULTRIUM_BOOTS);
     }
 }

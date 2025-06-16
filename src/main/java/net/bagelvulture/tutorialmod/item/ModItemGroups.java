@@ -29,6 +29,11 @@ public class ModItemGroups {
                 entries.add(ModItems.BEVULTRIUM_AXE);
                 entries.add(ModItems.BEVULTRIUM_HOE);
 
+                entries.add(ModItems.BEVULTRIUM_HELMET);
+                entries.add(ModItems.BEVULTRIUM_CHESTPLATE);
+                entries.add(ModItems.BEVULTRIUM_LEGGINGS);
+                entries.add(ModItems.BEVULTRIUM_BOOTS);
+
                 entries.add(ModItems.BEVULTRIUM_HAMMER);
             }).build());
 
