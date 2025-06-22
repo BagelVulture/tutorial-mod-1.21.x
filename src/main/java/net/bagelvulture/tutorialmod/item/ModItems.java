@@ -3,6 +3,7 @@ package net.bagelvulture.tutorialmod.item;
 import net.bagelvulture.tutorialmod.TutorialMod;
 import net.bagelvulture.tutorialmod.item.custom.HammerItem;
 import net.bagelvulture.tutorialmod.item.custom.HandSmelterItem;
+import net.bagelvulture.tutorialmod.item.custom.ModArmorItem;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -35,7 +36,7 @@ public class ModItems {
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 0, -3f))));
 
     public static final Item BEVULTRIUM_HELMET = registerItem("bevultrium_helmet",
-            new ArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+            new ModArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
     public static final Item BEVULTRIUM_CHESTPLATE = registerItem("bevultrium_chestplate",
             new ArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
