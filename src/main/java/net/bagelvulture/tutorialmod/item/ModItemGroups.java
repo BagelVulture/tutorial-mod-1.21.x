@@ -34,6 +34,8 @@ public class ModItemGroups {
                 entries.add(ModItems.BEVULTRIUM_LEGGINGS);
                 entries.add(ModItems.BEVULTRIUM_BOOTS);
 
+                entries.add(ModItems.BEVULTRIUM_HORSE_ARMOR);
+
                 entries.add(ModItems.BEVULTRIUM_HAMMER);
             }).build());
 

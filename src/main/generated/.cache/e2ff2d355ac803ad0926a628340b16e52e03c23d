@@ -1,4 +1,4 @@
-// 1.21	2025-06-16T17:12:11.223175	tutorial mod/Block Loot Tables
+// 1.21	2025-06-22T15:00:09.256237	tutorial mod/Block Loot Tables
 1e3f2e410e64f0ddee8fa37ffb8a8b3097370d59 data/tutorialmod/loot_table/blocks/bevultrium_pressure_plate.json
 036b3ce78559142af0a5bbde004f95ab672a7444 data/tutorialmod/loot_table/blocks/bevultrium_slab.json
 661f4c3c3e87a7f1b1c117a65c953014c922a4ab data/tutorialmod/loot_table/blocks/crude_alchemy_transformer.json
@@ -10,7 +10,7 @@ c883becd6737ff2c6d4afebe49004d283cda99d5 data/tutorialmod/loot_table/blocks/bevu
 aa692e36daa27ea25e729451b4a2b67704799b60 data/tutorialmod/loot_table/blocks/bevultrium_ore.json
 07c38263fbc77ce7679ab15a28e5b6f7a28df0b2 data/tutorialmod/loot_table/blocks/bevultrium_fence_gate.json
 40b7d95ca378b41858aff1f94c255fdedf9b4119 data/tutorialmod/loot_table/blocks/bevultrium_stairs.json
-c5d879d0b564f96da9d7f56ddb4779b90898cbc3 data/tutorialmod/loot_table/blocks/bevultrium_deepslate_ore.json
 81fb3105ea451e3c0276a5a07620dd55bf807802 data/tutorialmod/loot_table/blocks/bevultrium_trapdoor.json
+c5d879d0b564f96da9d7f56ddb4779b90898cbc3 data/tutorialmod/loot_table/blocks/bevultrium_deepslate_ore.json
 9d5925fa184378a4d62d95dc3a8048c852f1379f data/tutorialmod/loot_table/blocks/raw_bevultrium_block.json
 f54f5d2afc93274bb7466bf1a31e34180b1505fb data/tutorialmod/loot_table/blocks/bevultrium_door.json

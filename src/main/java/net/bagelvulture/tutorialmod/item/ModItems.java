@@ -48,6 +48,9 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
+    public static final Item BEVULTRIUM_HORSE_ARMOR = registerItem("bevultrium_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
+
     public static final Item BEVULTRIUM_HAMMER = registerItem("bevultrium_hammer",
             new HammerItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 7, -3.4f))));

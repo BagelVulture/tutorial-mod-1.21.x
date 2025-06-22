@@ -62,6 +62,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEVULTRIUM_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEVULTRIUM_BOOTS));
 
+        itemModelGenerator.register(ModItems.BEVULTRIUM_HORSE_ARMOR, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.BEVULTRIUM_HAMMER, Models.HANDHELD);
     }
 }
