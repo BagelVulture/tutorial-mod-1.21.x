@@ -122,6 +122,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, OTHER_BOW)
+                .pattern(" AB")
+                .pattern("C B")
+                .pattern(" AB")
+                .input('A', BEVULTRIUM)
+                .input('B', Items.STRING)
+                .input('C', Items.AMETHYST_SHARD)
+                .criterion(hasItem(Items.BOW), conditionsFromItem(Items.BOW))
+                .offerTo(exporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FERTILE_BEVULTRIUM, 9)
                 .input(ModBlocks.RAW_BEVULTRIUM_BLOCK)
                 .input(Items.WHEAT_SEEDS)

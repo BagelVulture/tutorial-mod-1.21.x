@@ -51,13 +51,17 @@ public class ModItems {
 
     public static final Item BEVULTRIUM_HAMMER = registerItem("bevultrium_hammer",
             new HammerItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
-                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 7, -3.4f))));
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM,
+                            7, -3.4f))));
 
     public static final Item BEVULTRIUM_HORSE_ARMOR = registerItem("bevultrium_horse_armor",
-            new AnimalArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
+            new AnimalArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN,
+                    false, new Item.Settings().maxCount(1)));
 
     public static final Item BEVULTURE_SMITHING_TEMPLATE = registerItem("bevulture_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(TutorialMod.MOD_ID, "bevulture"), FeatureFlags.VANILLA));
+
+    public static final Item OTHER_BOW = registerItem("other_bow", new BowItem(new Item.Settings().maxDamage(1000)));
 
 
 

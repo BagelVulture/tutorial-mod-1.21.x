@@ -1,4 +1,4 @@
-// 1.21	2025-06-26T11:26:09.500801	tutorial mod/Recipes
+// 1.21	2025-06-26T12:37:41.868514	tutorial mod/Recipes
 456e549b3143b6bc60ee2f61a6b3e51698f3c3fa data/tutorial-mod/recipe/bevultrium_from_smelting_bevultrium_ore.json
 df98a752c049f6a04adb678e4c704ab0ddd0e1ea data/tutorial-mod/recipe/bevultrium_from_blasting_raw_bevultrium.json
 0b49ae5badca009cb276bbfc4a6e8fb69afde97a data/tutorial-mod/recipe/bevultrium_from_blasting_bevultrium_deepslate_ore.json
@@ -21,6 +21,7 @@ a08f3521257c87a5a564aa031bd96b4a62533b90 data/tutorial-mod/advancement/recipes/m
 89f5e0f23bc31db3e5731a2d90ddace742cdfbf0 data/tutorial-mod/advancement/recipes/misc/bevultrium_helmet.json
 3ad6f20b3841b63667d101e58ea199a5b0abc022 data/tutorial-mod/advancement/recipes/misc/bevultrium_pickaxe.json
 e04f4cc086fde0217d8fda5a59596519d030da16 data/tutorial-mod/recipe/hand_smelter.json
+37c854684836a0b64e9aef867df09c07de04cc9f data/tutorial-mod/advancement/recipes/misc/other_bow.json
 61b3efcc1f1bb6c49e52815ef4ae9d7fce1e37f0 data/tutorial-mod/advancement/recipes/misc/bevulture_armor_trim_smithing_template.json
 95afb527dc7f071c55f14dc4ede89ea3c902b1f7 data/tutorial-mod/recipe/bevultrium_from_smelting_raw_bevultrium.json
 f0e5ee8d42b50354f853f5dea85e6321be27484f data/tutorial-mod/recipe/fertile_bevultrium.json
@@ -39,6 +40,7 @@ e07f3ff27be1e3dcdbe629d97371a53e8330fc9a data/tutorial-mod/recipe/bevultrium_boo
 0fc202d8f60edbc2c12388bd14a4f21fee229f34 data/tutorial-mod/advancement/recipes/misc/bevultrium_from_smelting_raw_bevultrium.json
 183e1f27697ebeb42eef860755b571bad6e8c746 data/tutorial-mod/advancement/recipes/misc/raw_bevultrium_block.json
 4b812e8f1a02f6a8db9ac4c49a7c0d5ed0e59339 data/tutorial-mod/advancement/recipes/misc/fertile_bevultrium.json
+0d0986f068a20c48f45a3d9c22123e5891aa2755 data/tutorial-mod/recipe/other_bow.json
 ef20b90faab3acb70076a644b07382213d485b12 data/tutorial-mod/advancement/recipes/misc/bevultrium_boots.json
 67b9f317e17f6db5b90fe26e12e851f8ba958c66 data/tutorial-mod/recipe/bevultrium_from_blasting_bevultrium_ore.json
 61031d52de69ac7e8127de65160828ea7850da5e data/tutorial-mod/advancement/recipes/misc/bevultrium_hoe.json

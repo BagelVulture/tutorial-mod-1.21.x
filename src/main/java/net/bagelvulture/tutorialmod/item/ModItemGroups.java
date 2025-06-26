@@ -39,6 +39,8 @@ public class ModItemGroups {
                 entries.add(ModItems.BEVULTRIUM_HORSE_ARMOR);
 
                 entries.add(ModItems.BEVULTURE_SMITHING_TEMPLATE);
+
+                entries.add(ModItems.OTHER_BOW);
             }).build());
 
 
