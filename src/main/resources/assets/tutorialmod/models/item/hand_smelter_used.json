@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tutorialmod:item/hand_smelter"
+    "layer0": "tutorialmod:item/hand_smelter_used"
   }
 }
