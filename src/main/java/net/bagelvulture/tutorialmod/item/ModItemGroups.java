@@ -29,6 +29,8 @@ public class ModItemGroups {
                 entries.add(ModItems.BEVULTRIUM_AXE);
                 entries.add(ModItems.BEVULTRIUM_HOE);
 
+                entries.add(ModItems.BEVULTRIUM_HAMMER);
+
                 entries.add(ModItems.BEVULTRIUM_HELMET);
                 entries.add(ModItems.BEVULTRIUM_CHESTPLATE);
                 entries.add(ModItems.BEVULTRIUM_LEGGINGS);
@@ -36,7 +38,7 @@ public class ModItemGroups {
 
                 entries.add(ModItems.BEVULTRIUM_HORSE_ARMOR);
 
-                entries.add(ModItems.BEVULTRIUM_HAMMER);
+                entries.add(ModItems.BEVULTURE_SMITHING_TEMPLATE);
             }).build());
 
 

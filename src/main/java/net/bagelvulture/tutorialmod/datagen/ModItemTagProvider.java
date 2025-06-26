@@ -35,5 +35,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BEVULTRIUM_CHESTPLATE)
                 .add(ModItems.BEVULTRIUM_LEGGINGS)
                 .add(ModItems.BEVULTRIUM_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.BEVULTRIUM);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.BEVULTURE_SMITHING_TEMPLATE);
     }
 }

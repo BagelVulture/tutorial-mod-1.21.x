@@ -1,4 +1,4 @@
-// 1.21	2025-06-22T15:00:09.25857	tutorial mod/Model Definitions
+// 1.21	2025-06-26T08:58:24.994801	tutorial mod/Model Definitions
 47539b010f4e93b06f0660922eac308b1d8972ff assets/tutorialmod/blockstates/bevultrium_wall.json
 8637d702b5e7c8302f80244b899e977ab83db8e0 assets/tutorialmod/models/item/bevultrium_leggings_copper_trim.json
 e5a24e4fd4c0e1c16a7d8f1e25184a63784ce4e0 assets/tutorialmod/blockstates/bevultrium_ore.json
@@ -14,6 +14,7 @@ e3079fe6301d139b4f6882044971d62b2ee879fe assets/tutorialmod/models/item/bevultri
 5e57efa6a75cee48be57332fc371b51601a317e0 assets/tutorialmod/models/block/bevultrium_door_top_left_open.json
 5ffe02806b92bad4c5a0e35bbcb3e54e50adbda1 assets/tutorialmod/models/item/bevultrium_chestplate_emerald_trim.json
 66f6c4a2e73204f86af6103ee072ee74a513bd31 assets/tutorialmod/models/item/bevultrium_chestplate_netherite_trim.json
+be7923b6a0f32caa952d8faa0560472ea8409070 assets/tutorialmod/models/item/bevulture_armor_trim_smithing_template.json
 ec40ce626a7be746e892a5cb5fddb137535dd095 assets/tutorialmod/blockstates/bevultrium_slab.json
 0c881fc3569e423b68ffefd0ea70bfdbba93e20c assets/tutorialmod/models/block/bevultrium_fence_inventory.json
 2cb9c08eaa9b23f90b202708227e30d8a5f4102c assets/tutorialmod/models/block/bevultrium_trapdoor_top.json

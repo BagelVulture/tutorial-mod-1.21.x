@@ -17,6 +17,8 @@
   "item.tutorialmod.bevultrium_leggings": "Bevultrium Leggings",
   "item.tutorialmod.bevultrium_boots": "Bevultrium Boots",
 
+  "item.tutorialmod.bevulture_armor_trim_smithing_template": "Bevulture Smithing Template",
+
   "item.tutorialmod.bevultrium_horse_armor": "Bevultrium Horse Armor",
 
   "item.tutorialmod.bevultrium_hammer": "Bevultrium Hammer",
@@ -39,6 +41,10 @@
 
   "block.tutorialmod.crude_alchemy_transformer": "Crude Alchemy Transformer Block",
   "block.tutorialmod.bevultrium_lamp": "Bevultrium Lamp",
+
+
+  "trim_material.tutorialmod.bevultrium": "Bevultrium Material",
+  "trim_pattern.tutorialmod.bevulture": "Bevulture Armor Pattern",
 
 
   "itemgroup.tutorialmod.bvs_1st_mod_items": "Items From BV's First Mod",

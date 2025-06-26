@@ -1,5 +1,6 @@
 package net.bagelvulture.tutorialmod.datagen;
 
+import net.bagelvulture.tutorialmod.TutorialMod;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.bagelvulture.tutorialmod.block.ModBlocks;
@@ -11,6 +12,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -125,6 +127,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(Items.WHEAT_SEEDS)
                 .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_HELMET)
+                .pattern("BBB")
+                .pattern("B B")
+                .input('B', BEVULTRIUM)
+                .criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_CHESTPLATE)
+                .pattern("B B")
+                .pattern("BBB")
+                .pattern("BBB")
+                .input('B', BEVULTRIUM)
+                .criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_LEGGINGS)
+                .pattern("BBB")
+                .pattern("B B")
+                .pattern("B B")
+                .input('B', BEVULTRIUM)
+                .criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BEVULTRIUM_BOOTS)
+                .pattern("B B")
+                .pattern("B B")
+                .input('B', BEVULTRIUM)
+                .criterion(hasItem(ModItems.BEVULTRIUM), conditionsFromItem(ModItems.BEVULTRIUM))
+                .offerTo(exporter);
+
+        offerSmithingTemplateCopyingRecipe(exporter, BEVULTURE_SMITHING_TEMPLATE, BEVULTRIUM_BLOCK);
+        offerSmithingTrimRecipe(exporter, BEVULTURE_SMITHING_TEMPLATE, Identifier.of(TutorialMod.MOD_ID, "bevulture"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BEVULTRIUM_SLAB, 6).input('#', BEVULTRIUM).pattern("###");
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BEVULTRIUM_STAIRS, 4).input('#', BEVULTRIUM).pattern("#  ").pattern("## ").pattern("###");

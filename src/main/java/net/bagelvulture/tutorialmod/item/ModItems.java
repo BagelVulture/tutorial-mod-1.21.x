@@ -9,6 +9,7 @@ import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -48,12 +49,16 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
-    public static final Item BEVULTRIUM_HORSE_ARMOR = registerItem("bevultrium_horse_armor",
-            new AnimalArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
-
     public static final Item BEVULTRIUM_HAMMER = registerItem("bevultrium_hammer",
             new HammerItem(ModToolMaterials.BEVULTRIUM, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.BEVULTRIUM, 7, -3.4f))));
+
+    public static final Item BEVULTRIUM_HORSE_ARMOR = registerItem("bevultrium_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.BEVULTRIUM_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
+
+    public static final Item BEVULTURE_SMITHING_TEMPLATE = registerItem("bevulture_armor_trim_smithing_template",
+            SmithingTemplateItem.of(Identifier.of(TutorialMod.MOD_ID, "bevulture"), FeatureFlags.VANILLA));
+
 
 
     public static final Item FERTILE_BEVULTRIUM = registerItem("fertile_bevultrium", new Item(new Item.Settings()){
