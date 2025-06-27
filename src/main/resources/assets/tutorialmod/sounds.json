@@ -1,0 +1,38 @@
+{
+  "crude_alchemy_transformer_use": {
+    "subtitle": "sounds.tutorialmod.crude_alchemy_transformer_use",
+    "sounds": [
+      "tutorialmod:crude_alchemy_transformer_use"
+    ]
+  },
+  "crude_alchemy_transformer_break": {
+    "subtitle": "sounds.tutorialmod.crude_alchemy_transformer_break",
+    "sounds": [
+      "tutorialmod:crude_alchemy_transformer_break"
+    ]
+  },
+  "crude_alchemy_transformer_step": {
+    "subtitle": "sounds.tutorialmod.crude_alchemy_transformer_step",
+    "sounds": [
+      "tutorialmod:crude_alchemy_transformer_step"
+    ]
+  },
+  "crude_alchemy_transformer_place": {
+    "subtitle": "sounds.tutorialmod.crude_alchemy_transformer_place",
+    "sounds": [
+      "tutorialmod:crude_alchemy_transformer_place"
+    ]
+  },
+  "crude_alchemy_transformer_hit": {
+    "subtitle": "sounds.tutorialmod.crude_alchemy_transformer_hit",
+    "sounds": [
+      "tutorialmod:crude_alchemy_transformer_hit"
+    ]
+  },
+  "crude_alchemy_transformer_fall": {
+    "subtitle": "sounds.tutorialmod.crude_alchemy_transformer_fall",
+    "sounds": [
+      "tutorialmod:crude_alchemy_transformer_fall"
+    ]
+  }
+}

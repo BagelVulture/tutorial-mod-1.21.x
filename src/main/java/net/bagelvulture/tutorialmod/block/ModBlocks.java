@@ -3,6 +3,7 @@ package net.bagelvulture.tutorialmod.block;
 import net.bagelvulture.tutorialmod.TutorialMod;
 import net.bagelvulture.tutorialmod.block.custom.BevultriumLampBlock;
 import net.bagelvulture.tutorialmod.block.custom.CrudeAlchemyTransformer;
+import net.bagelvulture.tutorialmod.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -24,7 +25,7 @@ public class ModBlocks {
                     AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
 
     public static final Block CRUDE_ALCHEMY_TRANSFORMER = registerBlock("crude_alchemy_transformer",
-            new CrudeAlchemyTransformer(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+            new CrudeAlchemyTransformer(AbstractBlock.Settings.create().strength(2f).requiresTool().sounds(ModSounds.CRUDE_ALCHEMY_TRANSFORMER_SOUNDS)));
 
 
     public static final Block BEVULTRIUM_STAIRS = registerBlock("bevultrium_stairs",

@@ -1,5 +1,6 @@
 package net.bagelvulture.tutorialmod.block.custom;
 
+import net.bagelvulture.tutorialmod.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -29,7 +30,11 @@ public class CrudeAlchemyTransformer extends Block {
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
             if(itemEntity.getStack().getItem() == Items.BLACKSTONE) {
-                itemEntity.setStack(new ItemStack(Items.GOLD_NUGGET, itemEntity.getStack().getCount()));
+                world.playSound(null, pos, ModSounds.CRUDE_ALCHEMY_TRANSFORMER_USE, SoundCategory.BLOCKS,
+                        1.0F,1.0F);
+                if (itemEntity.age >= 10) {
+                    itemEntity.setStack(new ItemStack(Items.GOLD_NUGGET, itemEntity.getStack().getCount()));
+                }
             }
         }
 

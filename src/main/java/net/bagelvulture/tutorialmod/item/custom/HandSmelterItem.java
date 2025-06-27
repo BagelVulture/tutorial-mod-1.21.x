@@ -74,7 +74,7 @@ public class HandSmelterItem extends Item {
         if(HANDSMELTER_MAP.containsKey(clickedBlock)) {
             if(!world.isClient()) {
                 world.setBlockState(context.getBlockPos(), HANDSMELTER_MAP.get(clickedBlock).getDefaultState());
-                world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_FURNACE_FIRE_CRACKLE, SoundCategory.BLOCKS);
+                world.playSound(null, context.getBlockPos(), SoundEvents.ITEM_FIRECHARGE_USE, SoundCategory.BLOCKS);
 
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }

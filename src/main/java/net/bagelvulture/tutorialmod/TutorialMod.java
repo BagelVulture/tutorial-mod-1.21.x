@@ -3,6 +3,7 @@ package net.bagelvulture.tutorialmod;
 import net.bagelvulture.tutorialmod.block.ModBlocks;
 import net.bagelvulture.tutorialmod.component.ModDataComponentTypes;
 import net.bagelvulture.tutorialmod.item.ModItems;
+import net.bagelvulture.tutorialmod.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 import net.bagelvulture.tutorialmod.item.ModItemGroups;
 import net.bagelvulture.tutorialmod.util.HammerUsageEvent;
@@ -27,6 +28,8 @@ public class TutorialMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModDataComponentTypes.registerDataComponentTypes();
+		ModSounds.registerSounds();
+
 
 		FuelRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 200);
 
