@@ -34,5 +34,13 @@
     "sounds": [
       "tutorialmod:crude_alchemy_transformer_fall"
     ]
+  },
+  "bye_ears": {
+    "sounds": [
+      {
+        "name": "tutorialmod:bye_ears",
+        "stream": true
+      }
+    ]
   }
 }

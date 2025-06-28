@@ -1,0 +1,8 @@
+{
+  "comparator_output": 8,
+  "description": {
+    "translate": "item.tutorialmod.bye_ears_music_disc.desc"
+  },
+  "length_in_seconds": 50.0,
+  "sound_event": "tutorialmod:bye_ears"
+}
