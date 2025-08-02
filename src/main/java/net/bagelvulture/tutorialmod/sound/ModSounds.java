@@ -1,8 +1,11 @@
 package net.bagelvulture.tutorialmod.sound;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
+import net.minecraft.block.jukebox.JukeboxSong;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
@@ -17,11 +20,12 @@ public class ModSounds {
     public static final SoundEvent CRUDE_ALCHEMY_TRANSFORMER_FALL = registerSoundEvent("crude_alchemy_transformer_fall");
 
     public static final BlockSoundGroup CRUDE_ALCHEMY_TRANSFORMER_SOUNDS = new BlockSoundGroup(1f, 1f,
-            CRUDE_ALCHEMY_TRANSFORMER_BREAK,
-            CRUDE_ALCHEMY_TRANSFORMER_STEP,
-            CRUDE_ALCHEMY_TRANSFORMER_PLACE,
-            CRUDE_ALCHEMY_TRANSFORMER_HIT,
-            CRUDE_ALCHEMY_TRANSFORMER_FALL);
+            CRUDE_ALCHEMY_TRANSFORMER_BREAK, CRUDE_ALCHEMY_TRANSFORMER_STEP, CRUDE_ALCHEMY_TRANSFORMER_PLACE,
+            CRUDE_ALCHEMY_TRANSFORMER_HIT, CRUDE_ALCHEMY_TRANSFORMER_FALL);
+
+    public static final SoundEvent BYE_EARS = registerSoundEvent("bye_ears");
+    public static final RegistryKey<JukeboxSong> BYE_EARS_KEY =
+            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(TutorialMod.MOD_ID, "bye_ears"));
 
 
     private static SoundEvent registerSoundEvent(String name) {

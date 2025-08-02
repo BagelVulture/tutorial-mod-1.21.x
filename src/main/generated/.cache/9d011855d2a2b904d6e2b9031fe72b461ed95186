@@ -1,4 +1,4 @@
-// 1.21	2025-06-26T12:37:41.868514	tutorial mod/Recipes
+// 1.21	2025-07-02T08:47:19.828616	tutorial mod/Recipes
 456e549b3143b6bc60ee2f61a6b3e51698f3c3fa data/tutorial-mod/recipe/bevultrium_from_smelting_bevultrium_ore.json
 df98a752c049f6a04adb678e4c704ab0ddd0e1ea data/tutorial-mod/recipe/bevultrium_from_blasting_raw_bevultrium.json
 0b49ae5badca009cb276bbfc4a6e8fb69afde97a data/tutorial-mod/recipe/bevultrium_from_blasting_bevultrium_deepslate_ore.json
@@ -39,8 +39,8 @@ b8f444e41bef3a841d06c087bbfa6e181eb5b5a9 data/tutorial-mod/recipe/bevultrium_leg
 e07f3ff27be1e3dcdbe629d97371a53e8330fc9a data/tutorial-mod/recipe/bevultrium_boots.json
 0fc202d8f60edbc2c12388bd14a4f21fee229f34 data/tutorial-mod/advancement/recipes/misc/bevultrium_from_smelting_raw_bevultrium.json
 183e1f27697ebeb42eef860755b571bad6e8c746 data/tutorial-mod/advancement/recipes/misc/raw_bevultrium_block.json
-4b812e8f1a02f6a8db9ac4c49a7c0d5ed0e59339 data/tutorial-mod/advancement/recipes/misc/fertile_bevultrium.json
 0d0986f068a20c48f45a3d9c22123e5891aa2755 data/tutorial-mod/recipe/other_bow.json
+4b812e8f1a02f6a8db9ac4c49a7c0d5ed0e59339 data/tutorial-mod/advancement/recipes/misc/fertile_bevultrium.json
 ef20b90faab3acb70076a644b07382213d485b12 data/tutorial-mod/advancement/recipes/misc/bevultrium_boots.json
 67b9f317e17f6db5b90fe26e12e851f8ba958c66 data/tutorial-mod/recipe/bevultrium_from_blasting_bevultrium_ore.json
 61031d52de69ac7e8127de65160828ea7850da5e data/tutorial-mod/advancement/recipes/misc/bevultrium_hoe.json

@@ -41,6 +41,8 @@ public class ModItemGroups {
                 entries.add(ModItems.BEVULTURE_SMITHING_TEMPLATE);
 
                 entries.add(ModItems.OTHER_BOW);
+
+                entries.add(ModItems.BYE_EARS_MUSIC_DISC);
             }).build());
 
 

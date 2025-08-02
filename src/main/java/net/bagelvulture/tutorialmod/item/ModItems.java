@@ -4,6 +4,7 @@ import net.bagelvulture.tutorialmod.TutorialMod;
 import net.bagelvulture.tutorialmod.item.custom.HammerItem;
 import net.bagelvulture.tutorialmod.item.custom.HandSmelterItem;
 import net.bagelvulture.tutorialmod.item.custom.ModArmorItem;
+import net.bagelvulture.tutorialmod.sound.ModSounds;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -62,6 +63,9 @@ public class ModItems {
             SmithingTemplateItem.of(Identifier.of(TutorialMod.MOD_ID, "bevulture"), FeatureFlags.VANILLA));
 
     public static final Item OTHER_BOW = registerItem("other_bow", new BowItem(new Item.Settings().maxDamage(1000)));
+
+    public static final Item BYE_EARS_MUSIC_DISC = registerItem("bye_ears_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.BYE_EARS_KEY).maxCount(1)));
 
 
 
