@@ -18,6 +18,6 @@ public class ModEffects {
     }
 
     public static void registerEffects() {
-        TutorialMod.LOGGER.info("Registering Mod Effects for " + TutorialMod.MOD_ID);
+        TutorialMod.LOGGER.info("Registering " + TutorialMod.MOD_ID + "'s  Mod Effects");
     }
 }

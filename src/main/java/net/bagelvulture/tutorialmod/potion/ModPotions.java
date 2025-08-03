@@ -19,6 +19,6 @@ public class ModPotions {
     }
 
     public static void registerPotions() {
-        TutorialMod.LOGGER.info("Registering Mod Potions for " + TutorialMod.MOD_ID);
+        TutorialMod.LOGGER.info("Registering " + TutorialMod.MOD_ID + "'s Potions");
     }
 }

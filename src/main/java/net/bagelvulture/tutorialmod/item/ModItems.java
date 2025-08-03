@@ -110,6 +110,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        TutorialMod.LOGGER.info("Registering "+ TutorialMod.MOD_ID +"s items");
+        TutorialMod.LOGGER.info("Registering "+ TutorialMod.MOD_ID +"'s items");
     }
 }

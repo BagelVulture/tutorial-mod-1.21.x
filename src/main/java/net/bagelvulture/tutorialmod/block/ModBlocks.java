@@ -64,7 +64,7 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        TutorialMod.LOGGER.info("Registering " + TutorialMod.MOD_ID + "s blocks");
+        TutorialMod.LOGGER.info("Registering " + TutorialMod.MOD_ID + "'s blocks");
 
     }
 }

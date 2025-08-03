@@ -34,6 +34,6 @@ public class ModSounds {
     }
 
     public static void registerSounds() {
-        TutorialMod.LOGGER.info("Registering Mod Sounds for " + TutorialMod.MOD_ID);
+        TutorialMod.LOGGER.info("Registering " + TutorialMod.MOD_ID + "'s  Mod Sounds");
     }
 }

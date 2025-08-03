@@ -71,6 +71,6 @@ public class ModItemGroups {
 
 
     public static void registerModItemGroups() {
-        TutorialMod.LOGGER.info("Registering "+ TutorialMod.MOD_ID +"s item groups");
+        TutorialMod.LOGGER.info("Registering "+ TutorialMod.MOD_ID +"'s item groups");
     }
 }

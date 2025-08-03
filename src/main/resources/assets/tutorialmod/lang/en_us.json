@@ -54,6 +54,13 @@
 
   "effect.tutorialmod.imaplant": "I'm A Plant",
 
+  "painting.tutorialmod.uncomfortable.title": "Uncomfortable",
+  "painting.tutorialmod.uncomfortable.author": "BagelVulture",
+  "painting.tutorialmod.stupid.title": "Stupid",
+  "painting.tutorialmod.stupid.author": "BagelVulture",
+  "painting.tutorialmod.idiot.title": "Idiot",
+  "painting.tutorialmod.idiot.author": "BagelVulture",
+
   "trim_material.tutorialmod.bevultrium": "Bevultrium Material",
   "trim_pattern.tutorialmod.bevulture": "Bevulture Armor Pattern",
 
@@ -64,6 +71,6 @@
 
   "tooltip.tutorialmod.generic_not_shifting": "Press and Hold §9SHIFT§r For More Info",
   "tooltip.tutorialmod.fertile_bevultrium": "Try Putting it in the Ground",
-  "tooltip.tutorialmod.fried_bevultrium": "Congradulations! You Tried Cooking or Planting a Rock, and it Worked!",
+  "tooltip.tutorialmod.fried_bevultrium": "Congratulations! You Tried Cooking or Planting a Rock, and it Worked!",
   "tooltip.tutorialmod.hand_smelter": "Instantly Smelts Whatever You're Looking at as if it Were in a Furnace"
 }
