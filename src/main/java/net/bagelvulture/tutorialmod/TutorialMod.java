@@ -4,13 +4,17 @@ import net.bagelvulture.tutorialmod.block.ModBlocks;
 import net.bagelvulture.tutorialmod.component.ModDataComponentTypes;
 import net.bagelvulture.tutorialmod.effect.ModEffects;
 import net.bagelvulture.tutorialmod.item.ModItems;
+import net.bagelvulture.tutorialmod.potion.ModPotions;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 import net.bagelvulture.tutorialmod.item.ModItemGroups;
 import net.bagelvulture.tutorialmod.util.HammerUsageEvent;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.item.Items;
+import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import org.slf4j.Logger;
@@ -32,6 +36,7 @@ public class TutorialMod implements ModInitializer {
 		ModSounds.registerSounds();
 
 		ModEffects.registerEffects();
+		ModPotions.registerPotions();
 
 
 		FuelRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 200);
@@ -46,6 +51,10 @@ public class TutorialMod implements ModInitializer {
 				player.sendMessage(Text.literal(selected));
 			}
 			return ActionResult.PASS;
+		});
+
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+			builder.registerPotionRecipe(Potions.AWKWARD, Items.VINE, ModPotions.IMAPLANT_POTION);
 		});
 	}
 }
