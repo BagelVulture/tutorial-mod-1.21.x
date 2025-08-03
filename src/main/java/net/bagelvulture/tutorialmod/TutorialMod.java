@@ -3,6 +3,7 @@ package net.bagelvulture.tutorialmod;
 import net.bagelvulture.tutorialmod.block.ModBlocks;
 import net.bagelvulture.tutorialmod.component.ModDataComponentTypes;
 import net.bagelvulture.tutorialmod.effect.ModEffects;
+import net.bagelvulture.tutorialmod.enchantment.ModEnchantmentEffects;
 import net.bagelvulture.tutorialmod.item.ModItems;
 import net.bagelvulture.tutorialmod.potion.ModPotions;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
@@ -37,6 +38,7 @@ public class TutorialMod implements ModInitializer {
 
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+		ModEnchantmentEffects.registerEnchantmentEffects();
 
 
 		FuelRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 200);
