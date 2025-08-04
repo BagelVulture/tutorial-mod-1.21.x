@@ -7,6 +7,7 @@ import net.bagelvulture.tutorialmod.enchantment.ModEnchantmentEffects;
 import net.bagelvulture.tutorialmod.item.ModItems;
 import net.bagelvulture.tutorialmod.potion.ModPotions;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
+import net.bagelvulture.tutorialmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.bagelvulture.tutorialmod.item.ModItemGroups;
 import net.bagelvulture.tutorialmod.util.HammerUsageEvent;
@@ -40,6 +41,8 @@ public class TutorialMod implements ModInitializer {
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
 		ModEnchantmentEffects.registerEnchantmentEffects();
+
+		ModWorldGeneration.generateModWorldGen();
 
 
 		FuelRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 200);

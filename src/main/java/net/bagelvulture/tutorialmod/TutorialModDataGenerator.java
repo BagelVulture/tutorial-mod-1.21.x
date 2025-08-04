@@ -3,6 +3,8 @@ package net.bagelvulture.tutorialmod;
 import net.bagelvulture.tutorialmod.enchantment.ModEnchantments;
 import net.bagelvulture.tutorialmod.trim.ModTrimMaterials;
 import net.bagelvulture.tutorialmod.trim.ModTrimPatterns;
+import net.bagelvulture.tutorialmod.world.ModConfiguredFeatures;
+import net.bagelvulture.tutorialmod.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.bagelvulture.tutorialmod.datagen.*;
@@ -27,5 +29,8 @@ public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
+
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }
