@@ -38,8 +38,11 @@
 
   "block.tutorialmod.bevultrium_block": "Block of Bevultrium",
   "block.tutorialmod.raw_bevultrium_block": "Block of Raw Bevultrium",
+
   "block.tutorialmod.bevultrium_ore": "Stone Bevultrium Ore",
   "block.tutorialmod.bevultrium_deepslate_ore": "Deepslate Bevultrium Ore",
+  "block.tutorialmod.pink_garnet_end_ore": "Pink Garnet End Ore",
+  "block.tutorialmod.pink_garnet_nether_ore": "Pink Garnet Nether Ore",
 
   "block.tutorialmod.bevultrium_stairs": "Bevultrium Stairs",
   "block.tutorialmod.bevultrium_slab": "Bevultrium Slab",
@@ -57,7 +60,9 @@
   "block.tutorialmod.fertile_bevultrium_crop": "Fertile Bevultrium Crop",
   "block.tutorialmod.honey_berry_bush": "Honey Berry Bush",
 
+
   "effect.tutorialmod.imaplant": "I'm A Plant",
+
 
   "painting.tutorialmod.uncomfortable.title": "Uncomfortable",
   "painting.tutorialmod.uncomfortable.author": "BagelVulture",
@@ -66,8 +71,9 @@
   "painting.tutorialmod.idiot.title": "Idiot",
   "painting.tutorialmod.idiot.author": "BagelVulture",
 
-  
+
   "enchantment.tutorialmod.too_many_pigs": "Too Many Pigs",
+
 
   "trim_material.tutorialmod.bevultrium": "Bevultrium Material",
   "trim_pattern.tutorialmod.bevulture": "Bevulture Armor Pattern",

@@ -27,6 +27,13 @@ public class ModBlocks {
     public static final Block BEVULTRIUM_DEEPSLATE_ORE = registerBlock("bevultrium_deepslate_ore", new
             ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
+    public static final Block BEVULTRIUM_END_ORE = registerBlock("bevultrium_end_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(5f).requiresTool()));
+    public static final Block BEVULTRIUM_NETHER_ORE = registerBlock("bevultrium_nether_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(3f).requiresTool()));
+
 
     public static final Block CRUDE_ALCHEMY_TRANSFORMER = registerBlock("crude_alchemy_transformer",
             new CrudeAlchemyTransformer(AbstractBlock.Settings.create().strength(2f).requiresTool().sounds(ModSounds.CRUDE_ALCHEMY_TRANSFORMER_SOUNDS)));

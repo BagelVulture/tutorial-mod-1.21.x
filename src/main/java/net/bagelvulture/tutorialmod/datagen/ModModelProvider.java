@@ -23,6 +23,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_BEVULTRIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BEVULTRIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BEVULTRIUM_NETHER_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BEVULTRIUM_END_ORE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUDE_ALCHEMY_TRANSFORMER);
 
