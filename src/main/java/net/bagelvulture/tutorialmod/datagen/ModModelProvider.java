@@ -1,6 +1,7 @@
 package net.bagelvulture.tutorialmod.datagen;
 
 import net.bagelvulture.tutorialmod.block.custom.BevultriumLampBlock;
+import net.bagelvulture.tutorialmod.block.custom.FertileBevultriumCropBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.bagelvulture.tutorialmod.block.ModBlocks;
@@ -16,7 +17,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        BlockStateModelGenerator.BlockTexturePool bevultriumPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BEVULTRIUM_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool bevultriumPool = blockStateModelGenerator
+                .registerCubeAllModelTexturePool(ModBlocks.BEVULTRIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_BEVULTRIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BEVULTRIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE);
@@ -40,6 +42,8 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.BEVULTRIUM_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.BEVULTRIUM_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(BevultriumLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
+
+        blockStateModelGenerator.registerCrop(ModBlocks.FERTILE_BEVULTRIUM_CROP, FertileBevultriumCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
     }
 
     @Override
@@ -49,7 +53,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.FRIED_BEVULTRIUM, Models.GENERATED);
         //itemModelGenerator.register(ModItems.HAND_SMELTER, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FERTILE_BEVULTRIUM, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BEVULTRIUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BEVULTRIUM_PICKAXE, Models.HANDHELD);

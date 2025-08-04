@@ -12,6 +12,8 @@ public class TutorialModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BEVULTRIUM_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BEVULTRIUM_TRAPDOOR, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FERTILE_BEVULTRIUM_CROP, RenderLayer.getCutout());
+
         ModModelPredicates.registerModelPredicates();
     }
 }

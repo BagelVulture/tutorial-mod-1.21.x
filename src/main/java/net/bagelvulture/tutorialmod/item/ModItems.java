@@ -1,6 +1,7 @@
 package net.bagelvulture.tutorialmod.item;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
+import net.bagelvulture.tutorialmod.block.ModBlocks;
 import net.bagelvulture.tutorialmod.item.custom.HammerItem;
 import net.bagelvulture.tutorialmod.item.custom.HandSmelterItem;
 import net.bagelvulture.tutorialmod.item.custom.ModArmorItem;
@@ -69,7 +70,8 @@ public class ModItems {
 
 
 
-    public static final Item FERTILE_BEVULTRIUM = registerItem("fertile_bevultrium", new Item(new Item.Settings()){
+    public static final Item FERTILE_BEVULTRIUM = registerItem("fertile_bevultrium", new AliasedBlockItem
+            (ModBlocks.FERTILE_BEVULTRIUM_CROP, new Item.Settings()){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
             if(Screen.hasShiftDown()) {

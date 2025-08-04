@@ -3,12 +3,15 @@ package net.bagelvulture.tutorialmod.block;
 import net.bagelvulture.tutorialmod.TutorialMod;
 import net.bagelvulture.tutorialmod.block.custom.BevultriumLampBlock;
 import net.bagelvulture.tutorialmod.block.custom.CrudeAlchemyTransformer;
+import net.bagelvulture.tutorialmod.block.custom.FertileBevultriumCropBlock;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
@@ -52,6 +55,14 @@ public class ModBlocks {
             new BevultriumLampBlock(AbstractBlock.Settings.create()
                     .strength(3f).requiresTool().luminance(state -> state.get(BevultriumLampBlock.CLICKED) ? 15 : 0)));
 
+    public static final Block FERTILE_BEVULTRIUM_CROP = registerBlockWithoutBlockItem("fertile_bevultrium_crop",
+            new FertileBevultriumCropBlock(AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly()
+                    .sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(TutorialMod.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

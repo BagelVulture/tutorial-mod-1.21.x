@@ -1,6 +1,7 @@
-// 1.21	2025-08-04T12:27:43.876352	tutorial mod/Block Loot Tables
+// 1.21	2025-08-04T14:25:18.898691	tutorial mod/Block Loot Tables
 1e3f2e410e64f0ddee8fa37ffb8a8b3097370d59 data/tutorialmod/loot_table/blocks/bevultrium_pressure_plate.json
 036b3ce78559142af0a5bbde004f95ab672a7444 data/tutorialmod/loot_table/blocks/bevultrium_slab.json
+f66c8f5bb3968b6a9fd3acba902fdc75e9e097e9 data/tutorialmod/loot_table/blocks/fertile_bevultrium_crop.json
 661f4c3c3e87a7f1b1c117a65c953014c922a4ab data/tutorialmod/loot_table/blocks/crude_alchemy_transformer.json
 6f2d386c3f64570ff25feb96ee3fbd1cc1d771ba data/tutorialmod/loot_table/blocks/bevultrium_fence.json
 802f547f94e2bcd0df59a625d5ffa576cc25383d data/tutorialmod/loot_table/blocks/bevultrium_button.json
