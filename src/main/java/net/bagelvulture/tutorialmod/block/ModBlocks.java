@@ -2,6 +2,7 @@ package net.bagelvulture.tutorialmod.block;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
 import net.bagelvulture.tutorialmod.block.custom.BevultriumLampBlock;
+import net.bagelvulture.tutorialmod.block.custom.BrightBerryBushBlock;
 import net.bagelvulture.tutorialmod.block.custom.CrudeAlchemyTransformer;
 import net.bagelvulture.tutorialmod.block.custom.FertileBevultriumCropBlock;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
@@ -58,6 +59,9 @@ public class ModBlocks {
     public static final Block FERTILE_BEVULTRIUM_CROP = registerBlockWithoutBlockItem("fertile_bevultrium_crop",
             new FertileBevultriumCropBlock(AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly()
                     .sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+    public static final Block BRIGHT_BERRY_BUSH = registerBlockWithoutBlockItem("bright_berry_bush",
+            new BrightBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {

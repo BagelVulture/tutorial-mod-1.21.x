@@ -106,6 +106,8 @@ public class ModItems {
         }
     });
 
+    public static final Item BRIGHT_BERRIES = registerItem("bright_berries",
+            new AliasedBlockItem(ModBlocks.BRIGHT_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.BRIGHT_BERRY)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);

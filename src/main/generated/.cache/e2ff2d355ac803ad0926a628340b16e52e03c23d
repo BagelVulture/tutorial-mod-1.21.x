@@ -1,4 +1,4 @@
-// 1.21	2025-08-04T14:25:18.898691	tutorial mod/Block Loot Tables
+// 1.21	2025-08-04T15:56:19.027372	tutorial mod/Block Loot Tables
 1e3f2e410e64f0ddee8fa37ffb8a8b3097370d59 data/tutorialmod/loot_table/blocks/bevultrium_pressure_plate.json
 036b3ce78559142af0a5bbde004f95ab672a7444 data/tutorialmod/loot_table/blocks/bevultrium_slab.json
 f66c8f5bb3968b6a9fd3acba902fdc75e9e097e9 data/tutorialmod/loot_table/blocks/fertile_bevultrium_crop.json
@@ -15,3 +15,4 @@ c5d879d0b564f96da9d7f56ddb4779b90898cbc3 data/tutorialmod/loot_table/blocks/bevu
 81fb3105ea451e3c0276a5a07620dd55bf807802 data/tutorialmod/loot_table/blocks/bevultrium_trapdoor.json
 9d5925fa184378a4d62d95dc3a8048c852f1379f data/tutorialmod/loot_table/blocks/raw_bevultrium_block.json
 f54f5d2afc93274bb7466bf1a31e34180b1505fb data/tutorialmod/loot_table/blocks/bevultrium_door.json
+97aef99e5b197928469ad8adfd281ca00e2877a8 data/tutorialmod/loot_table/blocks/bright_berry_bush.json

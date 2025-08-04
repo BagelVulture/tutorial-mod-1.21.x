@@ -1,6 +1,7 @@
 package net.bagelvulture.tutorialmod.datagen;
 
 import net.bagelvulture.tutorialmod.block.custom.BevultriumLampBlock;
+import net.bagelvulture.tutorialmod.block.custom.BrightBerryBushBlock;
 import net.bagelvulture.tutorialmod.block.custom.FertileBevultriumCropBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -44,6 +45,9 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(BevultriumLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
         blockStateModelGenerator.registerCrop(ModBlocks.FERTILE_BEVULTRIUM_CROP, FertileBevultriumCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BRIGHT_BERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                BrightBerryBushBlock.AGE, 0, 1, 2, 3);
     }
 
     @Override

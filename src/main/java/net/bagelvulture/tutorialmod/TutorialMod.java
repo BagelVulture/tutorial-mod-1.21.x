@@ -62,5 +62,6 @@ public class TutorialMod implements ModInitializer {
 
 		CompostingChanceRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 0.25f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.FRIED_BEVULTRIUM, 0.75f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.BRIGHT_BERRIES, 0.5f);
 	}
 }

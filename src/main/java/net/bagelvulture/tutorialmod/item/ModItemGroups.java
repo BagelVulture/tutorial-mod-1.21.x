@@ -43,6 +43,8 @@ public class ModItemGroups {
                 entries.add(ModItems.OTHER_BOW);
 
                 entries.add(ModItems.BYE_EARS_MUSIC_DISC);
+
+                entries.add(ModItems.BRIGHT_BERRIES);
             }).build());
 
 

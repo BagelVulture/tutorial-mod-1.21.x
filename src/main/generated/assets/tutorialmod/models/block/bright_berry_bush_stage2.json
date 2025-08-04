@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "tutorialmod:block/bright_berry_bush_stage2"
+  }
+}
