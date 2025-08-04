@@ -1,16 +1,10 @@
 package net.bagelvulture.tutorialmod.enchantment;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
-import net.bagelvulture.tutorialmod.enchantment.custom.TooManyPigsEnchantmentEffect;
-import net.minecraft.component.EnchantmentEffectComponentTypes;
-import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.effect.EnchantmentEffectTarget;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.EnchantmentTags;
-import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
 public class ModEnchantments {
@@ -21,19 +15,19 @@ public class ModEnchantments {
         var enchantments = registerable.getRegistryLookup(RegistryKeys.ENCHANTMENT);
         var items = registerable.getRegistryLookup(RegistryKeys.ITEM);
 
-        register(registerable, TOO_MANY_PIGS, Enchantment.builder(Enchantment.definition(
-                        items.getOrThrow(ItemTags.WEAPON_ENCHANTABLE),
-                        items.getOrThrow(ItemTags.SWORD_ENCHANTABLE),
-                        5,
-                        5,
-                        Enchantment.leveledCost(5, 7),
-                        Enchantment.leveledCost(10, 9),
-                        1,
-                        AttributeModifierSlot.MAINHAND))
-                .exclusiveSet(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE_SET))
-                .addEffect(EnchantmentEffectComponentTypes.POST_ATTACK,
-                        EnchantmentEffectTarget.ATTACKER, EnchantmentEffectTarget.VICTIM,
-                        new TooManyPigsEnchantmentEffect()));
+        // register(registerable, TOO_MANY_PIGS, Enchantment.builder(Enchantment.definition(
+        //              items.getOrThrow(ItemTags.WEAPON_ENCHANTABLE),
+        //              items.getOrThrow(ItemTags.SWORD_ENCHANTABLE),
+        //              5,
+        //              5,                                                //doesnt work, copied it over manually to resources
+        //              Enchantment.leveledCost(5, 7),
+        //              Enchantment.leveledCost(10, 9),
+        //              1,
+        //              AttributeModifierSlot.MAINHAND))
+        //      .exclusiveSet(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE_SET))
+        //      .addEffect(EnchantmentEffectComponentTypes.POST_ATTACK,
+        //              EnchantmentEffectTarget.ATTACKER, EnchantmentEffectTarget.VICTIM,
+        //              new TooManyPigsEnchantmentEffect()));
     }
 
 
