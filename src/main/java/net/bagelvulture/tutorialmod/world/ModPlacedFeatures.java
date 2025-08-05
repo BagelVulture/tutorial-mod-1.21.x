@@ -9,8 +9,7 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 //import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
-//import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;
 
@@ -20,6 +19,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> END_BEVULTRIUM_ORE_PLACED_KEY = registerKey("end_bevultrium_ore_placed");
 
     public static final RegistryKey<PlacedFeature> DISEASED_PLACED_KEY = registerKey("diseased_placed");
+    public static final RegistryKey<PlacedFeature> BRIGHT_BERRY_BUSH_PLACED_KEY = registerKey("bright_berry_bush_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -36,10 +36,14 @@ public class ModPlacedFeatures {
         //        ModOrePlacement.modifiersWithCount(14,
         //                HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(256))));
 
-                                //this gives an error, but it wouldn't have done anything anyway so... oh well!
+                                    //this gives an error, but it wouldn't have done anything anyway so... oh well!
         //register(context, DISEASED_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DISEASED_KEY),
         //        VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
         //                PlacedFeatures.createCountExtraModifier(0, 0.2f, 1), ModBlocks.DISEASED_SAPLING));
+
+        //register(context, BRIGHT_BERRY_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BRIGHT_BERRY_BUSH_KEY),
+        //        RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
