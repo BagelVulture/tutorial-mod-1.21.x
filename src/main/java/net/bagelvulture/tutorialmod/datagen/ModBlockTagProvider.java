@@ -33,6 +33,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BEVULTRIUM_WALL)
                 .add(ModBlocks.BEVULTRIUM_LAMP);
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.DISEASED_SLAB)
+                .add(ModBlocks.DISEASED_STAIRS)
+                .add(ModBlocks.DISEASED_BUTTON)
+                .add(ModBlocks.DISEASED_PRESSURE_PLATE)
+                .add(ModBlocks.DISEASED_TRAPDOOR)
+                .add(ModBlocks.DISEASED_FENCE)
+                .add(ModBlocks.DISEASED_FENCE_GATE);
+
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RAW_BEVULTRIUM_BLOCK)
                 .add(ModBlocks.BEVULTRIUM_ORE)
@@ -52,9 +61,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BEVULTRIUM_WALL)
                 .add(ModBlocks.BEVULTRIUM_LAMP);
 
-        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.BEVULTRIUM_FENCE);
-        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES).add(ModBlocks.BEVULTRIUM_FENCE);
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.BEVULTRIUM_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.BEVULTRIUM_FENCE).add(ModBlocks.DISEASED_FENCE);
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES).add(ModBlocks.BEVULTRIUM_FENCE).add(ModBlocks.DISEASED_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.BEVULTRIUM_FENCE_GATE).add(ModBlocks.DISEASED_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.BEVULTRIUM_WALL);
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BEVULTRIUM_TOOL)

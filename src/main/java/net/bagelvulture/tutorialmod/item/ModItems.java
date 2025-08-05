@@ -94,7 +94,8 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
-    public static final Item FRIED_BEVULTRIUM = registerItem("fried_bevultrium", new Item(new Item.Settings().food(ModFoodComponents.FRIED_BEVULTRIUM)){
+    public static final Item FRIED_BEVULTRIUM = registerItem("fried_bevultrium", new Item(new Item.Settings()
+                .food(ModFoodComponents.FRIED_BEVULTRIUM)){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
             if(Screen.hasShiftDown()) {
@@ -105,6 +106,9 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
+
+    public static final Item DISEASED_APPLE = registerItem("diseased_apple", new Item(new Item.Settings()
+            .food(ModFoodComponents.DISEASED_APPLE)));
 
     public static final Item BRIGHT_BERRIES = registerItem("bright_berries",
             new AliasedBlockItem(ModBlocks.BRIGHT_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.BRIGHT_BERRY)));

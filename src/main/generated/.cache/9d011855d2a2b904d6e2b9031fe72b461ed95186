@@ -1,4 +1,4 @@
-// 1.21	2025-08-05T00:04:55.347938	tutorial mod/Recipes
+// 1.21	2025-08-05T01:27:29.070115	tutorial mod/Recipes
 456e549b3143b6bc60ee2f61a6b3e51698f3c3fa data/tutorial-mod/recipe/bevultrium_from_smelting_bevultrium_ore.json
 df98a752c049f6a04adb678e4c704ab0ddd0e1ea data/tutorial-mod/recipe/bevultrium_from_blasting_raw_bevultrium.json
 b2de1f01106771874fb9a6ee9d6ca33a2a469a85 data/tutorial-mod/recipe/bevultrium_from_smelting_bevultrium_end_ore.json
@@ -17,6 +17,7 @@ adf1329a0a4b02c01db6c575f4c7ad18c1fbd4c9 data/tutorial-mod/recipe/bevultrium_fro
 75963e55d9d75bc5c612bfc961ff046732122af2 data/tutorial-mod/advancement/recipes/misc/bevultrium_hammer.json
 e9441ec1b541cbcbedaa3b7187fa9ab0537ae75a data/tutorial-mod/recipe/bevultrium_from_blasting_bevultrium_nether_ore.json
 f78b04d33b9141ef7f491e0d5f4e0d7452b73e95 data/tutorial-mod/advancement/recipes/misc/bevultrium_chestplate.json
+bb44367bfd0e509ea21752d1e24e2c8e0c8ddb68 data/tutorial-mod/recipe/diseased_button.json
 a1de370f498cf526bf684b51d4a88d8b6f219f23 data/tutorial-mod/advancement/recipes/misc/hand_smelter.json
 01dd96b0055bbd012262a6feaaeb8bfe2d29c0ec data/tutorial-mod/advancement/recipes/misc/bevultrium_from_smelting_bevultrium_ore.json
 31505f99dc566c2abcead8e5b105ec58afc5d5b9 data/tutorial-mod/recipe/bevultrium_block.json
@@ -49,8 +50,8 @@ e07f3ff27be1e3dcdbe629d97371a53e8330fc9a data/tutorial-mod/recipe/bevultrium_boo
 ef20b90faab3acb70076a644b07382213d485b12 data/tutorial-mod/advancement/recipes/misc/bevultrium_boots.json
 67b9f317e17f6db5b90fe26e12e851f8ba958c66 data/tutorial-mod/recipe/bevultrium_from_blasting_bevultrium_ore.json
 61031d52de69ac7e8127de65160828ea7850da5e data/tutorial-mod/advancement/recipes/misc/bevultrium_hoe.json
-31d4679eaecdbf929a1a656bb105965f298159ef data/tutorial-mod/advancement/recipes/misc/bevultrium_from_blasting_bevultrium_end_ore.json
 92c4238b1c406de666107f966d9e330486ef9816 data/tutorial-mod/advancement/recipes/misc/bevultrium_from_blasting_bevultrium_deepslate_ore.json
+31d4679eaecdbf929a1a656bb105965f298159ef data/tutorial-mod/advancement/recipes/misc/bevultrium_from_blasting_bevultrium_end_ore.json
 be7cf0f1738657d6ef6022f526a608a9e8cbcd27 data/tutorial-mod/advancement/recipes/misc/crude_alchemy_transformer.json
 edf51c3202bd67f5c5079b9741792f909fa80349 data/tutorial-mod/recipe/raw_bevultrium.json
 d6f4e4ccd89cea299702be313e2aa9bdab450cad data/tutorial-mod/recipe/bevultrium_pickaxe.json
@@ -61,5 +62,6 @@ b554a2e38fb709696b4754c577e8b62259eceb04 data/tutorial-mod/advancement/recipes/b
 213ab5f967f0fa93170d293f7dea84e7f5078306 data/tutorial-mod/recipe/bevultrium_chestplate.json
 d9e7897a718a8b329e28052732105423b4ef3697 data/tutorial-mod/advancement/recipes/misc/bevultrium_shovel.json
 2b0f373ecd948162e843447340a9af9cb3c27451 data/tutorial-mod/recipe/bevulture_armor_trim_smithing_template.json
+4393b3f361cec2397628b5fa76df513ec9deff08 data/tutorial-mod/advancement/recipes/misc/diseased_button.json
 a3a51b2c16028d6cb4005c38f3ec5d5d7794599e data/tutorial-mod/recipe/raw_bevultrium_block.json
 869b25b7a76f75898a0db5758e915d129a9aa82e data/tutorial-mod/advancement/recipes/misc/bevultrium_from_blasting_bevultrium_nether_ore.json

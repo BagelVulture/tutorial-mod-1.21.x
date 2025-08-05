@@ -79,9 +79,26 @@ public class ModBlocks {
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final Block STRIPPED_DISEASED_WOOD = registerBlock("stripped_diseased_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
-
     public static final Block DISEASED_PLANKS = registerBlock("diseased_planks",
-            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+            new Block(AbstractBlock.Settings.create().strength(2F).sounds(BlockSoundGroup.WOOD).burnable()));
+
+    public static final Block DISEASED_STAIRS = registerBlock("diseased_stairs",
+            new StairsBlock(ModBlocks.DISEASED_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2f)));
+
+    public static final Block DISEASED_SLAB = registerBlock("diseased_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block DISEASED_BUTTON = registerBlock("diseased_button",
+            new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.create().strength(2f).noCollision().breakInstantly()));
+    public static final Block DISEASED_PRESSURE_PLATE = registerBlock("diseased_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(2f)));
+    public static final Block DISEASED_FENCE = registerBlock("diseased_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block DISEASED_FENCE_GATE = registerBlock("diseased_fence_gate",
+            new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create().strength(2f)));
+    public static final Block DISEASED_TRAPDOOR = registerBlock("diseased_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(2f).nonOpaque()));
+
     public static final Block DISEASED_LEAVES = registerBlock("diseased_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
 

@@ -11,4 +11,8 @@ public class ModFoodComponents {
 
     public static final FoodComponent BRIGHT_BERRY = new FoodComponent.Builder().nutrition(10).saturationModifier(0.0f)
             .snack().build();
+
+    public static final FoodComponent DISEASED_APPLE = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 600, 0), 0.8F)
+            .snack().build();
 }

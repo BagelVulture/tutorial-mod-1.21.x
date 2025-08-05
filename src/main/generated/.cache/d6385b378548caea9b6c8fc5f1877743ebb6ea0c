@@ -1,10 +1,11 @@
-// 1.21	2025-08-05T00:04:55.344063	tutorial mod/Tags for minecraft:block
-3e71fdd49b41d11d9165561c4cfc2bb8eb88526b data/minecraft/tags/block/fences.json
+// 1.21	2025-08-05T01:27:29.063834	tutorial mod/Tags for minecraft:block
+2f5e9f5cf7597777c5dc3f19f500f5e1f5721267 data/minecraft/tags/block/mineable/axe.json
 ff9c85a02a947e996a7f47cc1144728c33cc1b82 data/minecraft/tags/block/mineable/pickaxe.json
+35a500baa2a7c5a53dffc80c16decee71d35ab56 data/minecraft/tags/block/fences.json
 78afe2ce3db4e1f1b8869f3a11ac345f45770ed2 data/minecraft/tags/block/needs_stone_tool.json
 f94618043fe49fa3943d17cb8bef07d325a8427f data/minecraft/tags/block/logs_that_burn.json
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data/tutorialmod/tags/block/needs_bevultrium_tool.json
-c36307326f090b71739b9076942d7c434010579d data/minecraft/tags/block/walls.json
 c9725deeae21654e16c209e29bf7e68ee9c4f65e data/minecraft/tags/block/needs_iron_tool.json
-0352afeec054da072c8fbcdc8fbc9057cb3c6da4 data/minecraft/tags/block/fence_gates.json
-3e71fdd49b41d11d9165561c4cfc2bb8eb88526b data/minecraft/tags/block/wooden_fences.json
+c36307326f090b71739b9076942d7c434010579d data/minecraft/tags/block/walls.json
+73efb50f10b499b77818ec71242854a22514dc2a data/minecraft/tags/block/fence_gates.json
+35a500baa2a7c5a53dffc80c16decee71d35ab56 data/minecraft/tags/block/wooden_fences.json

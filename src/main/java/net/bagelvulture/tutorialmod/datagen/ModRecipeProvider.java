@@ -180,5 +180,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DISEASED_WOOD, 3).input('#', DISEASED_LOG).pattern("##").pattern("##");
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, STRIPPED_DISEASED_WOOD, 3).input('#', STRIPPED_DISEASED_LOG).pattern("##").pattern("##");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DISEASED_SLAB, 6).input('#', DISEASED_PLANKS).pattern("###");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DISEASED_STAIRS, 4).input('#', DISEASED_PLANKS).pattern("#  ").pattern("## ").pattern("###");
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, DISEASED_BUTTON, 1).input(DISEASED_PLANKS).criterion(hasItem(DISEASED_PLANKS), conditionsFromItem(DISEASED_PLANKS)).offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, DISEASED_PRESSURE_PLATE).input('#', DISEASED_PLANKS).pattern("##");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, DISEASED_TRAPDOOR, 2).input('#', DISEASED_PLANKS).pattern("###").pattern("###");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, DISEASED_FENCE, 3).input('W', DISEASED_PLANKS).input('#', Items.STICK).pattern("W#W").pattern("W#W");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, DISEASED_FENCE_GATE).input('#', Items.STICK).input('W', DISEASED_PLANKS).pattern("#W#").pattern("#W#");
     }
 }

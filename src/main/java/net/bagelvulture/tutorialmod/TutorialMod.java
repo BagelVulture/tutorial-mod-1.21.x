@@ -30,8 +30,8 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerModItemGroups();
 
-		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModItems.registerModItems();
 
 		ModDataComponentTypes.registerDataComponentTypes();
 		ModSounds.registerSounds();
@@ -64,6 +64,8 @@ public class TutorialMod implements ModInitializer {
 		CompostingChanceRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 0.25f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.FRIED_BEVULTRIUM, 0.75f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.BRIGHT_BERRIES, 0.5f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.DISEASED_APPLE, 0.75f);
+		CompostingChanceRegistry.INSTANCE.add(Items.ROTTEN_FLESH, 0.5f);
 
 		StrippableBlockRegistry.register(ModBlocks.DISEASED_LOG, ModBlocks.STRIPPED_DISEASED_LOG);
 		StrippableBlockRegistry.register(ModBlocks.DISEASED_WOOD, ModBlocks.STRIPPED_DISEASED_WOOD);

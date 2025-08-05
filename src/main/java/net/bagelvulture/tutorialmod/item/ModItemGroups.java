@@ -22,6 +22,7 @@ public class ModItemGroups {
 
                 entries.add(ModItems.HAND_SMELTER);
                 entries.add(ModItems.FRIED_BEVULTRIUM);
+                entries.add(ModItems.DISEASED_APPLE);
 
                 entries.add(ModItems.BEVULTRIUM_SWORD);
                 entries.add(ModItems.BEVULTRIUM_PICKAXE);
@@ -76,6 +77,14 @@ public class ModItemGroups {
                 entries.add(ModBlocks.DISEASED_WOOD);
                 entries.add(ModBlocks.STRIPPED_DISEASED_LOG);
                 entries.add(ModBlocks.STRIPPED_DISEASED_WOOD);
+
+                entries.add(ModBlocks.DISEASED_SLAB);
+                entries.add(ModBlocks.DISEASED_STAIRS);
+                entries.add(ModBlocks.DISEASED_BUTTON);
+                entries.add(ModBlocks.DISEASED_PRESSURE_PLATE);
+                entries.add(ModBlocks.DISEASED_TRAPDOOR);
+                entries.add(ModBlocks.DISEASED_FENCE);
+                entries.add(ModBlocks.DISEASED_FENCE_GATE);
 
                 entries.add(ModBlocks.DISEASED_PLANKS);
                 entries.add(ModBlocks.DISEASED_LEAVES);

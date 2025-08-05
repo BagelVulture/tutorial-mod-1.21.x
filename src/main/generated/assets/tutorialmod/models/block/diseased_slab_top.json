@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "tutorialmod:block/diseased_planks",
+    "side": "tutorialmod:block/diseased_planks",
+    "top": "tutorialmod:block/diseased_planks"
+  }
+}

@@ -20,6 +20,9 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         BlockStateModelGenerator.BlockTexturePool bevultriumPool = blockStateModelGenerator
                 .registerCubeAllModelTexturePool(ModBlocks.BEVULTRIUM_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool DiseasedPool = blockStateModelGenerator
+                .registerCubeAllModelTexturePool(ModBlocks.DISEASED_PLANKS);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_BEVULTRIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BEVULTRIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE);
@@ -54,7 +57,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.DISEASED_LOG).log(ModBlocks.DISEASED_LOG).wood(ModBlocks.DISEASED_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_DISEASED_LOG).log(ModBlocks.STRIPPED_DISEASED_LOG).wood(ModBlocks.STRIPPED_DISEASED_WOOD);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DISEASED_PLANKS);
+        DiseasedPool.stairs(ModBlocks.DISEASED_STAIRS);
+        DiseasedPool.slab(ModBlocks.DISEASED_SLAB);
+        DiseasedPool.button(ModBlocks.DISEASED_BUTTON);
+        DiseasedPool.pressurePlate(ModBlocks.DISEASED_PRESSURE_PLATE);
+        DiseasedPool.fence(ModBlocks.DISEASED_FENCE);
+        DiseasedPool.fenceGate(ModBlocks.DISEASED_FENCE_GATE);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.DISEASED_TRAPDOOR);
+
         blockStateModelGenerator.registerSingleton(ModBlocks.DISEASED_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.DISEASED_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
@@ -65,6 +75,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_BEVULTRIUM, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.FRIED_BEVULTRIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DISEASED_APPLE, Models.GENERATED);
         //itemModelGenerator.register(ModItems.HAND_SMELTER, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BEVULTRIUM_SWORD, Models.HANDHELD);

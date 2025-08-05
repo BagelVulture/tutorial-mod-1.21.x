@@ -13,10 +13,12 @@ import net.minecraft.item.Item;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.loot.condition.TableBonusLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryKeys;
@@ -81,9 +83,32 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_DISEASED_LOG);
         addDrop(ModBlocks.STRIPPED_DISEASED_WOOD);
         addDrop(ModBlocks.DISEASED_PLANKS);
+
+        addDrop(ModBlocks.DISEASED_STAIRS);
+        addDrop(ModBlocks.DISEASED_SLAB, slabDrops(ModBlocks.BEVULTRIUM_SLAB));
+        addDrop(ModBlocks.DISEASED_BUTTON);
+        addDrop(ModBlocks.DISEASED_PRESSURE_PLATE);
+        addDrop(ModBlocks.DISEASED_FENCE);
+        addDrop(ModBlocks.DISEASED_FENCE_GATE);
+        addDrop(ModBlocks.DISEASED_TRAPDOOR);
+
         addDrop(ModBlocks.DISEASED_SAPLING);
-                   //i should add a diseased apple with the wood set w/better compostability that acts like rotten flesh
-        addDrop(ModBlocks.DISEASED_LEAVES, leavesDrops(ModBlocks.DISEASED_LEAVES, ModBlocks.DISEASED_SAPLING, 0.0625f));
+
+        addDrop(ModBlocks.DISEASED_LEAVES, diseasedLeavesDrops(ModBlocks.DISEASED_LEAVES, ModBlocks.DISEASED_SAPLING, 0.0625f));
+    }
+
+    public LootTable.Builder diseasedLeavesDrops(Block leaves, Block sapling, float... saplingChance) {
+        RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
+        return this.leavesDrops(leaves, sapling, saplingChance)
+                .pool(
+                        LootPool.builder()
+                                .rolls(ConstantLootNumberProvider.create(1.0F))
+                                .conditionally(this.createWithoutShearsOrSilkTouchCondition())
+                                .with(
+                                        ((LeafEntry.Builder<?>)this.addSurvivesExplosionCondition(leaves, ItemEntry.builder(ModItems.DISEASED_APPLE)))
+                                                .conditionally(TableBonusLootCondition.builder(impl.getOrThrow(Enchantments.FORTUNE), 0.005F, 0.0055555557F, 0.00625F, 0.008333334F, 0.025F))
+                                )
+                );
     }
 
 

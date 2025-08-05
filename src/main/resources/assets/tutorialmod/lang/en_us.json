@@ -65,6 +65,15 @@
   "block.tutorialmod.stripped_diseased_log": "Stripped Diseased Log",
   "block.tutorialmod.stripped_diseased_wood": "Stripped Diseased Wood",
   "block.tutorialmod.diseased_planks": "Diseased Planks",
+
+  "block.tutorialmod.diseased_stairs": "Diseased Stairs",
+  "block.tutorialmod.diseased_slab": "Diseased Slab",
+  "block.tutorialmod.diseased_button": "Diseased Button",
+  "block.tutorialmod.diseased_pressure_plate": "Diseased Pressure Plate",
+  "block.tutorialmod.diseased_fence": "Diseased Fence",
+  "block.tutorialmod.diseased_fence_gate": "Diseased Fence Gate",
+  "block.tutorialmod.diseased_trapdoor": "Diseased Trapdoor",
+
   "block.tutorialmod.diseased_leaves": "Diseased Leaves",
   "block.tutorialmod.diseased_sapling": "Diseased Sapling",
 
