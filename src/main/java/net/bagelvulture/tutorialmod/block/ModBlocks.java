@@ -6,6 +6,7 @@ import net.bagelvulture.tutorialmod.block.custom.BrightBerryBushBlock;
 import net.bagelvulture.tutorialmod.block.custom.CrudeAlchemyTransformer;
 import net.bagelvulture.tutorialmod.block.custom.FertileBevultriumCropBlock;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
+import net.bagelvulture.tutorialmod.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -69,6 +70,23 @@ public class ModBlocks {
 
     public static final Block BRIGHT_BERRY_BUSH = registerBlockWithoutBlockItem("bright_berry_bush",
             new BrightBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
+
+    public static final Block DISEASED_LOG = registerBlock("diseased_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block DISEASED_WOOD = registerBlock("diseased_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_DISEASED_LOG = registerBlock("stripped_diseased_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block STRIPPED_DISEASED_WOOD = registerBlock("stripped_diseased_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final Block DISEASED_PLANKS = registerBlock("diseased_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block DISEASED_LEAVES = registerBlock("diseased_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+
+    public static final Block DISEASED_SAPLING = registerBlock("diseased_sapling",
+            new SaplingBlock(ModSaplingGenerators.DISEASED, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
 
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {

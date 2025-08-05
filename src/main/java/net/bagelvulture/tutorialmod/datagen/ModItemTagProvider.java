@@ -1,5 +1,6 @@
 package net.bagelvulture.tutorialmod.datagen;
 
+import net.bagelvulture.tutorialmod.block.ModBlocks;
 import net.bagelvulture.tutorialmod.item.ModItems;
 import net.bagelvulture.tutorialmod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -41,5 +42,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.BEVULTURE_SMITHING_TEMPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DISEASED_LOG.asItem())
+                .add(ModBlocks.DISEASED_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_DISEASED_LOG.asItem())
+                .add(ModBlocks.STRIPPED_DISEASED_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.DISEASED_PLANKS.asItem());
     }
 }

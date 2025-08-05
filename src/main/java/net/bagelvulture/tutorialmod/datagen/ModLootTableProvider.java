@@ -76,7 +76,16 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                         .exactMatch(BrightBerryBushBlock.AGE, 2))).with(ItemEntry.builder(ModItems.BRIGHT_BERRIES))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 2.0F)))
                         .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE))))));
+        addDrop(ModBlocks.DISEASED_LOG);
+        addDrop(ModBlocks.DISEASED_WOOD);
+        addDrop(ModBlocks.STRIPPED_DISEASED_LOG);
+        addDrop(ModBlocks.STRIPPED_DISEASED_WOOD);
+        addDrop(ModBlocks.DISEASED_PLANKS);
+        addDrop(ModBlocks.DISEASED_SAPLING);
+                   //i should add a diseased apple with the wood set w/better compostability that acts like rotten flesh
+        addDrop(ModBlocks.DISEASED_LEAVES, leavesDrops(ModBlocks.DISEASED_LEAVES, ModBlocks.DISEASED_SAPLING, 0.0625f));
     }
+
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);

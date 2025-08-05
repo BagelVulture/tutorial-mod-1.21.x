@@ -56,6 +56,8 @@ public class ModItemGroups {
                 entries.add(ModBlocks.RAW_BEVULTRIUM_BLOCK);
                 entries.add(ModBlocks.BEVULTRIUM_ORE);
                 entries.add(ModBlocks.BEVULTRIUM_DEEPSLATE_ORE);
+                entries.add(ModBlocks.BEVULTRIUM_END_ORE);
+                entries.add(ModBlocks.BEVULTRIUM_NETHER_ORE);
 
                 entries.add(ModBlocks.CRUDE_ALCHEMY_TRANSFORMER);
                 entries.add(ModBlocks.BEVULTRIUM_LAMP);
@@ -69,6 +71,16 @@ public class ModItemGroups {
                 entries.add(ModBlocks.BEVULTRIUM_FENCE);
                 entries.add(ModBlocks.BEVULTRIUM_FENCE_GATE);
                 entries.add(ModBlocks.BEVULTRIUM_WALL);
+
+                entries.add(ModBlocks.DISEASED_LOG);
+                entries.add(ModBlocks.DISEASED_WOOD);
+                entries.add(ModBlocks.STRIPPED_DISEASED_LOG);
+                entries.add(ModBlocks.STRIPPED_DISEASED_WOOD);
+
+                entries.add(ModBlocks.DISEASED_PLANKS);
+                entries.add(ModBlocks.DISEASED_LEAVES);
+
+                entries.add(ModBlocks.DISEASED_SAPLING);
             }).build());
 
 

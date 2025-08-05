@@ -50,6 +50,13 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BRIGHT_BERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
                 BrightBerryBushBlock.AGE, 0, 1, 2, 3);
+
+        blockStateModelGenerator.registerLog(ModBlocks.DISEASED_LOG).log(ModBlocks.DISEASED_LOG).wood(ModBlocks.DISEASED_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_DISEASED_LOG).log(ModBlocks.STRIPPED_DISEASED_LOG).wood(ModBlocks.STRIPPED_DISEASED_WOOD);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DISEASED_PLANKS);
+        blockStateModelGenerator.registerSingleton(ModBlocks.DISEASED_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.DISEASED_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
@@ -78,5 +85,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BEVULTRIUM_HAMMER, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.BYE_EARS_MUSIC_DISC, Models.GENERATED);
+
+        itemModelGenerator.register(ModBlocks.DISEASED_SAPLING.asItem(), Models.GENERATED);
     }
 }

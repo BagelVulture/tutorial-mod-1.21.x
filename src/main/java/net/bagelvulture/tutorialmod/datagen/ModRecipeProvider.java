@@ -27,8 +27,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        List<ItemConvertible> BEVULTRIUM_SMELTABLES = List.of(ModItems.RAW_BEVULTRIUM, ModBlocks.BEVULTRIUM_ORE,
-                ModBlocks.BEVULTRIUM_DEEPSLATE_ORE);
+        List<ItemConvertible> BEVULTRIUM_SMELTABLES = List.of(ModItems.RAW_BEVULTRIUM, BEVULTRIUM_ORE,
+                BEVULTRIUM_DEEPSLATE_ORE, BEVULTRIUM_END_ORE, BEVULTRIUM_NETHER_ORE);
 
         offerSmelting(exporter, BEVULTRIUM_SMELTABLES, RecipeCategory.MISC, BEVULTRIUM, 0.20f, 200, "BEVULTRIUM");
         offerBlasting(exporter, BEVULTRIUM_SMELTABLES, RecipeCategory.MISC, BEVULTRIUM, 0.20f, 100, "BEVULTRIUM");
@@ -178,6 +178,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, BEVULTRIUM_FENCE_GATE).input('#', Items.STICK).input('W', BEVULTRIUM).pattern("#W#").pattern("#W#");
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BEVULTRIUM_WALL, 6).input('#', BEVULTRIUM).pattern("###").pattern("###");
 
-
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DISEASED_WOOD, 3).input('#', DISEASED_LOG).pattern("##").pattern("##");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, STRIPPED_DISEASED_WOOD, 3).input('#', STRIPPED_DISEASED_LOG).pattern("##").pattern("##");
     }
 }

@@ -59,5 +59,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BEVULTRIUM_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DISEASED_LOG)
+                .add(ModBlocks.DISEASED_WOOD)
+                .add(ModBlocks.STRIPPED_DISEASED_LOG)
+                .add(ModBlocks.STRIPPED_DISEASED_WOOD);
     }
 }

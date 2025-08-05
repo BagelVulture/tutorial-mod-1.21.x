@@ -41,8 +41,8 @@
 
   "block.tutorialmod.bevultrium_ore": "Stone Bevultrium Ore",
   "block.tutorialmod.bevultrium_deepslate_ore": "Deepslate Bevultrium Ore",
-  "block.tutorialmod.pink_garnet_end_ore": "Pink Garnet End Ore",
-  "block.tutorialmod.pink_garnet_nether_ore": "Pink Garnet Nether Ore",
+  "block.tutorialmod.bevultrium_end_ore": "Endstone Bevultrium Ore",
+  "block.tutorialmod.bevultrium_nether_ore": "Netherack Bevultrium Ore",
 
   "block.tutorialmod.bevultrium_stairs": "Bevultrium Stairs",
   "block.tutorialmod.bevultrium_slab": "Bevultrium Slab",
@@ -59,6 +59,14 @@
 
   "block.tutorialmod.fertile_bevultrium_crop": "Fertile Bevultrium Crop",
   "block.tutorialmod.honey_berry_bush": "Honey Berry Bush",
+
+  "block.tutorialmod.diseased_log": "Diseased Log",
+  "block.tutorialmod.diseased_wood": "Diseased Wood",
+  "block.tutorialmod.stripped_diseased_log": "Stripped Diseased Log",
+  "block.tutorialmod.stripped_diseased_wood": "Stripped Diseased Wood",
+  "block.tutorialmod.diseased_planks": "Diseased Planks",
+  "block.tutorialmod.diseased_leaves": "Diseased Leaves",
+  "block.tutorialmod.diseased_sapling": "Diseased Sapling",
 
 
   "effect.tutorialmod.imaplant": "I'm A Plant",
