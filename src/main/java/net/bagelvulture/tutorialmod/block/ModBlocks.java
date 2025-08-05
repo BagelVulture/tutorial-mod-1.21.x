@@ -1,10 +1,7 @@
 package net.bagelvulture.tutorialmod.block;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
-import net.bagelvulture.tutorialmod.block.custom.BevultriumLampBlock;
-import net.bagelvulture.tutorialmod.block.custom.BrightBerryBushBlock;
-import net.bagelvulture.tutorialmod.block.custom.CrudeAlchemyTransformer;
-import net.bagelvulture.tutorialmod.block.custom.FertileBevultriumCropBlock;
+import net.bagelvulture.tutorialmod.block.custom.*;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
 import net.bagelvulture.tutorialmod.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
@@ -16,6 +13,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ModBlocks {
     public static final Block BEVULTRIUM_BLOCK = registerBlock("bevultrium_block", new
@@ -102,8 +102,21 @@ public class ModBlocks {
     public static final Block DISEASED_LEAVES = registerBlock("diseased_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
 
+    public static final List<Block> Diseased_Can_Survive_On = new ArrayList<>(List.of(
+            Blocks.STONE,
+            Blocks.GRASS_BLOCK,
+            Blocks.DIRT,
+            Blocks.DIRT_PATH,
+            Blocks.COARSE_DIRT,
+            Blocks.ROOTED_DIRT,
+            Blocks.FARMLAND,
+            Blocks.MYCELIUM,
+            Blocks.CRIMSON_NYLIUM,
+            Blocks.WARPED_NYLIUM,
+            Blocks.STONE));
+
     public static final Block DISEASED_SAPLING = registerBlock("diseased_sapling",
-            new SaplingBlock(ModSaplingGenerators.DISEASED, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new ModSaplingBlock(ModSaplingGenerators.DISEASED, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Diseased_Can_Survive_On));
 
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {

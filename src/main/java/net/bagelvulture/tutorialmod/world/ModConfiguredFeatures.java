@@ -16,10 +16,11 @@ import net.minecraft.world.gen.feature.*;
 //import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 //import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 //import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-//import net.minecraft.world.gen.trunk.GiantTrunkPlacer;
 //import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
+
+//import static net.bagelvulture.tutorialmod.block.ModBlocks.Diseased_Can_Survive_On;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BEVULTRIUM_ORE_KEY = registerKey("bevultrium_ore");
@@ -55,7 +56,7 @@ public class ModConfiguredFeatures {
         //        BlockStateProvider.of(ModBlocks.DISEASED_LEAVES),
         //        new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
 
-        //        new TwoLayersFeatureSize(1, 0, 2)).build());
+        //        new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of((BlockState) Diseased_Can_Survive_On)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
