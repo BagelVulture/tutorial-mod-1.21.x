@@ -37,9 +37,11 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> endBevultriumOres =
                 List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.BEVULTRIUM_END_ORE.getDefaultState()));
 
-        register(context, BEVULTRIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBevultriumOres, 9));
-        register(context, NETHER_BEVULTRIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherBevultriumOres, 5));
-        register(context, END_BEVULTRIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(endBevultriumOres, 3));
+        // datagen for worldgen doesn't work, I've concluded it's the datagen program and not my code.
+
+        //register(context, BEVULTRIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBevultriumOres, 9));
+        //register(context, NETHER_BEVULTRIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherBevultriumOres, 5));
+        //register(context, END_BEVULTRIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(endBevultriumOres, 3));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
