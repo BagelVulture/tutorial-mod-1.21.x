@@ -1,11 +1,11 @@
-// 1.21	2025-08-05T01:27:29.077583	tutorial mod/Tags for minecraft:item
+// 1.21	2025-08-10T15:57:32.818387	tutorial mod/Tags for minecraft:item
 24130ad854382c316a2003bfc0343ae32d62e72c data/minecraft/tags/item/hoes.json
-0a693cb88b3243935c57a74ff2390edb064bdfdd data/minecraft/tags/item/shovels.json
 1793abc2b25ceec340ef8cac2cfb2a926ea7df36 data/minecraft/tags/item/swords.json
+0a693cb88b3243935c57a74ff2390edb064bdfdd data/minecraft/tags/item/shovels.json
 c0dd17635bfa09f8e1d10b6329c447381dfccea9 data/minecraft/tags/item/planks.json
 f94618043fe49fa3943d17cb8bef07d325a8427f data/minecraft/tags/item/logs_that_burn.json
-a3f85db4eab4146404e3573d550c1b0d524d838f data/minecraft/tags/item/axes.json
 024b30b2ad0aa1f8e3e5beb7c6acbfb23ead50c9 data/minecraft/tags/item/pickaxes.json
+a3f85db4eab4146404e3573d550c1b0d524d838f data/minecraft/tags/item/axes.json
 f7d2670f6ff8e2c44d5fc97892cbfbaaeefb4eff data/minecraft/tags/item/trim_materials.json
 283fe76cbdad37e40b03e8feb5ce91333227ec8d data/minecraft/tags/item/trimmable_armor.json
 a172b0f1152dd9864ba660ce932f3399b1b88a77 data/minecraft/tags/item/trim_templates.json

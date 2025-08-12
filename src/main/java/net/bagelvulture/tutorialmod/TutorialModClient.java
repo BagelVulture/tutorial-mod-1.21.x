@@ -2,7 +2,12 @@ package net.bagelvulture.tutorialmod;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.bagelvulture.tutorialmod.block.ModBlocks;
+import net.bagelvulture.tutorialmod.entity.ModEntities;
+import net.bagelvulture.tutorialmod.entity.client.TardigradeModel;
+import net.bagelvulture.tutorialmod.entity.client.TardigradeRenderer;
 import net.bagelvulture.tutorialmod.util.ModModelPredicates;
 import net.minecraft.client.render.RenderLayer;
 
@@ -18,5 +23,8 @@ public class TutorialModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DISEASED_SAPLING, RenderLayer.getCutout());
 
         ModModelPredicates.registerModelPredicates();
+
+        EntityModelLayerRegistry.registerModelLayer(TardigradeModel.TARDIGRADE  , TardigradeModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.TARDIGRADE, TardigradeRenderer::new);
     }
 }

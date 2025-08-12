@@ -46,6 +46,8 @@ public class ModItemGroups {
                 entries.add(ModItems.BYE_EARS_MUSIC_DISC);
 
                 entries.add(ModItems.BRIGHT_BERRIES);
+
+                entries.add(ModItems.TARDIGRADE_SPAWN_EGG);
             }).build());
 
 

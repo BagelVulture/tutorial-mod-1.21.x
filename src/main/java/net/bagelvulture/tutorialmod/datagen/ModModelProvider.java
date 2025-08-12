@@ -11,6 +11,8 @@ import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
+import java.util.Optional;
+
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -98,5 +100,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BYE_EARS_MUSIC_DISC, Models.GENERATED);
 
         itemModelGenerator.register(ModBlocks.DISEASED_SAPLING.asItem(), Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.TARDIGRADE_SPAWN_EGG,
+                new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     }
 }

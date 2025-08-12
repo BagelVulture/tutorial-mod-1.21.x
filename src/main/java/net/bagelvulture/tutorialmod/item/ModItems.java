@@ -2,6 +2,7 @@ package net.bagelvulture.tutorialmod.item;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
 import net.bagelvulture.tutorialmod.block.ModBlocks;
+import net.bagelvulture.tutorialmod.entity.ModEntities;
 import net.bagelvulture.tutorialmod.item.custom.HammerItem;
 import net.bagelvulture.tutorialmod.item.custom.HandSmelterItem;
 import net.bagelvulture.tutorialmod.item.custom.ModArmorItem;
@@ -112,6 +113,9 @@ public class ModItems {
 
     public static final Item BRIGHT_BERRIES = registerItem("bright_berries",
             new AliasedBlockItem(ModBlocks.BRIGHT_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.BRIGHT_BERRY)));
+
+    public static final Item TARDIGRADE_SPAWN_EGG = registerItem("tardigrade_spawn_egg",
+            new SpawnEggItem(ModEntities.TARDIGRADE, 0xc898d4, 0xba7aca, new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);

@@ -4,6 +4,8 @@ import net.bagelvulture.tutorialmod.block.ModBlocks;
 import net.bagelvulture.tutorialmod.component.ModDataComponentTypes;
 import net.bagelvulture.tutorialmod.effect.ModEffects;
 import net.bagelvulture.tutorialmod.enchantment.ModEnchantmentEffects;
+import net.bagelvulture.tutorialmod.entity.ModEntities;
+import net.bagelvulture.tutorialmod.entity.custom.TardigradeEntity;
 import net.bagelvulture.tutorialmod.item.ModItems;
 import net.bagelvulture.tutorialmod.potion.ModPotions;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
@@ -13,6 +15,7 @@ import net.bagelvulture.tutorialmod.item.ModItemGroups;
 import net.bagelvulture.tutorialmod.util.HammerUsageEvent;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.*;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
@@ -42,6 +45,7 @@ public class TutorialMod implements ModInitializer {
 
 		ModWorldGeneration.generateModWorldGen();
 
+		ModEntities.registerModEntities();
 
 		FuelRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 200);
 
@@ -76,5 +80,7 @@ public class TutorialMod implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DISEASED_WOOD, 10, 10);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DISEASED_PLANKS, 10, 25);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DISEASED_LEAVES, 35, 65);
+
+		FabricDefaultAttributeRegistry.register(ModEntities.TARDIGRADE, TardigradeEntity.createAttributes());
 	}
 }
