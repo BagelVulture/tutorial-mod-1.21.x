@@ -11,15 +11,12 @@ import net.minecraft.registry.tag.ItemTags;
 import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
-    public ModItemTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
-        super(output, completableFuture);
+    public ModItemTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> lookup) {
+        super(output, lookup, new ModBlockTagProvider(output, lookup));
     }
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(ModTags.Items.EXAMPLE_TAG)
-                .add(ModItems.BEVULTRIUM);
-
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.BEVULTRIUM_SWORD);
         getOrCreateTagBuilder(ItemTags.PICKAXES)
@@ -51,5 +48,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.DISEASED_PLANKS.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.DISEASED_LOGS)
+                .add(ModBlocks.DISEASED_LOG.asItem())
+                .add(ModBlocks.DISEASED_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_DISEASED_LOG.asItem())
+                .add(ModBlocks.STRIPPED_DISEASED_WOOD.asItem());
     }
 }

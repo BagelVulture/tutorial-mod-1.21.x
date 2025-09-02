@@ -1,17 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "redstone",
   "key": {
-    "B": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
       "item": "tutorialmod:bevultrium"
     }
   },
   "pattern": [
-    "BBB",
-    "B B"
+    "#W#",
+    "#W#"
   ],
   "result": {
     "count": 1,
-    "id": "tutorialmod:bevultrium_helmet"
+    "id": "tutorialmod:bevultrium_fence_gate"
   }
 }

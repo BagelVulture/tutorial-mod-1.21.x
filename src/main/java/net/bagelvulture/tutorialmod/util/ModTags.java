@@ -13,16 +13,18 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_BEVULTRIUM_TOOL = createTag("needs_bevultrium_tool");
         public static final TagKey<Block> INCORRECT_FOR_BEVULTRIUM_TOOL = createTag("incorrect_for_bevultrium_tool");
 
+        public static final TagKey<Block> DISEASED_LOGS = createTag("diseased_logs");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, name));
         }
     }
 
     public static class Items {
-        public static final TagKey<Item> EXAMPLE_TAG = createTag();
+        public static final TagKey<Item> DISEASED_LOGS = createTag("diseased_logs");
 
-        private static TagKey<Item> createTag() {
-            return TagKey.of(RegistryKeys.ITEM, Identifier.of(TutorialMod.MOD_ID, "example_tag"));
+        private static TagKey<Item> createTag(String path) {
+            return TagKey.of(RegistryKeys.ITEM, Identifier.of(TutorialMod.MOD_ID, path));
         }
     }
 }

@@ -14,7 +14,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
 
 public class SpearProjectileRenderer extends EntityRenderer<SpearProjectileEntity> {
-    protected SpearProjectileModel model;
+    protected final SpearProjectileModel model;
 
     public SpearProjectileRenderer(EntityRendererFactory.Context ctx) {
         super(ctx);
@@ -27,12 +27,15 @@ public class SpearProjectileRenderer extends EntityRenderer<SpearProjectileEntit
                        VertexConsumerProvider vertexConsumers, int light) {
         matrices.push();
 
-        if(!entity.isGrounded()) {
-            matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(MathHelper.lerp(tickDelta, entity.prevYaw, entity.getYaw())));
-            matrices.translate(0, -1.0f, 0);
-        } else {
-            matrices.translate(0, -1.0f, 0);
-        }
+        float yawbv = MathHelper.lerp(tickDelta, entity.prevYaw, entity.getYaw());
+        float pitchbv = MathHelper.lerp(tickDelta, entity.prevPitch, entity.getPitch());
+
+        matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(yawbv));
+        matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(-pitchbv));
+
+        matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(180));
+
+        matrices.translate(0, -1.0f, 0);
 
         VertexConsumer vertexconsumer = ItemRenderer.getDirectItemGlintConsumer(vertexConsumers,
                 this.model.getLayer(Identifier.of(TutorialMod.MOD_ID, "textures/entity/spear/spear.png")), false, false);

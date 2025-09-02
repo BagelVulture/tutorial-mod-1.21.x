@@ -2,16 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
     "B": {
-      "item": "tutorialmod:bevultrium"
+      "item": "minecraft:iron_ingot"
     }
   },
   "pattern": [
-    "BBB",
-    "B B"
+    " AB",
+    "AAA",
+    "AA "
   ],
   "result": {
     "count": 1,
-    "id": "tutorialmod:bevultrium_helmet"
+    "id": "tutorialmod:spear"
   }
 }

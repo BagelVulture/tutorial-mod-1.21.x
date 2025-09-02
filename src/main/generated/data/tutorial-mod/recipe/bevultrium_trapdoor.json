@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "redstone",
   "key": {
-    "B": {
+    "#": {
       "item": "tutorialmod:bevultrium"
     }
   },
   "pattern": [
-    "BBB",
-    "B B"
+    "###",
+    "###"
   ],
   "result": {
-    "count": 1,
-    "id": "tutorialmod:bevultrium_helmet"
+    "count": 2,
+    "id": "tutorialmod:bevultrium_trapdoor"
   }
 }

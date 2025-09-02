@@ -22,7 +22,8 @@ public class SpearItem extends Item {
         world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SNOWBALL_THROW, SoundCategory.NEUTRAL, 0.5f, 0.4f / (world.getRandom().nextFloat() * 0.4f + 0.8f));
         if (!world.isClient) {
             SpearProjectileEntity spear = new SpearProjectileEntity(world, user);
-            spear.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 1.5f, 0f);
+            spear.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 1.5f, 0.1f);
+            spear.setPos(spear.getX(), spear.getY() - 0.3, spear.getZ());
             world.spawnEntity(spear);
         }
 

@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "building",
   "key": {
-    "B": {
+    "#": {
       "item": "tutorialmod:bevultrium"
     }
   },
   "pattern": [
-    "BBB",
-    "B B"
+    "#  ",
+    "## ",
+    "###"
   ],
   "result": {
-    "count": 1,
-    "id": "tutorialmod:bevultrium_helmet"
+    "count": 4,
+    "id": "tutorialmod:bevultrium_stairs"
   }
 }
