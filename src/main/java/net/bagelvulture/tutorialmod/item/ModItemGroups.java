@@ -47,6 +47,8 @@ public class ModItemGroups {
 
                 entries.add(ModItems.BRIGHT_BERRIES);
 
+                entries.add(ModItems.SPEAR);
+
                 entries.add(ModItems.TARDIGRADE_SPAWN_EGG);
             }).build());
 

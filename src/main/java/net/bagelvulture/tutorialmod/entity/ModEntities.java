@@ -1,6 +1,7 @@
 package net.bagelvulture.tutorialmod.entity;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
+import net.bagelvulture.tutorialmod.entity.custom.SpearProjectileEntity;
 import net.bagelvulture.tutorialmod.entity.custom.TardigradeEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -13,6 +14,11 @@ public class ModEntities {
             Identifier.of(TutorialMod.MOD_ID, "tardigrade"),
             EntityType.Builder.create(TardigradeEntity::new, SpawnGroup.CREATURE)
                     .dimensions(1f, 0.625f).build());
+
+    public static final EntityType<SpearProjectileEntity> SPEAR = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(TutorialMod.MOD_ID, "spear"),
+            EntityType.Builder.<SpearProjectileEntity>create(SpearProjectileEntity::new, SpawnGroup.MISC)
+                    .dimensions(0.5f, 0.125f).  build());
 
 
     public static void registerModEntities() {

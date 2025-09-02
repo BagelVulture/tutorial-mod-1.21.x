@@ -1,5 +1,7 @@
 package net.bagelvulture.tutorialmod;
 
+import net.bagelvulture.tutorialmod.entity.client.SpearProjectileModel;
+import net.bagelvulture.tutorialmod.entity.client.SpearProjectileRenderer;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
@@ -26,5 +28,8 @@ public class TutorialModClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(TardigradeModel.TARDIGRADE  , TardigradeModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.TARDIGRADE, TardigradeRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(SpearProjectileModel.SPEAR, SpearProjectileModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.SPEAR, SpearProjectileRenderer::new);
     }
 }

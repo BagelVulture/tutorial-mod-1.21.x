@@ -6,6 +6,7 @@ import net.bagelvulture.tutorialmod.entity.ModEntities;
 import net.bagelvulture.tutorialmod.item.custom.HammerItem;
 import net.bagelvulture.tutorialmod.item.custom.HandSmelterItem;
 import net.bagelvulture.tutorialmod.item.custom.ModArmorItem;
+import net.bagelvulture.tutorialmod.item.custom.SpearItem;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.*;
@@ -116,6 +117,9 @@ public class ModItems {
 
     public static final Item TARDIGRADE_SPAWN_EGG = registerItem("tardigrade_spawn_egg",
             new SpawnEggItem(ModEntities.TARDIGRADE, 0xc898d4, 0xba7aca, new Item.Settings()));
+
+    public static final Item SPEAR = registerItem("spear",
+            new SpearItem(new Item.Settings().maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);

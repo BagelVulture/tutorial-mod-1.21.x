@@ -37,6 +37,8 @@
 
   "item.tutorialmod.tardigrade_spawn_egg": "Tardigrade Spawn Egg",
 
+  "item.tutorialmod.spear": "Spear",
+
 
   "block.tutorialmod.bevultrium_block": "Block of Bevultrium",
   "block.tutorialmod.raw_bevultrium_block": "Block of Raw Bevultrium",
@@ -110,5 +112,6 @@
   "tooltip.tutorialmod.fried_bevultrium": "Congratulations! You Tried Cooking or Planting a Rock, and it Worked!",
   "tooltip.tutorialmod.hand_smelter": "Instantly Smelts Whatever You're Looking at as if it Were in a Furnace",
 
-  "entity.tutorialmod.tardigrade": "Tardigrade"
+  "entity.tutorialmod.tardigrade": "Tardigrade",
+  "entity.tutorialmod.spear": "Spear"
 }
