@@ -50,6 +50,7 @@ public class ModItemGroups {
                 entries.add(ModItems.SPEAR);
 
                 entries.add(ModItems.TARDIGRADE_SPAWN_EGG);
+                entries.add(ModItems.BOSS_BAR_SPAWN_EGG);
             }).build());
 
 

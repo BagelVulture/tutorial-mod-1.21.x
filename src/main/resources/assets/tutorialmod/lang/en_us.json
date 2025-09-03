@@ -36,6 +36,7 @@
   "item.minecraft.tipped_arrow.effect.imaplant_potion": "Arrow Of I'm A Plant",
 
   "item.tutorialmod.tardigrade_spawn_egg": "Tardigrade Spawn Egg",
+  "item.tutorialmod.boss_bar_spawn_egg": "Boss Bar Spawn Egg",
 
   "item.tutorialmod.spear": "Spear",
 
@@ -113,5 +114,6 @@
   "tooltip.tutorialmod.hand_smelter": "Instantly Smelts Whatever You're Looking at as if it Were in a Furnace",
 
   "entity.tutorialmod.tardigrade": "Tardigrade",
-  "entity.tutorialmod.spear": "Spear"
+  "entity.tutorialmod.spear": "Spear",
+  "entity.tutorialmod.boss_bar": "Boss Bar"
 }

@@ -5,6 +5,7 @@ import net.bagelvulture.tutorialmod.component.ModDataComponentTypes;
 import net.bagelvulture.tutorialmod.effect.ModEffects;
 import net.bagelvulture.tutorialmod.enchantment.ModEnchantmentEffects;
 import net.bagelvulture.tutorialmod.entity.ModEntities;
+import net.bagelvulture.tutorialmod.entity.custom.BossBarEntity;
 import net.bagelvulture.tutorialmod.entity.custom.TardigradeEntity;
 import net.bagelvulture.tutorialmod.item.ModItems;
 import net.bagelvulture.tutorialmod.potion.ModPotions;
@@ -17,6 +18,8 @@ import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.*;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
@@ -82,5 +85,6 @@ public class TutorialMod implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DISEASED_LEAVES, 35, 65);
 
 		FabricDefaultAttributeRegistry.register(ModEntities.TARDIGRADE, TardigradeEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register((EntityType<? extends LivingEntity>) ModEntities.BOSSBAR, BossBarEntity.createAttributes());
 	}
 }

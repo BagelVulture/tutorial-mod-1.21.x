@@ -117,6 +117,8 @@ public class ModItems {
 
     public static final Item TARDIGRADE_SPAWN_EGG = registerItem("tardigrade_spawn_egg",
             new SpawnEggItem(ModEntities.TARDIGRADE, 0xc898d4, 0xba7aca, new Item.Settings()));
+    public static final Item BOSS_BAR_SPAWN_EGG = registerItem("boss_bar_spawn_egg",
+            new SpawnEggItem(ModEntities.BOSSBAR, 0xf0f0f0, 0x0f0f0f, new Item.Settings()));
 
     public static final Item SPEAR = registerItem("spear",
             new SpearItem(new Item.Settings().maxCount(16)));
