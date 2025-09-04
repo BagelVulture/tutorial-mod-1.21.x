@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "tutorialmod:diseased_planks"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "AAA",
+    "A A"
+  ],
+  "result": {
+    "count": 2,
+    "id": "tutorialmod:diseased_chair"
+  }
+}

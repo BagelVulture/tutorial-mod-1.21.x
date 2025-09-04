@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tutorialmod:block/warped_chair",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tutorialmod:block/warped_chair"
+    },
+    "facing=south": {
+      "model": "tutorialmod:block/warped_chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tutorialmod:block/warped_chair",
+      "y": 270
+    }
+  }
+}

@@ -82,6 +82,19 @@
   "block.tutorialmod.diseased_leaves": "Diseased Leaves",
   "block.tutorialmod.diseased_sapling": "Diseased Sapling",
 
+  "block.tutorialmod.oak_chair": "Oak Chair",
+  "block.tutorialmod.spruce_chair": "Spruce Chair",
+  "block.tutorialmod.birch_chair": "Birch Chair",
+  "block.tutorialmod.jungle_chair": "Jungle Chair",
+  "block.tutorialmod.acacia_chair": "Acacia Chair",
+  "block.tutorialmod.dark_oak_chair": "Dark Oak Chair",
+  "block.tutorialmod.mangrove_chair": "Mangrove Chair",
+  "block.tutorialmod.cherry_chair": "Cherry Chair",
+  "block.tutorialmod.bamboo_chair": "Bamboo Chair",
+  "block.tutorialmod.warped_chair": "Warped Chair",
+  "block.tutorialmod.crimson_chair": "Crimson Chair",
+  "block.tutorialmod.diseased_chair": "Diseased Chair",
+
 
   "tag.tutorialmod.diseased_logs": "Diseased Logs",
 

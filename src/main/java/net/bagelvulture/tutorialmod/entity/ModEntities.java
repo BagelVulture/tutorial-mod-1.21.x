@@ -2,6 +2,7 @@ package net.bagelvulture.tutorialmod.entity;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
 import net.bagelvulture.tutorialmod.entity.custom.BossBarEntity;
+import net.bagelvulture.tutorialmod.entity.custom.ChairEntity;
 import net.bagelvulture.tutorialmod.entity.custom.SpearProjectileEntity;
 import net.bagelvulture.tutorialmod.entity.custom.TardigradeEntity;
 import net.minecraft.entity.EntityType;
@@ -25,6 +26,11 @@ public class ModEntities {
             Identifier.of(TutorialMod.MOD_ID, "boss_bar"),
             EntityType.Builder.create(BossBarEntity::new, SpawnGroup.CREATURE)
                     .dimensions(0.5f, 1.0f).build());
+
+    public static final EntityType<ChairEntity> CHAIR = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(TutorialMod.MOD_ID, "chair_entity"),
+            EntityType.Builder.create(ChairEntity::new, SpawnGroup.MISC)
+                    .dimensions(0.5f, 0.8f).build());
 
 
     public static void registerModEntities() {

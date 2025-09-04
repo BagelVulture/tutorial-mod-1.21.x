@@ -85,7 +85,6 @@ public class ModBlocks {
     public static final Block DISEASED_STAIRS = registerBlock("diseased_stairs",
             new StairsBlock(ModBlocks.DISEASED_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.create().strength(2f)));
-
     public static final Block DISEASED_SLAB = registerBlock("diseased_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(2f)));
     public static final Block DISEASED_BUTTON = registerBlock("diseased_button",
@@ -101,6 +100,20 @@ public class ModBlocks {
 
     public static final Block DISEASED_LEAVES = registerBlock("diseased_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+
+    public static final Block OAK_CHAIR = registerBlock("oak_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+    public static final Block SPRUCE_CHAIR = registerBlock("spruce_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+    public static final Block BIRCH_CHAIR = registerBlock("birch_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+    public static final Block JUNGLE_CHAIR = registerBlock("jungle_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+    public static final Block ACACIA_CHAIR = registerBlock("acacia_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+    public static final Block DARK_OAK_CHAIR = registerBlock("dark_oak_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+    public static final Block MANGROVE_CHAIR = registerBlock("mangrove_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+    public static final Block CHERRY_CHAIR = registerBlock("cherry_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+    public static final Block BAMBOO_CHAIR = registerBlock("bamboo_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+    public static final Block WARPED_CHAIR = registerBlock("warped_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+    public static final Block CRIMSON_CHAIR = registerBlock("crimson_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+    public static final Block DISEASED_CHAIR = registerBlock("diseased_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
+
 
     public static final List<Block> Diseased_Can_Survive_On = new ArrayList<>(List.of(
             Blocks.STONE,

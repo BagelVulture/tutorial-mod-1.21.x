@@ -95,6 +95,19 @@ public class ModItemGroups {
                 entries.add(ModBlocks.DISEASED_LEAVES);
 
                 entries.add(ModBlocks.DISEASED_SAPLING);
+
+                entries.add(ModBlocks.OAK_CHAIR);
+                entries.add(ModBlocks.SPRUCE_CHAIR);
+                entries.add(ModBlocks.BIRCH_CHAIR);
+                entries.add(ModBlocks.JUNGLE_CHAIR);
+                entries.add(ModBlocks.ACACIA_CHAIR);
+                entries.add(ModBlocks.DARK_OAK_CHAIR);
+                entries.add(ModBlocks.MANGROVE_CHAIR);
+                entries.add(ModBlocks.CHERRY_CHAIR);
+                entries.add(ModBlocks.BAMBOO_CHAIR);
+                entries.add(ModBlocks.CRIMSON_CHAIR);
+                entries.add(ModBlocks.WARPED_CHAIR);
+                entries.add(ModBlocks.DISEASED_CHAIR);
             }).build());
 
 

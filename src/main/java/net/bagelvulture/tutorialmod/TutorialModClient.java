@@ -31,5 +31,8 @@ public class TutorialModClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(BossBarModel.BOSSBAR, BossBarModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.BOSSBAR, BossBarRenderer::new);
+
+
+        EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
     }
 }

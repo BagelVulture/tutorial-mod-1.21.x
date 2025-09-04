@@ -26,6 +26,8 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
+import static net.bagelvulture.tutorialmod.block.ModBlocks.*;
+
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
@@ -95,6 +97,19 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DISEASED_SAPLING);
 
         addDrop(ModBlocks.DISEASED_LEAVES, diseasedLeavesDrops(ModBlocks.DISEASED_LEAVES, ModBlocks.DISEASED_SAPLING, 0.0625f));
+
+        addDrop(OAK_CHAIR);
+        addDrop(SPRUCE_CHAIR);
+        addDrop(BIRCH_CHAIR);
+        addDrop(JUNGLE_CHAIR);
+        addDrop(ACACIA_CHAIR);
+        addDrop(DARK_OAK_CHAIR);
+        addDrop(MANGROVE_CHAIR);
+        addDrop(CHERRY_CHAIR);
+        addDrop(BAMBOO_CHAIR);
+        addDrop(WARPED_CHAIR);
+        addDrop(CRIMSON_CHAIR);
+        addDrop(DISEASED_CHAIR);
     }
 
     public LootTable.Builder diseasedLeavesDrops(Block leaves, Block sapling, float... saplingChance) {

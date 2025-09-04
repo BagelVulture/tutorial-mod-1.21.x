@@ -198,5 +198,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('A', Items.STICK)
                 .criterion(hasItem(BEVULTRIUM), conditionsFromItem(BEVULTRIUM))
                 .offerTo(exporter);
+
+        chairRecipeBuilder(exporter, Items.OAK_PLANKS, OAK_CHAIR);
+        chairRecipeBuilder(exporter, Items.SPRUCE_PLANKS, SPRUCE_CHAIR);
+        chairRecipeBuilder(exporter, Items.BIRCH_PLANKS, BIRCH_CHAIR);
+        chairRecipeBuilder(exporter, Items.JUNGLE_PLANKS, JUNGLE_CHAIR);
+        chairRecipeBuilder(exporter, Items.ACACIA_PLANKS, ACACIA_CHAIR);
+        chairRecipeBuilder(exporter, Items.DARK_OAK_PLANKS, DARK_OAK_CHAIR);
+        chairRecipeBuilder(exporter, Items.MANGROVE_PLANKS, MANGROVE_CHAIR);
+        chairRecipeBuilder(exporter, Items.CHERRY_PLANKS, CHERRY_CHAIR);
+        chairRecipeBuilder(exporter, Items.BAMBOO_PLANKS, BAMBOO_CHAIR);
+        chairRecipeBuilder(exporter, Items.CRIMSON_PLANKS, CRIMSON_CHAIR);
+        chairRecipeBuilder(exporter, Items.WARPED_PLANKS, WARPED_CHAIR);
+        chairRecipeBuilder(exporter, DISEASED_PLANKS, DISEASED_CHAIR);
+    }
+    public static void chairRecipeBuilder(RecipeExporter exporter, ItemConvertible input, ItemConvertible output) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output, 2)
+                .pattern("A  ")
+                .pattern("AAA")
+                .pattern("A A")
+                .input('A', input)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter);
     }
 }
