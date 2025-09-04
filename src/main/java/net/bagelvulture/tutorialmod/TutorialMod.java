@@ -10,6 +10,7 @@ import net.bagelvulture.tutorialmod.entity.custom.TardigradeEntity;
 import net.bagelvulture.tutorialmod.item.ModItems;
 import net.bagelvulture.tutorialmod.potion.ModPotions;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
+import net.bagelvulture.tutorialmod.villager.ModVillagers;
 import net.bagelvulture.tutorialmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.bagelvulture.tutorialmod.item.ModItemGroups;
@@ -49,6 +50,7 @@ public class TutorialMod implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 
 		ModEntities.registerModEntities();
+		ModVillagers.registerVillagers();
 
 		FuelRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 200);
 

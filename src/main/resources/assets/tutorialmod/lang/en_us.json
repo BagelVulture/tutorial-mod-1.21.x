@@ -128,5 +128,7 @@
 
   "entity.tutorialmod.tardigrade": "Tardigrade",
   "entity.tutorialmod.spear": "Spear",
-  "entity.tutorialmod.boss_bar": "Boss Bar"
+  "entity.tutorialmod.boss_bar": "Boss Bar",
+
+  "entity.minecraft.villager.bv_fan": "BagelVulture Fan"
 }
