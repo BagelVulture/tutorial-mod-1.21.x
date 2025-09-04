@@ -9,6 +9,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
@@ -75,6 +77,10 @@ public class HandSmelterItem extends Item {
             if(!world.isClient()) {
                 world.setBlockState(context.getBlockPos(), HANDSMELTER_MAP.get(clickedBlock).getDefaultState());
                 world.playSound(null, context.getBlockPos(), SoundEvents.ITEM_FIRECHARGE_USE, SoundCategory.BLOCKS);
+
+                ((ServerWorld) world).spawnParticles(ParticleTypes.FLAME,
+                        context.getBlockPos().getX() + 0.5, context.getBlockPos().getY() + 0.5,
+                        context.getBlockPos().getZ() + 0.5, 10, 0, 0, 0, 0.1);
 
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
