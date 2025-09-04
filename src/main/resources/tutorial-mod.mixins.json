@@ -3,10 +3,11 @@
 	"package": "net.bagelvulture.tutorialmod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
 	],"client":
 	[
-	"AbstractClientPlayerEntityMixin"
+	"AbstractClientPlayerEntityMixin",
+		"ItemRendererMixin",
+		"ModelLoaderMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

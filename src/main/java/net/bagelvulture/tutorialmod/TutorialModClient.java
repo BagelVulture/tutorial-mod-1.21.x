@@ -34,5 +34,6 @@ public class TutorialModClient implements ClientModInitializer {
 
 
         EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
+
     }
 }
