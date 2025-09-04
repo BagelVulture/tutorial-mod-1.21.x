@@ -18,15 +18,22 @@ import net.bagelvulture.tutorialmod.util.HammerUsageEvent;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.village.TradeOffer;
+import net.minecraft.village.TradedItem;
+import net.minecraft.village.VillagerProfession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Optional;
 
 public class TutorialMod implements ModInitializer {
 	public static final String MOD_ID = "tutorialmod";
@@ -88,5 +95,60 @@ public class TutorialMod implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(ModEntities.TARDIGRADE, TardigradeEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register((EntityType<? extends LivingEntity>) ModEntities.BOSSBAR, BossBarEntity.createAttributes());
+
+		TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factories -> {
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 1),
+					new ItemStack(ModItems.DISEASED_APPLE, 1), 10, 0, 0.04f));
+		});
+
+		TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factories -> {
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 3),
+					new ItemStack(ModItems.BRIGHT_BERRIES, 8), 7, 7, 0.04f));
+		});
+
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.BV_FAN, 1, factories -> {
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 10),
+					new ItemStack(ModItems.BEVULTRIUM, 1), 8, 7, 0.04f));
+
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 64),
+                    Optional.of(new TradedItem(Items.EMERALD, 36)),
+					new ItemStack(ModBlocks.BEVULTRIUM_BLOCK, 1), 4, 7, 0.04f));
+		});
+
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.BV_FAN, 2, factories -> {
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 10),
+					new ItemStack(Items.PAINTING, 1), 4, 7, 0.04f));
+
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 16),
+					new ItemStack(ModItems.SPEAR, 1), 3, 12, 0.09f));
+		});
+
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.BV_FAN, 3, factories -> {
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 10),
+					new ItemStack(Items.PAINTING, 1), 4, 7, 0.04f));
+		});
+
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.BV_FAN, 4, factories -> {
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 10),
+					new ItemStack(Items.PAINTING, 1), 4, 7, 0.04f));
+		});
+
+		TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 10),
+					new ItemStack(ModItems.HAND_SMELTER, 1), 4, 7, 0.04f));
+
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(ModItems.BEVULTRIUM, 64),
+					new ItemStack(ModItems.BEVULTURE_SMITHING_TEMPLATE, 1), 3, 12, 0.09f));
+		});
 	}
 }
