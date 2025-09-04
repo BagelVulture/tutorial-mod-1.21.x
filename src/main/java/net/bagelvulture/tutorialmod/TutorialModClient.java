@@ -1,8 +1,11 @@
 package net.bagelvulture.tutorialmod;
 
 import net.bagelvulture.tutorialmod.entity.client.*;
+import net.bagelvulture.tutorialmod.particle.MagicParticle;
+import net.bagelvulture.tutorialmod.particle.ModParticles;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.bagelvulture.tutorialmod.block.ModBlocks;
@@ -35,5 +38,6 @@ public class TutorialModClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
 
+        ParticleFactoryRegistry.getInstance().register(ModParticles.MAGIC_PARTICLE, MagicParticle.Factory::new);
     }
 }

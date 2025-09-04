@@ -8,6 +8,7 @@ import net.bagelvulture.tutorialmod.entity.ModEntities;
 import net.bagelvulture.tutorialmod.entity.custom.BossBarEntity;
 import net.bagelvulture.tutorialmod.entity.custom.TardigradeEntity;
 import net.bagelvulture.tutorialmod.item.ModItems;
+import net.bagelvulture.tutorialmod.particle.ModParticles;
 import net.bagelvulture.tutorialmod.potion.ModPotions;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
 import net.bagelvulture.tutorialmod.villager.ModVillagers;
@@ -58,6 +59,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModEntities.registerModEntities();
 		ModVillagers.registerVillagers();
+
+		ModParticles.registerParticles();
 
 		FuelRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 200);
 

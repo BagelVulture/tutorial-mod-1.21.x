@@ -1,5 +1,6 @@
 package net.bagelvulture.tutorialmod.block.custom;
 
+import net.bagelvulture.tutorialmod.particle.ModParticles;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -8,6 +9,7 @@ import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
@@ -34,6 +36,11 @@ public class CrudeAlchemyTransformer extends Block {
                         1.0F,1.0F);
                 if (itemEntity.age >= 10) {
                     itemEntity.setStack(new ItemStack(Items.GOLD_NUGGET, itemEntity.getStack().getCount()));
+                    if(!world.isClient()) {
+                        ((ServerWorld) world).spawnParticles(ModParticles.MAGIC_PARTICLE,
+                                itemEntity.getX() + 0.0, itemEntity.getY() + 0.0,
+                                itemEntity.getZ() + 0.0, 8, 0, 0, 0, 0.1);
+                    }
                 }
             }
         }

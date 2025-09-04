@@ -2,6 +2,7 @@ package net.bagelvulture.tutorialmod.item.custom;
 
 import net.bagelvulture.tutorialmod.block.ModBlocks;
 import net.bagelvulture.tutorialmod.component.ModDataComponentTypes;
+import net.bagelvulture.tutorialmod.particle.ModParticles;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -81,6 +82,9 @@ public class HandSmelterItem extends Item {
                 ((ServerWorld) world).spawnParticles(ParticleTypes.FLAME,
                         context.getBlockPos().getX() + 0.5, context.getBlockPos().getY() + 0.5,
                         context.getBlockPos().getZ() + 0.5, 10, 0, 0, 0, 0.1);
+                ((ServerWorld) world).spawnParticles(ModParticles.MAGIC_PARTICLE,
+                        context.getBlockPos().getX() + 0.5, context.getBlockPos().getY() + 0.5,
+                        context.getBlockPos().getZ() + 0.5, 8, 0, 0, 0, 0.1);
 
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
