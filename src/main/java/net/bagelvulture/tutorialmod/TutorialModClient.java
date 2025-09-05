@@ -1,5 +1,7 @@
 package net.bagelvulture.tutorialmod;
 
+import net.bagelvulture.tutorialmod.block.entity.ModBlockEntities;
+import net.bagelvulture.tutorialmod.block.entity.renderer.AltarBlockEntityRenderer;
 import net.bagelvulture.tutorialmod.entity.client.*;
 import net.bagelvulture.tutorialmod.particle.MagicParticle;
 import net.bagelvulture.tutorialmod.particle.ModParticles;
@@ -12,6 +14,7 @@ import net.bagelvulture.tutorialmod.block.ModBlocks;
 import net.bagelvulture.tutorialmod.entity.ModEntities;
 import net.bagelvulture.tutorialmod.util.ModModelPredicates;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 
 public class TutorialModClient implements ClientModInitializer {
     @Override
@@ -39,5 +42,7 @@ public class TutorialModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.MAGIC_PARTICLE, MagicParticle.Factory::new);
+
+        BlockEntityRendererFactories.register(ModBlockEntities.ALTAR_BE, AltarBlockEntityRenderer::new);
     }
 }

@@ -17,6 +17,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class AltarBlockEntity extends BlockEntity implements ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(1, ItemStack.EMPTY);
+    private float rotation = 0;
 
     public AltarBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.ALTAR_BE, pos, state);
@@ -25,6 +26,14 @@ public class AltarBlockEntity extends BlockEntity implements ImplementedInventor
     @Override
     public DefaultedList<ItemStack> getItems() {
         return inventory;
+    }
+
+    public float getRenderingRotation() {
+        rotation += (float) getStack(0).getCount() / 10;
+        if(rotation >= 360) {
+            rotation = 0;
+        }
+        return rotation;
     }
 
     @Override

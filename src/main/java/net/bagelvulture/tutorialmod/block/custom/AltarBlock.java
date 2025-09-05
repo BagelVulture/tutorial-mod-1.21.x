@@ -1,6 +1,7 @@
 package net.bagelvulture.tutorialmod.block.custom;
 
 import com.mojang.serialization.MapCodec;
+import net.bagelvulture.tutorialmod.TutorialMod;
 import net.bagelvulture.tutorialmod.block.entity.custom.AltarBlockEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -85,6 +86,24 @@ public class AltarBlock extends BlockWithEntity implements BlockEntityProvider {
 
                 altarBlockEntity.markDirty();
                 world.updateListeners(pos, state, state, 0);
+            } else if(!altarBlockEntity.isEmpty() && !stack.isEmpty()) { //if player and altar both have items    && altarBlockEntity.getStack(0).getComponents() == stack.getComponents()
+                if(altarBlockEntity.getStack(0).getItem() == stack.getItem()) { //if the items are the same AND the components are the same
+                    if(altarBlockEntity.getStack(0).getCount() <= altarBlockEntity.getStack(0).getMaxCount()) { //if altar has less than the max stack size
+                        if(altarBlockEntity.getStack(0).getCount() + stack.getCount() < altarBlockEntity.getStack(0).getMaxCount() + 1){ //if altar's count + player's count is less than the max stack size + 1
+                            TutorialMod.LOGGER.info("Max count is " + altarBlockEntity.getStack(0).getMaxCount() + " altar count is " + altarBlockEntity.getStack(0).getCount() + " and your stack is" + stack.getCount());
+                            altarBlockEntity.getStack(0).setCount(altarBlockEntity.getStack(0).getCount() + stack.getCount()); //add players count to altar's count
+                            stack.decrement(stack.getCount()); // decreases player's count by player's count, deleting item
+                            world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
+                        }else { //if altar's count + player's count is more than the max stack size
+                            TutorialMod.LOGGER.info("Max count is (2) " + altarBlockEntity.getStack(0).getMaxCount() + " altar count is " + altarBlockEntity.getStack(0).getCount() + " and your stack is" + stack.getCount());
+                            int CantBeAdded = altarBlockEntity.getStack(0).getCount() + stack.getCount() - altarBlockEntity.getStack(0).getMaxCount(); //sets CantBeAdded to altar's count + player's count - max stack size
+                            int CanBeAdded = stack.getCount() - CantBeAdded; //sets CanBeAdded to players count - CantBeAdded
+                            altarBlockEntity.getStack(0).setCount(altarBlockEntity.getStack(0).getCount() + CanBeAdded); // adds CanBeAdded to altars count
+                            stack.decrement(CanBeAdded); // removes CanBeAdded from players count
+                            world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
+                        }
+                    }
+                }
             }
         }
         return ItemActionResult.SUCCESS;
