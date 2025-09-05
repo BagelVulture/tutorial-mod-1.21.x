@@ -11,6 +11,7 @@ import net.bagelvulture.tutorialmod.item.ModItems;
 import net.bagelvulture.tutorialmod.particle.ModParticles;
 import net.bagelvulture.tutorialmod.potion.ModPotions;
 import net.bagelvulture.tutorialmod.sound.ModSounds;
+import net.bagelvulture.tutorialmod.util.ModLootTableModifiers;
 import net.bagelvulture.tutorialmod.villager.ModVillagers;
 import net.bagelvulture.tutorialmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
@@ -61,6 +62,8 @@ public class TutorialMod implements ModInitializer {
 		ModVillagers.registerVillagers();
 
 		ModParticles.registerParticles();
+
+		ModLootTableModifiers.modifyLootTables();
 
 		FuelRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 200);
 
