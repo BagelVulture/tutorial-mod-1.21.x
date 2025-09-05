@@ -110,6 +110,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(WARPED_CHAIR);
         addDrop(CRIMSON_CHAIR);
         addDrop(DISEASED_CHAIR);
+
+        addDrop(ALTAR);
     }
 
     public LootTable.Builder diseasedLeavesDrops(Block leaves, Block sapling, float... saplingChance) {

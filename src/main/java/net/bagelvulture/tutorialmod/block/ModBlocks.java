@@ -131,6 +131,8 @@ public class ModBlocks {
     public static final Block DISEASED_SAPLING = registerBlock("diseased_sapling",
             new ModSaplingBlock(ModSaplingGenerators.DISEASED, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Diseased_Can_Survive_On));
 
+    public static final Block ALTAR = registerBlock("altar",
+            new AltarBlock(AbstractBlock.Settings.create().nonOpaque()));
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(TutorialMod.MOD_ID, name), block);

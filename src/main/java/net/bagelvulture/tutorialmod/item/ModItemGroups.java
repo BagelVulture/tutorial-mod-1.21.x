@@ -108,6 +108,8 @@ public class ModItemGroups {
                 entries.add(ModBlocks.CRIMSON_CHAIR);
                 entries.add(ModBlocks.WARPED_CHAIR);
                 entries.add(ModBlocks.DISEASED_CHAIR);
+
+                entries.add(ModBlocks.ALTAR);
             }).build());
 
 

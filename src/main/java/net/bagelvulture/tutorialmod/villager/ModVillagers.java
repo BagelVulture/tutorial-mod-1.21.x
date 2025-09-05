@@ -37,6 +37,6 @@ public class ModVillagers {
     }
 
     public static void registerVillagers() {
-        TutorialMod.LOGGER.info("Registering" + TutorialMod.MOD_ID + "'s Villagers");
+        TutorialMod.LOGGER.info("Registering " + TutorialMod.MOD_ID + "'s Villagers");
     }
 }

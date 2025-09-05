@@ -1,6 +1,7 @@
 package net.bagelvulture.tutorialmod;
 
 import net.bagelvulture.tutorialmod.block.ModBlocks;
+import net.bagelvulture.tutorialmod.block.entity.ModBlockEntities;
 import net.bagelvulture.tutorialmod.component.ModDataComponentTypes;
 import net.bagelvulture.tutorialmod.effect.ModEffects;
 import net.bagelvulture.tutorialmod.enchantment.ModEnchantmentEffects;
@@ -64,6 +65,8 @@ public class TutorialMod implements ModInitializer {
 		ModParticles.registerParticles();
 
 		ModLootTableModifiers.modifyLootTables();
+
+		ModBlockEntities.registerBlockEntities();
 
 		FuelRegistry.INSTANCE.add(ModItems.FERTILE_BEVULTRIUM, 200);
 
@@ -145,6 +148,12 @@ public class TutorialMod implements ModInitializer {
 			factories.add((entity, random) -> new TradeOffer(
 					new TradedItem(Items.EMERALD, 10),
 					new ItemStack(Items.PAINTING, 1), 4, 7, 0.04f));
+		});
+
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.BV_FAN, 5, factories -> {
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 10),
+					new ItemStack(ModBlocks.ALTAR, 1), 1, 7, 0.04f));
 		});
 
 		TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
