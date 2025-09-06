@@ -100,7 +100,11 @@ public class AltarBlock extends BlockWithEntity implements BlockEntityProvider {
                             world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
                         }
                     }
+                } else {
+                    player.openHandledScreen(altarBlockEntity);
                 }
+            } else if(player.isSneaking() && !world.isClient()) {
+                player.openHandledScreen(altarBlockEntity);
             }
         }
         return ItemActionResult.SUCCESS;

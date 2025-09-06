@@ -5,6 +5,8 @@ import net.bagelvulture.tutorialmod.block.entity.renderer.AltarBlockEntityRender
 import net.bagelvulture.tutorialmod.entity.client.*;
 import net.bagelvulture.tutorialmod.particle.MagicParticle;
 import net.bagelvulture.tutorialmod.particle.ModParticles;
+import net.bagelvulture.tutorialmod.screen.ModScreenHandlers;
+import net.bagelvulture.tutorialmod.screen.custom.AltarScreen;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
@@ -13,6 +15,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.bagelvulture.tutorialmod.block.ModBlocks;
 import net.bagelvulture.tutorialmod.entity.ModEntities;
 import net.bagelvulture.tutorialmod.util.ModModelPredicates;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 
@@ -44,5 +47,6 @@ public class TutorialModClient implements ClientModInitializer {
         ParticleFactoryRegistry.getInstance().register(ModParticles.MAGIC_PARTICLE, MagicParticle.Factory::new);
 
         BlockEntityRendererFactories.register(ModBlockEntities.ALTAR_BE, AltarBlockEntityRenderer::new);
+        HandledScreens.register(ModScreenHandlers.ALTAR_SCREEN_HANDLER, AltarScreen::new);
     }
 }
