@@ -1,4 +1,4 @@
-// 1.21	2025-09-07T12:12:55.652553	tutorial mod/Block Loot Tables
+// 1.21	2025-09-07T16:25:19.144353	tutorial mod/Block Loot Tables
 4c6771a6f0c40ff4d959a023bcceeb80368d71b6 data/tutorialmod/loot_table/blocks/diseased_trapdoor.json
 03f35a1772450c172313674bd90ea9d49b09a3e7 data/tutorialmod/loot_table/blocks/diseased_pressure_plate.json
 2f27585e76fae1d09c78d2be262d3e5f632d6be2 data/tutorialmod/loot_table/blocks/diseased_chair.json
@@ -9,8 +9,8 @@ d03da363750b60ab89d89522d036b684ee0a1019 data/tutorialmod/loot_table/blocks/dise
 ee9a875a804a4880b9994e5534fa585ed8484ccd data/tutorialmod/loot_table/blocks/spruce_chair.json
 661f4c3c3e87a7f1b1c117a65c953014c922a4ab data/tutorialmod/loot_table/blocks/crude_alchemy_transformer.json
 53fb0a55badb312ab76001256cc24eba72ab3332 data/tutorialmod/loot_table/blocks/bamboo_chair.json
-c883becd6737ff2c6d4afebe49004d283cda99d5 data/tutorialmod/loot_table/blocks/bevultrium_block.json
 802f547f94e2bcd0df59a625d5ffa576cc25383d data/tutorialmod/loot_table/blocks/bevultrium_button.json
+c883becd6737ff2c6d4afebe49004d283cda99d5 data/tutorialmod/loot_table/blocks/bevultrium_block.json
 659de4c7aa0ebd9516fee69327ca6134a0d41139 data/tutorialmod/loot_table/blocks/bevultrium_lamp.json
 aa692e36daa27ea25e729451b4a2b67704799b60 data/tutorialmod/loot_table/blocks/bevultrium_ore.json
 40b7d95ca378b41858aff1f94c255fdedf9b4119 data/tutorialmod/loot_table/blocks/bevultrium_stairs.json

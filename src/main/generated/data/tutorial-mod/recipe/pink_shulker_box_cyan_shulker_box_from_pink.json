@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:pink",
+  "ingredient": {
+    "item": "minecraft:cyan_shulker_box"
+  },
+  "input_count": 1,
+  "pinkingtime": 40,
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_shulker_box"
+  }
+}

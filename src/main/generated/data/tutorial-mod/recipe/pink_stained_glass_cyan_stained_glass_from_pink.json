@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:pink",
+  "ingredient": {
+    "item": "minecraft:cyan_stained_glass"
+  },
+  "input_count": 1,
+  "pinkingtime": 80,
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_stained_glass"
+  }
+}

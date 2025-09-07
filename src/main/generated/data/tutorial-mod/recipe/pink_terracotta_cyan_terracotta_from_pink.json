@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:pink",
+  "ingredient": {
+    "item": "minecraft:cyan_terracotta"
+  },
+  "input_count": 1,
+  "pinkingtime": 100,
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_terracotta"
+  }
+}

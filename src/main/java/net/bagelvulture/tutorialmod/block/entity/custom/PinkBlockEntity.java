@@ -1,22 +1,23 @@
 package net.bagelvulture.tutorialmod.block.entity.custom;
 
+import net.bagelvulture.tutorialmod.recipe.ModRecipes;
+import net.bagelvulture.tutorialmod.recipe.PinkRecipe;
+import net.bagelvulture.tutorialmod.recipe.PinkRecipeInput;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.bagelvulture.tutorialmod.block.entity.ImplementedInventory;
 import net.bagelvulture.tutorialmod.block.entity.ModBlockEntities;
-import net.bagelvulture.tutorialmod.item.ModItems;
 import net.bagelvulture.tutorialmod.screen.custom.PinkScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
@@ -26,6 +27,8 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class PinkBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2, ItemStack.EMPTY);
@@ -102,11 +105,18 @@ public class PinkBlockEntity extends BlockEntity implements ExtendedScreenHandle
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
-        if(hasRecipe()) {
+        Optional<RecipeEntry<PinkRecipe>> recipeEntry = getCurrentRecipe();
+        if (recipeEntry.isPresent()) {
+            PinkRecipe pinkRecipe = recipeEntry.get().value();
+            if (progress == 0) {
+                // Set maxProgress dynamically based on the recipe
+                maxProgress = pinkRecipe.pinkingTime();
+            }
+
             increaseCraftingProgress();
             markDirty(world, pos, state);
 
-            if(hasCraftingFinished()) {
+            if (hasCraftingFinished()) {
                 craftItem();
                 resetProgress();
             }
@@ -117,13 +127,18 @@ public class PinkBlockEntity extends BlockEntity implements ExtendedScreenHandle
 
     private void resetProgress() {
         this.progress = 0;
-        this.maxProgress = 72;
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.DISEASED_APPLE, 6);
+        Optional<RecipeEntry<PinkRecipe>> recipe = getCurrentRecipe();
 
-        this.removeStack(INPUT_SLOT, 1);
+        if (recipe.isEmpty()) return;
+
+        PinkRecipe pinkRecipe = recipe.get().value();
+        ItemStack output = pinkRecipe.output();
+
+        this.removeStack(INPUT_SLOT, pinkRecipe.inputCount());
+
         this.setStack(OUTPUT_SLOT, new ItemStack(output.getItem(),
                 this.getStack(OUTPUT_SLOT).getCount() + output.getCount()));
     }
@@ -133,15 +148,30 @@ public class PinkBlockEntity extends BlockEntity implements ExtendedScreenHandle
     }
 
     private void increaseCraftingProgress() {
-        this.progress++;
+        Optional<RecipeEntry<PinkRecipe>> recipeEntry = getCurrentRecipe();
+        if (recipeEntry.isEmpty()) return;
+
+        PinkRecipe recipe = recipeEntry.get().value();
+        ItemStack result = recipe.output();
+
+        if (canInsertItemIntoOutputSlot(result) && canInsertAmountIntoOutputSlot(result.getCount())) {
+            this.progress++;
+        }
     }
 
     private boolean hasRecipe() {
-        Item input = Items.APPLE;
-        ItemStack output = new ItemStack(ModItems.DISEASED_APPLE, 6);
+        Optional<RecipeEntry<PinkRecipe>> recipe = getCurrentRecipe();
+        if(recipe.isEmpty()) {
+            return false;
+        }
 
-        return this.getStack(INPUT_SLOT).isOf(input) &&
-                canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+        ItemStack output = recipe.get().value().output();
+        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+    }
+
+    private Optional<RecipeEntry<PinkRecipe>> getCurrentRecipe() {
+        return this.getWorld().getRecipeManager()
+                .getFirstMatch(ModRecipes.PINK_TYPE, new PinkRecipeInput(inventory.get(INPUT_SLOT)), this.getWorld());
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {

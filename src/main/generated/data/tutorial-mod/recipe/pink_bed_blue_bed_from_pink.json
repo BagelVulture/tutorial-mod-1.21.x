@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:pink",
+  "ingredient": {
+    "item": "minecraft:blue_bed"
+  },
+  "input_count": 1,
+  "pinkingtime": 40,
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_bed"
+  }
+}

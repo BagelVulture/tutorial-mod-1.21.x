@@ -1,19 +1,24 @@
 package net.bagelvulture.tutorialmod.datagen;
 
 import net.bagelvulture.tutorialmod.TutorialMod;
+import net.bagelvulture.tutorialmod.datagen.custom.PinkRecipeJsonBuilder;
 import net.bagelvulture.tutorialmod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 import static net.bagelvulture.tutorialmod.block.ModBlocks.*;
@@ -28,11 +33,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         List<ItemConvertible> BEVULTRIUM_SMELTABLES = List.of(RAW_BEVULTRIUM, BEVULTRIUM_ORE,
                 BEVULTRIUM_DEEPSLATE_ORE, BEVULTRIUM_END_ORE, BEVULTRIUM_NETHER_ORE);
+        List<ItemConvertible> WOOLS = List.of(Blocks.WHITE_WOOL, Blocks.ORANGE_WOOL, Blocks.MAGENTA_WOOL, Blocks.LIGHT_BLUE_WOOL, Blocks.YELLOW_WOOL, Blocks.LIME_WOOL, Blocks.GRAY_WOOL, Blocks.LIGHT_GRAY_WOOL, Blocks.CYAN_WOOL, Blocks.PURPLE_WOOL, Blocks.BLUE_WOOL, Blocks.BROWN_WOOL, Blocks.GREEN_WOOL, Blocks.RED_WOOL, Blocks.BLACK_WOOL);
+        List<ItemConvertible> CARPETS = List.of(Blocks.WHITE_CARPET, Blocks.ORANGE_CARPET, Blocks.MAGENTA_CARPET, Blocks.LIGHT_BLUE_CARPET, Blocks.YELLOW_CARPET, Blocks.LIME_CARPET, Blocks.GRAY_CARPET, Blocks.LIGHT_GRAY_CARPET, Blocks.CYAN_CARPET, Blocks.PURPLE_CARPET, Blocks.BLUE_CARPET, Blocks.BROWN_CARPET, Blocks.GREEN_CARPET, Blocks.RED_CARPET, Blocks.BLACK_CARPET);
+        List<ItemConvertible> BEDS = List.of(Blocks.WHITE_BED, Blocks.ORANGE_BED, Blocks.MAGENTA_BED, Blocks.LIGHT_BLUE_BED, Blocks.YELLOW_BED, Blocks.LIME_BED, Blocks.GRAY_BED, Blocks.LIGHT_GRAY_BED, Blocks.CYAN_BED, Blocks.PURPLE_BED, Blocks.BLUE_BED, Blocks.BROWN_BED, Blocks.GREEN_BED, Blocks.RED_BED, Blocks.BLACK_BED);
+        List<ItemConvertible> TERRACOTTAS = List.of(Blocks.WHITE_TERRACOTTA, Blocks.ORANGE_TERRACOTTA, Blocks.MAGENTA_TERRACOTTA, Blocks.LIGHT_BLUE_TERRACOTTA, Blocks.YELLOW_TERRACOTTA, Blocks.LIME_TERRACOTTA, Blocks.GRAY_TERRACOTTA, Blocks.LIGHT_GRAY_TERRACOTTA, Blocks.CYAN_TERRACOTTA, Blocks.PURPLE_TERRACOTTA, Blocks.BLUE_TERRACOTTA, Blocks.BROWN_TERRACOTTA, Blocks.GREEN_TERRACOTTA, Blocks.RED_TERRACOTTA, Blocks.BLACK_TERRACOTTA);
+        List<ItemConvertible> GLAZED_TERRACOTTAS = List.of(Blocks.WHITE_GLAZED_TERRACOTTA, Blocks.ORANGE_GLAZED_TERRACOTTA, Blocks.MAGENTA_GLAZED_TERRACOTTA, Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA, Blocks.YELLOW_GLAZED_TERRACOTTA, Blocks.LIME_GLAZED_TERRACOTTA, Blocks.GRAY_GLAZED_TERRACOTTA, Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA, Blocks.CYAN_GLAZED_TERRACOTTA, Blocks.PURPLE_GLAZED_TERRACOTTA, Blocks.BLUE_GLAZED_TERRACOTTA, Blocks.BROWN_GLAZED_TERRACOTTA, Blocks.GREEN_GLAZED_TERRACOTTA, Blocks.RED_GLAZED_TERRACOTTA, Blocks.BLACK_GLAZED_TERRACOTTA);
+        List<ItemConvertible> CONCRETES = List.of(Blocks.WHITE_CONCRETE, Blocks.ORANGE_CONCRETE, Blocks.MAGENTA_CONCRETE, Blocks.LIGHT_BLUE_CONCRETE, Blocks.YELLOW_CONCRETE, Blocks.LIME_CONCRETE, Blocks.GRAY_CONCRETE, Blocks.LIGHT_GRAY_CONCRETE, Blocks.CYAN_CONCRETE, Blocks.PURPLE_CONCRETE, Blocks.BLUE_CONCRETE, Blocks.BROWN_CONCRETE, Blocks.GREEN_CONCRETE, Blocks.RED_CONCRETE, Blocks.BLACK_CONCRETE);
+        List<ItemConvertible> STAINED_GLASS = List.of(Blocks.WHITE_STAINED_GLASS, Blocks.ORANGE_STAINED_GLASS, Blocks.MAGENTA_STAINED_GLASS, Blocks.LIGHT_BLUE_STAINED_GLASS, Blocks.YELLOW_STAINED_GLASS, Blocks.LIME_STAINED_GLASS, Blocks.GRAY_STAINED_GLASS, Blocks.LIGHT_GRAY_STAINED_GLASS, Blocks.CYAN_STAINED_GLASS, Blocks.PURPLE_STAINED_GLASS, Blocks.BLUE_STAINED_GLASS, Blocks.BROWN_STAINED_GLASS, Blocks.GREEN_STAINED_GLASS, Blocks.RED_STAINED_GLASS, Blocks.BLACK_STAINED_GLASS);
+        List<ItemConvertible> STAINED_GLASS_PANES = List.of(Blocks.WHITE_STAINED_GLASS_PANE, Blocks.ORANGE_STAINED_GLASS_PANE, Blocks.MAGENTA_STAINED_GLASS_PANE, Blocks.LIGHT_BLUE_STAINED_GLASS_PANE, Blocks.YELLOW_STAINED_GLASS_PANE, Blocks.LIME_STAINED_GLASS_PANE, Blocks.GRAY_STAINED_GLASS_PANE, Blocks.LIGHT_GRAY_STAINED_GLASS_PANE, Blocks.CYAN_STAINED_GLASS_PANE, Blocks.PURPLE_STAINED_GLASS_PANE, Blocks.BLUE_STAINED_GLASS_PANE, Blocks.BROWN_STAINED_GLASS_PANE, Blocks.GREEN_STAINED_GLASS_PANE, Blocks.RED_STAINED_GLASS_PANE, Blocks.BLACK_STAINED_GLASS_PANE);
+        List<ItemConvertible> SHULKER_BOXES = List.of(Blocks.WHITE_SHULKER_BOX, Blocks.ORANGE_SHULKER_BOX, Blocks.MAGENTA_SHULKER_BOX, Blocks.LIGHT_BLUE_SHULKER_BOX, Blocks.YELLOW_SHULKER_BOX, Blocks.LIME_SHULKER_BOX, Blocks.GRAY_SHULKER_BOX, Blocks.LIGHT_GRAY_SHULKER_BOX, Blocks.CYAN_SHULKER_BOX, Blocks.PURPLE_SHULKER_BOX, Blocks.BLUE_SHULKER_BOX, Blocks.BROWN_SHULKER_BOX, Blocks.GREEN_SHULKER_BOX, Blocks.RED_SHULKER_BOX, Blocks.BLACK_SHULKER_BOX);
+        List<ItemConvertible> CONCRETE_POWDERS = List.of(Blocks.WHITE_CONCRETE_POWDER, Blocks.ORANGE_CONCRETE_POWDER, Blocks.MAGENTA_CONCRETE_POWDER, Blocks.LIGHT_BLUE_CONCRETE_POWDER, Blocks.YELLOW_CONCRETE_POWDER, Blocks.LIME_CONCRETE_POWDER, Blocks.GRAY_CONCRETE_POWDER, Blocks.LIGHT_GRAY_CONCRETE_POWDER, Blocks.CYAN_CONCRETE_POWDER, Blocks.PURPLE_CONCRETE_POWDER, Blocks.BLUE_CONCRETE_POWDER, Blocks.BROWN_CONCRETE_POWDER, Blocks.GREEN_CONCRETE_POWDER, Blocks.RED_CONCRETE_POWDER, Blocks.BLACK_CONCRETE_POWDER);
+
+        record PinkRecipeData(ItemConvertible result, int pinkingTime) {}
 
         offerSmelting(exporter, BEVULTRIUM_SMELTABLES, RecipeCategory.MISC, BEVULTRIUM, 0.20f, 200, "BEVULTRIUM");
         offerBlasting(exporter, BEVULTRIUM_SMELTABLES, RecipeCategory.MISC, BEVULTRIUM, 0.20f, 100, "BEVULTRIUM");
-
-        //smoking recipes manually added to generated folder
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, BEVULTRIUM, RecipeCategory.MISC, BEVULTRIUM_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, RAW_BEVULTRIUM, RecipeCategory.MISC, RAW_BEVULTRIUM_BLOCK);
@@ -211,6 +226,40 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         chairRecipeBuilder(exporter, Items.CRIMSON_PLANKS, CRIMSON_CHAIR);
         chairRecipeBuilder(exporter, Items.WARPED_PLANKS, WARPED_CHAIR);
         chairRecipeBuilder(exporter, DISEASED_PLANKS, DISEASED_CHAIR);
+
+        PinkRecipeJsonBuilder.create(
+                        RecipeCategory.MISC,
+                        DISEASED_APPLE, 7,
+                        Ingredient.ofItems(Items.APPLE), 2,
+                        200
+                ).criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
+                .offerTo(exporter, Identifier.of("tutorialmod", "diseased_apple"));
+
+        for (Map.Entry<List<ItemConvertible>, PinkRecipeData> entry : Map.of(
+                WOOLS, new PinkRecipeData(Items.PINK_WOOL, 20),
+                CARPETS, new PinkRecipeData(Items.PINK_CARPET, 10),
+                BEDS, new PinkRecipeData(Items.PINK_BED, 40),
+                TERRACOTTAS, new PinkRecipeData(Blocks.PINK_TERRACOTTA, 100),
+                GLAZED_TERRACOTTAS, new PinkRecipeData(Blocks.PINK_GLAZED_TERRACOTTA, 200),
+                CONCRETES, new PinkRecipeData(Blocks.PINK_CONCRETE, 120),
+                STAINED_GLASS, new PinkRecipeData(Blocks.PINK_STAINED_GLASS, 80),
+                STAINED_GLASS_PANES, new PinkRecipeData(Blocks.PINK_STAINED_GLASS_PANE, 60),
+                SHULKER_BOXES, new PinkRecipeData(Blocks.PINK_SHULKER_BOX, 40),
+                CONCRETE_POWDERS, new PinkRecipeData(Blocks.PINK_CONCRETE_POWDER, 40)
+        ).entrySet()) {
+            List<ItemConvertible> sources = entry.getKey();
+            PinkRecipeData data = entry.getValue();
+
+            for (ItemConvertible source : sources) {
+                PinkRecipeJsonBuilder.create(
+                                RecipeCategory.MISC,
+                                data.result(), 1,
+                                Ingredient.ofItems(source), 1,
+                                data.pinkingTime()
+                        ).criterion(hasItem(source), conditionsFromItem(source))
+                        .offerTo(exporter, Identifier.of("tutorialmod", Registries.ITEM.getId(data.result().asItem()).getPath() + "_" + Registries.ITEM.getId(source.asItem()).getPath()));
+            }
+        }
     }
     public static void chairRecipeBuilder(RecipeExporter exporter, ItemConvertible input, ItemConvertible output) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output, 2)

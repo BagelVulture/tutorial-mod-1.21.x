@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:pink",
+  "ingredient": {
+    "item": "minecraft:apple"
+  },
+  "input_count": 2,
+  "pinkingtime": 200,
+  "result": {
+    "count": 7,
+    "id": "tutorialmod:diseased_apple"
+  }
+}

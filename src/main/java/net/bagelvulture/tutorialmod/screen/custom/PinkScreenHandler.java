@@ -29,7 +29,12 @@ public class PinkScreenHandler extends ScreenHandler {
         this.propertyDelegate = arrayPropertyDelegate;
 
         this.addSlot(new Slot(inventory, 0, 56, 34));
-        this.addSlot(new Slot(inventory, 1, 104, 34));
+        this.addSlot(new Slot(inventory, 1, 104, 34) {
+            @Override
+            public boolean canInsert(ItemStack stack) {
+                return false;
+            }
+        });
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
@@ -50,27 +55,24 @@ public class PinkScreenHandler extends ScreenHandler {
     }
 
     @Override
-    public ItemStack quickMove(PlayerEntity player, int invSlot) {
-        ItemStack newStack = ItemStack.EMPTY;
-        Slot slot = this.slots.get(invSlot);
-        if (slot != null && slot.hasStack()) {
-            ItemStack originalStack = slot.getStack();
-            newStack = originalStack.copy();
-            if (invSlot < this.inventory.size()) {
-                if (!this.insertItem(originalStack, this.inventory.size(), this.slots.size(), true)) {
-                    return ItemStack.EMPTY;
-                }
-            } else if (!this.insertItem(originalStack, 0, this.inventory.size(), false)) {
+    public ItemStack quickMove(PlayerEntity player, int invSlot) {ItemStack newStack = ItemStack.EMPTY;Slot slot = this.slots.get(invSlot);if (slot != null && slot.hasStack()) {
+        ItemStack originalStack = slot.getStack();
+        newStack = originalStack.copy();
+        if (invSlot < this.inventory.size()) {
+            if (!this.insertItem(originalStack, this.inventory.size(), this.slots.size(), true)) {
                 return ItemStack.EMPTY;
             }
-
-            if (originalStack.isEmpty()) {
-                slot.setStack(ItemStack.EMPTY);
-            } else {
-                slot.markDirty();
-            }
+        } else if (!this.insertItem(originalStack, 0, this.inventory.size(), false)) {
+            return ItemStack.EMPTY;
         }
-        return newStack;
+
+        if (originalStack.isEmpty()) {
+            slot.setStack(ItemStack.EMPTY);
+        } else {
+            slot.markDirty();
+        }
+    }
+    return newStack;
     }
 
     @Override
