@@ -1,4 +1,4 @@
-// 1.21	2025-09-03T16:41:48.579717	tutorial mod/Block Loot Tables
+// 1.21	2025-09-07T12:12:55.652553	tutorial mod/Block Loot Tables
 4c6771a6f0c40ff4d959a023bcceeb80368d71b6 data/tutorialmod/loot_table/blocks/diseased_trapdoor.json
 03f35a1772450c172313674bd90ea9d49b09a3e7 data/tutorialmod/loot_table/blocks/diseased_pressure_plate.json
 2f27585e76fae1d09c78d2be262d3e5f632d6be2 data/tutorialmod/loot_table/blocks/diseased_chair.json
@@ -9,8 +9,8 @@ d03da363750b60ab89d89522d036b684ee0a1019 data/tutorialmod/loot_table/blocks/dise
 ee9a875a804a4880b9994e5534fa585ed8484ccd data/tutorialmod/loot_table/blocks/spruce_chair.json
 661f4c3c3e87a7f1b1c117a65c953014c922a4ab data/tutorialmod/loot_table/blocks/crude_alchemy_transformer.json
 53fb0a55badb312ab76001256cc24eba72ab3332 data/tutorialmod/loot_table/blocks/bamboo_chair.json
-802f547f94e2bcd0df59a625d5ffa576cc25383d data/tutorialmod/loot_table/blocks/bevultrium_button.json
 c883becd6737ff2c6d4afebe49004d283cda99d5 data/tutorialmod/loot_table/blocks/bevultrium_block.json
+802f547f94e2bcd0df59a625d5ffa576cc25383d data/tutorialmod/loot_table/blocks/bevultrium_button.json
 659de4c7aa0ebd9516fee69327ca6134a0d41139 data/tutorialmod/loot_table/blocks/bevultrium_lamp.json
 aa692e36daa27ea25e729451b4a2b67704799b60 data/tutorialmod/loot_table/blocks/bevultrium_ore.json
 40b7d95ca378b41858aff1f94c255fdedf9b4119 data/tutorialmod/loot_table/blocks/bevultrium_stairs.json
@@ -36,6 +36,7 @@ e3c2f2354fc1a28d1ba6e61c2e9b315a98929981 data/tutorialmod/loot_table/blocks/dise
 6d91d474fafa758c58c6015878ab275ffd364db9 data/tutorialmod/loot_table/blocks/acacia_chair.json
 6920f02d5250228db74d3eef386b7a8a08a2fd08 data/tutorialmod/loot_table/blocks/diseased_fence.json
 588c9342d93bca327e2df54ac139eb8124bdffb4 data/tutorialmod/loot_table/blocks/bevultrium_wall.json
+af7563287d95b320373860e2d5ba27c2d74b2edf data/tutorialmod/loot_table/blocks/altar.json
 07c38263fbc77ce7679ab15a28e5b6f7a28df0b2 data/tutorialmod/loot_table/blocks/bevultrium_fence_gate.json
 fad741a0f51d0a6b92200ffa816fd67818255798 data/tutorialmod/loot_table/blocks/mangrove_chair.json
 81fb3105ea451e3c0276a5a07620dd55bf807802 data/tutorialmod/loot_table/blocks/bevultrium_trapdoor.json

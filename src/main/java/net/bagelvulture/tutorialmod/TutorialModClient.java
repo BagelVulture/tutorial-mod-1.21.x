@@ -7,6 +7,7 @@ import net.bagelvulture.tutorialmod.particle.MagicParticle;
 import net.bagelvulture.tutorialmod.particle.ModParticles;
 import net.bagelvulture.tutorialmod.screen.ModScreenHandlers;
 import net.bagelvulture.tutorialmod.screen.custom.AltarScreen;
+import net.bagelvulture.tutorialmod.screen.custom.PinkScreen;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
@@ -48,5 +49,7 @@ public class TutorialModClient implements ClientModInitializer {
 
         BlockEntityRendererFactories.register(ModBlockEntities.ALTAR_BE, AltarBlockEntityRenderer::new);
         HandledScreens.register(ModScreenHandlers.ALTAR_SCREEN_HANDLER, AltarScreen::new);
+
+        HandledScreens.register(ModScreenHandlers.PINK_SCREEN_HANDLER, PinkScreen::new);
     }
 }

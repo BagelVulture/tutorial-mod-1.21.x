@@ -18,6 +18,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModBlocks {
+    public static final List<Block> Diseased_Can_Survive_On = new ArrayList<>(List.of(
+            Blocks.STONE,
+            Blocks.GRASS_BLOCK,
+            Blocks.DIRT,
+            Blocks.DIRT_PATH,
+            Blocks.COARSE_DIRT,
+            Blocks.ROOTED_DIRT,
+            Blocks.FARMLAND,
+            Blocks.MYCELIUM,
+            Blocks.CRIMSON_NYLIUM,
+            Blocks.WARPED_NYLIUM,
+            Blocks.STONE));
+
     public static final Block BEVULTRIUM_BLOCK = registerBlock("bevultrium_block", new
             Block(AbstractBlock.Settings.create().strength(4f).requiresTool()));
     public static final Block RAW_BEVULTRIUM_BLOCK = registerBlock("raw_bevultrium_block", new
@@ -101,38 +114,27 @@ public class ModBlocks {
     public static final Block DISEASED_LEAVES = registerBlock("diseased_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
 
-    public static final Block OAK_CHAIR = registerBlock("oak_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-    public static final Block SPRUCE_CHAIR = registerBlock("spruce_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-    public static final Block BIRCH_CHAIR = registerBlock("birch_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-    public static final Block JUNGLE_CHAIR = registerBlock("jungle_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-    public static final Block ACACIA_CHAIR = registerBlock("acacia_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-    public static final Block DARK_OAK_CHAIR = registerBlock("dark_oak_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-    public static final Block MANGROVE_CHAIR = registerBlock("mangrove_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-    public static final Block CHERRY_CHAIR = registerBlock("cherry_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-    public static final Block BAMBOO_CHAIR = registerBlock("bamboo_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-    public static final Block WARPED_CHAIR = registerBlock("warped_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-    public static final Block CRIMSON_CHAIR = registerBlock("crimson_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-    public static final Block DISEASED_CHAIR = registerBlock("diseased_chair", new ChairBlock(AbstractBlock.Settings.create().nonOpaque().strength(2f)));
-
-
-    public static final List<Block> Diseased_Can_Survive_On = new ArrayList<>(List.of(
-            Blocks.STONE,
-            Blocks.GRASS_BLOCK,
-            Blocks.DIRT,
-            Blocks.DIRT_PATH,
-            Blocks.COARSE_DIRT,
-            Blocks.ROOTED_DIRT,
-            Blocks.FARMLAND,
-            Blocks.MYCELIUM,
-            Blocks.CRIMSON_NYLIUM,
-            Blocks.WARPED_NYLIUM,
-            Blocks.STONE));
+    public static final Block OAK_CHAIR = registerBlock("oak_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block SPRUCE_CHAIR = registerBlock("spruce_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block BIRCH_CHAIR = registerBlock("birch_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block JUNGLE_CHAIR = registerBlock("jungle_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block ACACIA_CHAIR = registerBlock("acacia_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block DARK_OAK_CHAIR = registerBlock("dark_oak_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block MANGROVE_CHAIR = registerBlock("mangrove_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block CHERRY_CHAIR = registerBlock("cherry_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block BAMBOO_CHAIR = registerBlock("bamboo_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block WARPED_CHAIR = registerBlock("warped_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block CRIMSON_CHAIR = registerBlock("crimson_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
+    public static final Block DISEASED_CHAIR = registerBlock("diseased_chair", new ChairBlock(AbstractBlock.Settings.create().strength(2f)));
 
     public static final Block DISEASED_SAPLING = registerBlock("diseased_sapling",
             new ModSaplingBlock(ModSaplingGenerators.DISEASED, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Diseased_Can_Survive_On));
 
     public static final Block ALTAR = registerBlock("altar",
             new AltarBlock(AbstractBlock.Settings.create().nonOpaque()));
+
+    public static final Block PINK = registerBlock("pink",
+            new PinkBlock(AbstractBlock.Settings.create()));
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(TutorialMod.MOD_ID, name), block);

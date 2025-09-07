@@ -1,5 +1,6 @@
 package net.bagelvulture.tutorialmod.screen;
 
+import net.bagelvulture.tutorialmod.screen.custom.PinkScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.bagelvulture.tutorialmod.TutorialMod;
 import net.bagelvulture.tutorialmod.screen.custom.AltarScreenHandler;
@@ -13,6 +14,10 @@ public class ModScreenHandlers {
     public static final ScreenHandlerType<AltarScreenHandler> ALTAR_SCREEN_HANDLER =
             Registry.register(Registries.SCREEN_HANDLER, Identifier.of(TutorialMod.MOD_ID, "altar_screen_handler"),
                     new ExtendedScreenHandlerType<>(AltarScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<PinkScreenHandler> PINK_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(TutorialMod.MOD_ID, "pink_screen_handler"),
+                    new ExtendedScreenHandlerType<>(PinkScreenHandler::new, BlockPos.PACKET_CODEC));
 
     public static void registerScreenHandlers() {
         TutorialMod.LOGGER.info("Registering " + TutorialMod.MOD_ID + "'s Screen Handlers");

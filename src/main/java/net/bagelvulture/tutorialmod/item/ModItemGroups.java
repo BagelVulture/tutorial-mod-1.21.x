@@ -110,6 +110,7 @@ public class ModItemGroups {
                 entries.add(ModBlocks.DISEASED_CHAIR);
 
                 entries.add(ModBlocks.ALTAR);
+                entries.add(ModBlocks.PINK);
             }).build());
 
 
