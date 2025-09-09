@@ -1,4 +1,4 @@
-// 1.21	2025-09-07T16:25:19.151142	tutorial mod/Model Definitions
+// 1.21	2025-09-08T13:59:17.965213	tutorial mod/Model Definitions
 8637d702b5e7c8302f80244b899e977ab83db8e0 assets/tutorialmod/models/item/bevultrium_leggings_copper_trim.json
 51ad0a40972b161ff03eea6a4a46321dd75a26fe assets/tutorialmod/models/block/diseased_leaves.json
 57c6e6048f751af9eae8bc0e10a570dcba5075fa assets/tutorialmod/models/item/diseased_button.json
@@ -59,8 +59,8 @@ fed7efd117d92f9c3434ad4d632d3ce88a001c40 assets/tutorialmod/models/item/bevultri
 c0aa6c554200406d9c35af044810be94ab71bcb6 assets/tutorialmod/blockstates/diseased_pressure_plate.json
 9eb2dd7b4146e81150a8e2c3d4bcf71a0f6797f8 assets/tutorialmod/blockstates/bevultrium_block.json
 bf4035f645ac1d4225b878c159359d8554d6731b assets/tutorialmod/models/block/diseased_fence_post.json
-4dc053567539548c33cceab1784b515a32cb2c65 assets/tutorialmod/models/item/bevultrium_sword.json
 40b7f8bb096b4e766f677df71df7bd2281cc35d9 assets/tutorialmod/models/item/bevultrium_chestplate_redstone_trim.json
+4dc053567539548c33cceab1784b515a32cb2c65 assets/tutorialmod/models/item/bevultrium_sword.json
 73b5d777def30a41d469e03e0ed2512b1bb14153 assets/tutorialmod/models/block/bevultrium_door_top_right_open.json
 74557921697703ecbd046575f0670c33659da2db assets/tutorialmod/models/block/bevultrium_stairs_inner.json
 0db003f95a2d1383a29e4c181c95c4ebea1cc811 assets/tutorialmod/models/block/diseased_trapdoor_top.json

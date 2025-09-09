@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:pink",
+  "ingredient": {
+    "tag": "tutorialmod:dyes"
+  },
+  "input_count": 1,
+  "pinkingtime": 5,
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_dye"
+  }
+}

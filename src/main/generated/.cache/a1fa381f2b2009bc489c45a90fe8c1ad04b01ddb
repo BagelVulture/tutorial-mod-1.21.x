@@ -1,12 +1,25 @@
-// 1.21	2025-09-07T16:25:19.150046	tutorial mod/Tags for minecraft:item
-24130ad854382c316a2003bfc0343ae32d62e72c data/minecraft/tags/item/hoes.json
-1793abc2b25ceec340ef8cac2cfb2a926ea7df36 data/minecraft/tags/item/swords.json
-0a693cb88b3243935c57a74ff2390edb064bdfdd data/minecraft/tags/item/shovels.json
-c0dd17635bfa09f8e1d10b6329c447381dfccea9 data/minecraft/tags/item/planks.json
-f94618043fe49fa3943d17cb8bef07d325a8427f data/minecraft/tags/item/logs_that_burn.json
-a3f85db4eab4146404e3573d550c1b0d524d838f data/minecraft/tags/item/axes.json
+// 1.21	2025-09-08T13:59:17.964906	tutorial mod/Tags for minecraft:item
+2eeb8a996414ee0f54419b500ecae8ac54fe63e0 data/tutorialmod/tags/item/dyes.json
+e88a998fd65ce56978d6395d2cf9d8f0f9050362 data/tutorialmod/tags/item/concretes.json
+86c2951607f7f0bb1faa8a072c6d08ac57e684b2 data/tutorialmod/tags/item/terracottas.json
 024b30b2ad0aa1f8e3e5beb7c6acbfb23ead50c9 data/minecraft/tags/item/pickaxes.json
+449de77017dbe1cf6f4b3979158efab42661c95c data/tutorialmod/tags/item/stained_glass_panes.json
+9a9faf896576c12b6599aa940c963a94aee29eeb data/tutorialmod/tags/item/concrete_powders.json
+967f71dd824d58048cec8a5ca14e3ee4fa89f171 data/tutorialmod/tags/item/wools.json
+6f7ddf087dd15514e8f39b4230d5196f9161f247 data/tutorialmod/tags/item/candles.json
+a3f85db4eab4146404e3573d550c1b0d524d838f data/minecraft/tags/item/axes.json
 f7d2670f6ff8e2c44d5fc97892cbfbaaeefb4eff data/minecraft/tags/item/trim_materials.json
 f94618043fe49fa3943d17cb8bef07d325a8427f data/tutorialmod/tags/item/diseased_logs.json
 283fe76cbdad37e40b03e8feb5ce91333227ec8d data/minecraft/tags/item/trimmable_armor.json
 a172b0f1152dd9864ba660ce932f3399b1b88a77 data/minecraft/tags/item/trim_templates.json
+163ccb7619859584925a77a5060e84800a5944c3 data/tutorialmod/tags/item/glazed_terracottas.json
+1793abc2b25ceec340ef8cac2cfb2a926ea7df36 data/minecraft/tags/item/swords.json
+0a693cb88b3243935c57a74ff2390edb064bdfdd data/minecraft/tags/item/shovels.json
+cd6b09e9adfc38bf7976c563a1cb5a6f5b0dc432 data/tutorialmod/tags/item/carpets.json
+f94618043fe49fa3943d17cb8bef07d325a8427f data/minecraft/tags/item/logs_that_burn.json
+99609dc36c47c80b9035e6d8f1613c6094715a01 data/tutorialmod/tags/item/beds.json
+24130ad854382c316a2003bfc0343ae32d62e72c data/minecraft/tags/item/hoes.json
+c0dd17635bfa09f8e1d10b6329c447381dfccea9 data/minecraft/tags/item/planks.json
+fa81315644477a3b8eca98df9b25e3f5f81b8b2b data/tutorialmod/tags/item/shulker_boxes.json
+1d34798a5c02d0c70f3d00f40f658eb5b5318533 data/tutorialmod/tags/item/banners.json
+e5a2d162dd8be945041a2f19d90291590a185def data/tutorialmod/tags/item/stained_glass.json

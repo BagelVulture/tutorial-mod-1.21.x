@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:pink",
+  "ingredient": {
+    "tag": "tutorialmod:banners"
+  },
+  "input_count": 1,
+  "pinkingtime": 20,
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_banner"
+  }
+}

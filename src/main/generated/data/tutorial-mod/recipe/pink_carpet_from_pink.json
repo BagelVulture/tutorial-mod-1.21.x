@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:pink",
+  "ingredient": {
+    "tag": "tutorialmod:carpets"
+  },
+  "input_count": 1,
+  "pinkingtime": 10,
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_carpet"
+  }
+}

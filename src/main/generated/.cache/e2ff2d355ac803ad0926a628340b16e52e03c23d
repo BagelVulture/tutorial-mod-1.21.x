@@ -1,4 +1,4 @@
-// 1.21	2025-09-07T16:25:19.144353	tutorial mod/Block Loot Tables
+// 1.21	2025-09-08T13:59:17.963756	tutorial mod/Block Loot Tables
 4c6771a6f0c40ff4d959a023bcceeb80368d71b6 data/tutorialmod/loot_table/blocks/diseased_trapdoor.json
 03f35a1772450c172313674bd90ea9d49b09a3e7 data/tutorialmod/loot_table/blocks/diseased_pressure_plate.json
 2f27585e76fae1d09c78d2be262d3e5f632d6be2 data/tutorialmod/loot_table/blocks/diseased_chair.json
@@ -29,8 +29,8 @@ f54f5d2afc93274bb7466bf1a31e34180b1505fb data/tutorialmod/loot_table/blocks/bevu
 1af9d5541cc5e072657e39cee63998e48694eeec data/tutorialmod/loot_table/blocks/stripped_diseased_wood.json
 b10366176d104a7b468ec11ea21765e941eadbb4 data/tutorialmod/loot_table/blocks/cherry_chair.json
 a9e1ab5bad089edad982c746763ccd449dd1efca data/tutorialmod/loot_table/blocks/diseased_leaves.json
-7302ad85e676dc6ad02d0ab3f2dcd97e5dc546a1 data/tutorialmod/loot_table/blocks/diseased_stairs.json
 fda0bc00d19d1c33f3bb14b35c0777ba5c85503f data/tutorialmod/loot_table/blocks/crimson_chair.json
+7302ad85e676dc6ad02d0ab3f2dcd97e5dc546a1 data/tutorialmod/loot_table/blocks/diseased_stairs.json
 e3c2f2354fc1a28d1ba6e61c2e9b315a98929981 data/tutorialmod/loot_table/blocks/diseased_sapling.json
 6f2d386c3f64570ff25feb96ee3fbd1cc1d771ba data/tutorialmod/loot_table/blocks/bevultrium_fence.json
 6d91d474fafa758c58c6015878ab275ffd364db9 data/tutorialmod/loot_table/blocks/acacia_chair.json

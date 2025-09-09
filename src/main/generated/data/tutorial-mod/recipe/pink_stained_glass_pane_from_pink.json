@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:pink",
+  "ingredient": {
+    "tag": "tutorialmod:stained_glass_panes"
+  },
+  "input_count": 1,
+  "pinkingtime": 60,
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_stained_glass_pane"
+  }
+}

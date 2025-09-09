@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:pink",
+  "ingredient": {
+    "tag": "tutorialmod:candles"
+  },
+  "input_count": 1,
+  "pinkingtime": 15,
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_candle"
+  }
+}
