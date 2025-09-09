@@ -26,6 +26,9 @@
 		],
 		"emi": [
 			"net.bagelvulture.tutorialmod.compat.emi.TutorialModEmiPlugin"
+		],
+		"rei_client": [
+			"net.bagelvulture.tutorialmod.compat.rei.TutorialModReiClient"
 		]
 	},
 	"mixins": [
@@ -38,6 +41,5 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
 	}
 }
