@@ -13,7 +13,7 @@ public class PinkScreen extends HandledScreen<PinkScreenHandler> {
     private static final Identifier GUI_TEXTURE =
             Identifier.of(TutorialMod.MOD_ID, "textures/gui/pink/pink_gui.png");
     private static final Identifier ARROW_TEXTURE =
-            Identifier.of(TutorialMod.MOD_ID, "textures/gui/pink/pink_arrow_progress.png");
+            Identifier.of(TutorialMod.MOD_ID, "textures/gui/pink/pink_arrow.png");
 
     public PinkScreen(PinkScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);

@@ -100,8 +100,22 @@
   "block.tutorialmod.altar": "Ancient Altar",
   "block.tutorialmod.pink": "Pink",
 
-
+  "tag.tutorialmod.incorrect_for_bevultrium_tool": "Incorrect For Bevultrium Tool",
   "tag.tutorialmod.diseased_logs": "Diseased Logs",
+
+  "tag.tutorialmod.banners": "Banners",
+  "tag.tutorialmod.beds": "Beds",
+  "tag.tutorialmod.candles": "Candles",
+  "tag.tutorialmod.carpets": "Carpets",
+  "tag.tutorialmod.concrete_powders": "Concrete Powders",
+  "tag.tutorialmod.concretes": "Concretes",
+  "tag.tutorialmod.dyes": "Dyes",
+  "tag.tutorialmod.glazed_terracottas": "Glazed Terracottas",
+  "tag.tutorialmod.shulker_boxes": "Shulker Boxes",
+  "tag.tutorialmod.stained_glass": "Stained Glass",
+  "tag.tutorialmod.stained_glass_panes": "Stained Glass Panes",
+  "tag.tutorialmod.terracottas": "Terracottas",
+  "tag.tutorialmod.wools": "Wools",
 
 
   "effect.tutorialmod.imaplant": "I'm A Plant",
@@ -135,5 +149,7 @@
   "entity.tutorialmod.spear": "Spear",
   "entity.tutorialmod.boss_bar": "Boss Bar",
 
-  "entity.minecraft.villager.bv_fan": "BagelVulture Fan"
+  "entity.minecraft.villager.bv_fan": "BagelVulture Fan",
+
+  "emi.category.tutorialmod.pink_crafting": "Pink"
 }

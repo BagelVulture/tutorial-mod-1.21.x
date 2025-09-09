@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"net.bagelvulture.tutorialmod.TutorialModClient"
+		],
+		"emi": [
+			"net.bagelvulture.tutorialmod.compat.emi.TutorialModEmiPlugin"
 		]
 	},
 	"mixins": [
