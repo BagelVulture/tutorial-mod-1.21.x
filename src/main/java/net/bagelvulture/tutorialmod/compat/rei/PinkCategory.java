@@ -56,7 +56,7 @@ public class PinkCategory implements DisplayCategory<PinkDisplay> {
         }));
 
         widgets.add(Widgets.createLabel(new Point(startPoint.x + 36, startPoint.y + 32),
-                Text.of(display.getPinkingTime() / 10 + " Seconds")));
+                Text.of(display.getPinkingTime() / 20 + " Seconds")));
 
         widgets.add(Widgets.createSlot(new Point(startPoint.x + 14, startPoint.y + 14))
                 .entries(display.getInputEntries().get(0)).markInput().disableBackground());

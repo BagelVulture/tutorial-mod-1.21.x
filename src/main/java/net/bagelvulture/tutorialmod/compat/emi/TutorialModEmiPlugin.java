@@ -71,7 +71,7 @@ public class TutorialModEmiPlugin implements EmiPlugin {
 
         @Override
         public void addWidgets(WidgetHolder widgets) {
-            widgets.addText(Text.of(recipe.pinkingTime() / 10 + " Seconds"), 2, 28, 0x5a1551, false);
+            widgets.addText(Text.of(recipe.pinkingTime() / 20 + " Seconds"), 2, 28, 0x5a1551, false);
 
             widgets.addTexture(PINK_BG, -4, -4);
             widgets.addAnimatedTexture(PINK_ARROW, 30, 11, recipe.pinkingTime() * 100, true, false, false);
