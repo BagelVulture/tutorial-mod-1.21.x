@@ -1,6 +1,0 @@
-{
-  "parent": "tutorialmod:item/other_bow",
-  "textures": {
-    "layer0": "tutorialmod:item/other_bow_pulling_0"
-  }
-}

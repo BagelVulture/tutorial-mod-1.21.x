@@ -1,4 +1,4 @@
-// 1.21	2025-09-10T14:11:21.98209	tutorial mod/Model Definitions
+// 1.21	2025-09-10T14:18:33.484867	tutorial mod/Model Definitions
 8637d702b5e7c8302f80244b899e977ab83db8e0 assets/tutorialmod/models/item/bevultrium_leggings_copper_trim.json
 51ad0a40972b161ff03eea6a4a46321dd75a26fe assets/tutorialmod/models/block/diseased_leaves.json
 57c6e6048f751af9eae8bc0e10a570dcba5075fa assets/tutorialmod/models/item/diseased_button.json
@@ -52,8 +52,8 @@ d472279279d04bcc236a3978785c6c44b5285a37 assets/tutorialmod/models/block/disease
 b8d518fa964183e095d604d42cad050325557e0e assets/tutorialmod/models/block/stripped_diseased_wood.json
 c38f7850c9cff5967fe074f33ead5d1cedaf69ee assets/tutorialmod/models/item/bevultrium_helmet_netherite_trim.json
 2bcc1fde21ffa16074d392bd5f5e7fdb1780c6aa assets/tutorialmod/models/item/diseased_fence_gate.json
-f00a3f77d8a80e16924a848a2551ad91033ff45c assets/tutorialmod/models/item/bevultrium_pickaxe.json
 70d0281173e49dbf926ffd475efa2b1921222a17 assets/tutorialmod/models/item/pink.json
+f00a3f77d8a80e16924a848a2551ad91033ff45c assets/tutorialmod/models/item/bevultrium_pickaxe.json
 cddaedbee0ae727db550e408b331302f3300d672 assets/tutorialmod/blockstates/diseased_fence_gate.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/tutorialmod/models/item/boss_bar_spawn_egg.json
 97ed683cf7618c8ab925bccdc79041c0fdff7a9a assets/tutorialmod/models/item/bevultrium_helmet_quartz_trim.json

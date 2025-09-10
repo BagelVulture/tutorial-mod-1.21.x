@@ -1,4 +1,4 @@
-// 1.21	2025-09-10T14:11:21.981148	tutorial mod/Tags for minecraft:item
+// 1.21	2025-09-10T14:18:33.484274	tutorial mod/Tags for minecraft:item
 2eeb8a996414ee0f54419b500ecae8ac54fe63e0 data/tutorialmod/tags/item/dyes.json
 e88a998fd65ce56978d6395d2cf9d8f0f9050362 data/tutorialmod/tags/item/concretes.json
 86c2951607f7f0bb1faa8a072c6d08ac57e684b2 data/tutorialmod/tags/item/terracottas.json
@@ -13,8 +13,8 @@ f94618043fe49fa3943d17cb8bef07d325a8427f data/tutorialmod/tags/item/diseased_log
 283fe76cbdad37e40b03e8feb5ce91333227ec8d data/minecraft/tags/item/trimmable_armor.json
 a172b0f1152dd9864ba660ce932f3399b1b88a77 data/minecraft/tags/item/trim_templates.json
 163ccb7619859584925a77a5060e84800a5944c3 data/tutorialmod/tags/item/glazed_terracottas.json
-1793abc2b25ceec340ef8cac2cfb2a926ea7df36 data/minecraft/tags/item/swords.json
 0a693cb88b3243935c57a74ff2390edb064bdfdd data/minecraft/tags/item/shovels.json
+1793abc2b25ceec340ef8cac2cfb2a926ea7df36 data/minecraft/tags/item/swords.json
 cd6b09e9adfc38bf7976c563a1cb5a6f5b0dc432 data/tutorialmod/tags/item/carpets.json
 f94618043fe49fa3943d17cb8bef07d325a8427f data/minecraft/tags/item/logs_that_burn.json
 99609dc36c47c80b9035e6d8f1613c6094715a01 data/tutorialmod/tags/item/beds.json
