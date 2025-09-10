@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "tutorial-mod",
+	"id": "tutorialmod",
 	"version": "${version}",
 	"name": "tutorial mod",
 	"description": "mod for Bagelvulture to figure out what the flying f*** is going on",

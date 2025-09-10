@@ -1,4 +1,4 @@
-// 1.21	2025-09-08T13:59:17.963756	tutorial mod/Block Loot Tables
+// 1.21	2025-09-10T14:11:21.979273	tutorial mod/Block Loot Tables
 4c6771a6f0c40ff4d959a023bcceeb80368d71b6 data/tutorialmod/loot_table/blocks/diseased_trapdoor.json
 03f35a1772450c172313674bd90ea9d49b09a3e7 data/tutorialmod/loot_table/blocks/diseased_pressure_plate.json
 2f27585e76fae1d09c78d2be262d3e5f632d6be2 data/tutorialmod/loot_table/blocks/diseased_chair.json
@@ -29,8 +29,8 @@ f54f5d2afc93274bb7466bf1a31e34180b1505fb data/tutorialmod/loot_table/blocks/bevu
 1af9d5541cc5e072657e39cee63998e48694eeec data/tutorialmod/loot_table/blocks/stripped_diseased_wood.json
 b10366176d104a7b468ec11ea21765e941eadbb4 data/tutorialmod/loot_table/blocks/cherry_chair.json
 a9e1ab5bad089edad982c746763ccd449dd1efca data/tutorialmod/loot_table/blocks/diseased_leaves.json
-fda0bc00d19d1c33f3bb14b35c0777ba5c85503f data/tutorialmod/loot_table/blocks/crimson_chair.json
 7302ad85e676dc6ad02d0ab3f2dcd97e5dc546a1 data/tutorialmod/loot_table/blocks/diseased_stairs.json
+fda0bc00d19d1c33f3bb14b35c0777ba5c85503f data/tutorialmod/loot_table/blocks/crimson_chair.json
 e3c2f2354fc1a28d1ba6e61c2e9b315a98929981 data/tutorialmod/loot_table/blocks/diseased_sapling.json
 6f2d386c3f64570ff25feb96ee3fbd1cc1d771ba data/tutorialmod/loot_table/blocks/bevultrium_fence.json
 6d91d474fafa758c58c6015878ab275ffd364db9 data/tutorialmod/loot_table/blocks/acacia_chair.json
@@ -41,7 +41,7 @@ af7563287d95b320373860e2d5ba27c2d74b2edf data/tutorialmod/loot_table/blocks/alta
 fad741a0f51d0a6b92200ffa816fd67818255798 data/tutorialmod/loot_table/blocks/mangrove_chair.json
 81fb3105ea451e3c0276a5a07620dd55bf807802 data/tutorialmod/loot_table/blocks/bevultrium_trapdoor.json
 b6a844a6115ade4a8b2595795986defd67e29670 data/tutorialmod/loot_table/blocks/diseased_log.json
-2418bf6b061a5e1c274fd1d5e4398d6f3598954f data/tutorialmod/loot_table/blocks/diseased_fence_gate.json
 864860b037bd4649f30cb95ecc86530be064c828 data/tutorialmod/loot_table/blocks/bevultrium_end_ore.json
+2418bf6b061a5e1c274fd1d5e4398d6f3598954f data/tutorialmod/loot_table/blocks/diseased_fence_gate.json
 cfb2ea7d603c165fba6c94ce0881bf9fc11749eb data/tutorialmod/loot_table/blocks/stripped_diseased_log.json
 97aef99e5b197928469ad8adfd281ca00e2877a8 data/tutorialmod/loot_table/blocks/bright_berry_bush.json

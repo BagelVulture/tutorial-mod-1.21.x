@@ -1,0 +1,8 @@
+{
+  "asset_id": "tutorialmod:bevulture",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.tutorialmod.bevulture"
+  },
+  "template_item": "tutorialmod:bevulture_armor_trim_smithing_template"
+}

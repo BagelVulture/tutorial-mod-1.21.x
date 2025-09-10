@@ -1,0 +1,9 @@
+{
+  "asset_name": "bevultrium",
+  "description": {
+    "color": "#B03FE0",
+    "translate": "trim_material.tutorialmod.bevultrium"
+  },
+  "ingredient": "tutorialmod:bevultrium",
+  "item_model_index": 0.6
+}
