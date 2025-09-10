@@ -11,6 +11,7 @@ import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.collection.DefaultedList;
 
 public record PinkRecipe(
         Ingredient inputItem,
@@ -18,6 +19,13 @@ public record PinkRecipe(
         ItemStack output,
         int pinkingTime
 ) implements Recipe<PinkRecipeInput> {
+
+    @Override
+    public DefaultedList<Ingredient> getIngredients() {
+        DefaultedList<Ingredient> ingredients = DefaultedList.of();
+        ingredients.add(inputItem);
+        return ingredients;
+    }
 
     @Override
     public boolean matches(PinkRecipeInput input, net.minecraft.world.World world) {

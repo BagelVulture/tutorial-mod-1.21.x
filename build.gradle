@@ -18,6 +18,14 @@ repositories {
 	maven {
 		url = "https://maven.shedaniel.me"
 	}
+	maven {
+		name = "Jared's maven"
+		url = "https://maven.blamejared.com/"
+	}
+	maven {
+		name = "ModMaven"
+		url = "https://modmaven.dev"
+	}
 }
 
 fabricApi {
@@ -36,10 +44,13 @@ dependencies {
 	// EMI
 	modCompileOnly "dev.emi:emi-fabric:1.1.20+1.21.1:api"
 
-	//REI
+	// REI
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:16.0.799"
 	modApi "dev.architectury:architectury-fabric:13.0.8"
 	modApi "me.shedaniel.cloth:cloth-config-fabric:15.0.140"
+
+	// JEI
+	modCompileOnlyApi("mezz.jei:jei-${mc_version}-fabric-api:${jei_version}")
 }
 
 processResources {

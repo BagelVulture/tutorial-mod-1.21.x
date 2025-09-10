@@ -11,8 +11,8 @@
 		"homepage": "https://www.youtube.com/@bagelvulture",
 		"sources": "https://github.com/BagelVulture/tutorial-mod-1.21.x"
 	},
-	"license": "MIT",
-	"icon": "assets/tutorialmod/icon.jpg",
+	"license": "CC0-1.0",
+	"icon": "assets/tutorialmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -29,6 +29,9 @@
 		],
 		"rei_client": [
 			"net.bagelvulture.tutorialmod.compat.rei.TutorialModReiClient"
+		],
+		"jei_mod_plugin": [
+			"net.bagelvulture.tutorialmod.compat.jei.TutorialModJeiPlugin"
 		]
 	},
 	"mixins": [
