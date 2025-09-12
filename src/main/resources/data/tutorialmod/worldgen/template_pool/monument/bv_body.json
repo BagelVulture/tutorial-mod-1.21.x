@@ -1,0 +1,16 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "tutorialmod:body",
+        "processors": "tutorialmod:randomize_monument",
+            "comment1": "If set to 'terrain_matching', the house would be deformed to fit the change in land.",
+            "comment2": "That's best for roads so lets stay 'rigid' for now.",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

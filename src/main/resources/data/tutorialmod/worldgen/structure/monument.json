@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:jigsaw",
+
+  "start_pool": "tutorialmod:monument/bv_body",
+
+  "size": 2,
+
+  "comment1": "Maximum distance away from center that pieces can spawn. Cannot be greater than 128",
+  "max_distance_from_center": 80,
+
+  "biomes": "#tutorialmod:has_structure/monument_biomes",
+
+  "comment2": "The generation step for when to generate the structure. there are 10 stages you can pick from!",
+  "comment3": "This surface structure stage places the structure before plants and ores are generated",
+  "comment4": "See GenerationStep.Feature enum for all the stages you can use and what order they are in",
+  "step": "surface_structures",
+
+  "comment5": "This will add land around the bottom of the structure. (Based on the starting piece's y value)",
+  "comment6": "The kinds of values allowed here are: none, beard_thin, beard_box, and bury",
+  "comment7": "If no land change is desired, remove this field entirely.",
+  "terrain_adaptation": "beard_thin",
+
+  "start_height": { "absolute": 1 },
+
+  "comment8": "Makes our house snap to top land to spawn at. WORLD_SURFACE_WG will stop at first non-air block.",
+  "comment9": "To get top land at even the bottom of oceans, use OCEAN_FLOOR_WG.",
+  "comment0": "If no projection desired, remove this field entirely.",
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+
+  "commenta": "Keep this false. This is only for vanilla legacy villages to make it spawn properly.",
+  "use_expansion_hack": false,
+
+  "commentb": "Optional thing to control whether the structure will be waterlogged when replacing pre-existing water in the world.",
+  "commentc": "Set this to 'ignore_waterlogging' if you are making underground structures that you do not want to get waterlogged and flooded by aquifiers.",
+  "liquid_settings": "apply_waterlogging",
+
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "full",
+      "spawns": [
+        {
+          "type": "minecraft:evoker",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 2
+        },
+        {
+          "type": "minecraft:vindicator",
+          "weight": 2,
+          "minCount": 1,
+          "maxCount": 4
+        }
+      ]
+    }
+  },
+
+  "commentd": "Optional thing that allows swapping a template pool with another per structure json instance. More of an expert niche thing.",
+  "pool_aliases": []
+}

@@ -62,21 +62,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, CRUDE_ALCHEMY_TRANSFORMER)
-                .pattern("ABC")
-                .pattern("DEF")
-                .pattern("GHI")
-                .input('A', Items.EXPERIENCE_BOTTLE)
-                .input('B', Items.ENCHANTED_GOLDEN_APPLE)
-                .input('C', Items.NETHER_STAR)
-                .input('D', Items.LAPIS_LAZULI)
-                .input('E', Items.GLOW_INK_SAC)
-                .input('F', Items.HEART_OF_THE_SEA)
-                .input('G', Items.ECHO_SHARD)
-                .input('H', Items.TOTEM_OF_UNDYING)
-                .input('I', Items.BLAZE_ROD)
-                .criterion(hasItem(Items.GOLD_NUGGET), conditionsFromItem(Items.GOLD_NUGGET))
-                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, CRUDE_ALCHEMY_TRANSFORMER, 1)
+                .input(Items.EXPERIENCE_BOTTLE).input(Items.ENCHANTED_GOLDEN_APPLE).input(Items.NETHER_STAR)
+                .input(Items.LAPIS_LAZULI).input(Items.GLOW_INK_SAC).input(Items.HEART_OF_THE_SEA)
+                .input(Items.ECHO_SHARD).input(Items.TOTEM_OF_UNDYING).input(Items.BLAZE_ROD)
+                .criterion(hasItem(Items.GOLD_NUGGET), conditionsFromItem(Items.GOLD_NUGGET)).offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, BEVULTRIUM_PICKAXE)
                 .pattern("AAA")
@@ -258,6 +248,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                             Registries.ITEM.getId(data.result().asItem()).getPath())
                     );
         }
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, PINK, 1)
+                .input(Items.PINK_GLAZED_TERRACOTTA).input(Items.PINK_BED).input(Items.PINK_SHULKER_BOX)
+                .input(Items.PINK_STAINED_GLASS_PANE).input(Items.PINK_CONCRETE).input(Items.PINK_TULIP)
+                .input(Items.PINK_PETALS).input(Items.PINK_WOOL).input(Items.PINK_DYE)
+                .criterion(hasItem(Items.PINK_DYE), conditionsFromItem(Items.PINK_DYE)).offerTo(exporter);
     }
     public static void chairRecipeBuilder(RecipeExporter exporter, ItemConvertible input, ItemConvertible output) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output, 2)
